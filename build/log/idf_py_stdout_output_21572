@@ -1,0 +1,294 @@
+g of GPIO sleep configuration
+[0;32mI (263) main_task: Started on CPU0[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4201a930
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bf68h ( 49000) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001bf90 vaddr=3fc94300 size=02ac0h ( 10944) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001ea58 vaddr=40374000 size=015c0h (  5568) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b538h (111928) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003b560 vaddr=403755c0 size=0ec7ch ( 60540) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004a1e4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (171) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (184) app_init: ELF file SHA256:  42526b24d...[0m
+[0;32mI (188) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC97698 len 00052078 (328 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) bms_test: SPI bus initialized on 10–13[0m
+[0;32mI (273) bms_test: isoSPI link awake[0m
+[0;32mI (273) bms_test: RX: FF FF FF FF[0m
+[0;32mI (1283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (2283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (3283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (4283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (5283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (6283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (7283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (8283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (9283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (10283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (11283) bms_test: RX: FF FF FF FF[0m
+[0;32mI (1288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (2288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (3288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (4288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (5288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (6288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (7288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (8288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (9288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (10288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (11288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (12288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (13288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (14288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (15288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (16288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (17288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (18288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (19288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (20288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (21288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (22288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (23288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (24288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (25288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (26288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (27288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (28288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (29288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (30288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (31288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (32288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (33288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (34288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (35288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (36288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (37288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (38288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (39288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (40288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (41288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (42288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (43288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (44288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (45288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (46288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (47288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (48288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (49288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (50288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (51288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (52288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (53288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (54288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (55288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (56288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (57288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (58288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (59288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (60288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (61288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (62288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (63288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (64288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (65288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (66288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (67288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (68288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (69288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (70288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (71288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (72288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (73288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (74288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (75288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (76288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (77288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (78288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (79288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (80288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (81288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (82288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (83288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (84288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (85288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (86288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (87288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (88288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (89288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (90288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (91288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (92288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (93288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (94288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (95288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (96288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (97288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (98288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (99288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (100288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (101288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (102288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (103288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (104288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (105288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (106288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (107288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (108288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (109288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (110288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (111288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (112288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (113288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (114288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (115288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (116288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (117288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (118288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (119288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (120288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (121288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (122288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (123288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (124288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (125288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (126288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (127288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (128288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (129288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (130288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (131288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (132288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (133288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (134288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (135288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (136288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (137288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (138288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (139288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (140288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (141288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (142288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (143288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (144288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (145288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (146288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (147288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (148288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (149288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (150288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (151288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (152288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (153288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (154288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (155288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (156288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (157288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (158288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (159288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (160288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (161288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (162288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (163288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (164288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (165288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (166288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (167288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (168288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (169288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (170288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (171288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (172288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (173288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (174288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (175288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (176288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (177288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (178288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (179288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (180288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (181288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (182288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (183288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (184288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (185288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (186288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (187288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (188288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (189288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (190288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (191288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (192288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (193288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (194288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (195288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (196288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (197288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (198288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (199288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (200288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (201288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (202288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (203288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (204288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (205288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (206288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (207288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (208288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (209288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (210288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (211288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (212288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (213288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (214288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (215288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (216288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (217288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (218288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (219288) bms_test: RX: FF FF FF FF[0m
+[0;32mI (220288) bms_test: RX: FF FF FF FF[0m

@@ -1,0 +1,65 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4004883e: uart_tx_one_char_uart in ROM
+[0m
+[0;33m--- 0x40380d53: block_link_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:169
+---  (inlined by) block_mark_as_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:176
+---  (inlined by) tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:630
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x40380d50: block_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:161 (discriminator 1)
+---  (inlined by) block_link_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:168 (discriminator 1)
+---  (inlined by) block_mark_as_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:176 (discriminator 1)
+---  (inlined by) tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:630 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x4038233d: free at /Users/akame/esp/esp-idf/components/newlib/heap.c:39
+--- 0x42009b17: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:158
+--- 0x42009bea: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:201
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40380d53: block_link_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:169
+---  (inlined by) block_mark_as_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:176
+---  (inlined by) tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:630
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x40380d50: block_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:161 (discriminator 1)
+---  (inlined by) block_link_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:168 (discriminator 1)
+---  (inlined by) block_mark_as_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:176 (discriminator 1)
+---  (inlined by) tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:630 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x4038233d: free at /Users/akame/esp/esp-idf/components/newlib/heap.c:39
+--- 0x42009b17: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:158
+--- 0x42009bea: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:201
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40380d53: block_link_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:169
+---  (inlined by) block_mark_as_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:176
+---  (inlined by) tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:630
+[0m
+[0;33m--- 0x400556d5: strlen in ROM
+--- 0x400556e5: strlen in ROM
+[0m
+[0;33m--- 0x40380d50: block_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:161 (discriminator 1)
+---  (inlined by) block_link_next at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:168 (discriminator 1)
+---  (inlined by) block_mark_as_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf_block_functions.h:176 (discriminator 1)
+---  (inlined by) tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:630 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x4038233d: free at /Users/akame/esp/esp-idf/components/newlib/heap.c:39
+--- 0x42009b17: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:158
+--- 0x42009bea: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:201
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

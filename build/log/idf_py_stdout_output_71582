@@ -1,0 +1,3353 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d0b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c570h ( 50544) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c598 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f080 vaddr=40374000 size=00f98h (  3992) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c2c8h (115400) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c2f0 vaddr=40374f98 size=0f2a4h ( 62116) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004b59c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  5b19b66a8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976D8 len 00052038 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (324) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (324) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (334) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (334) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (344) ADBMS6830_Test: ------------------------[0m
+[0;32mI (1344) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (1354) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (1354) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (1364) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (1364) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (1364) ADBMS6830_Test: ------------------------[0m
+[0;32mI (2374) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (2384) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (2384) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (2394) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (2394) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (2394) ADBMS6830_Test: ------------------------[0m
+[0;32mI (3404) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (3414) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (3414) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (3424) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (3424) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (3424) ADBMS6830_Test: ------------------------[0m
+[0;32mI (4434) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (4444) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (4444) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (4454) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (4454) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (4454) ADBMS6830_Test: ------------------------[0m
+[0;32mI (5464) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (5474) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (5474) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (5484) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (5484) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (5484) ADBMS6830_Test: ------------------------[0m
+[0;32mI (6494) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (6504) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (6504) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (6514) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (6514) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (6514) ADBMS6830_Test: ------------------------[0m
+[0;32mI (7524) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (7534) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (7534) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (7544) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (7544) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (7544) ADBMS6830_Test: ------------------------[0m
+[0;32mI (8554) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (8564) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (8564) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (8574) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (8574) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (8574) ADBMS6830_Test: ------------------------[0m
+[0;32mI (9584) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (9594) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (9594) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (9604) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (9604) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (9604) ADBMS6830_Test: ------------------------[0m
+[0;32mI (10614) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (10624) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (10624) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (10634) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (10634) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (10644) ADBMS6830_Test: ------------------------[0m
+[0;32mI (11644) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (11654) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (11654) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (11664) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (11664) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (11674) ADBMS6830_Test: ------------------------[0m
+[0;32mI (12674) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (12684) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (12684) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (12694) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (12694) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (12704) ADBMS6830_Test: ------------------------[0m
+[0;32mI (13704) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (13714) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (13714) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (13724) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (13724) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (13734) ADBMS6830_Test: ------------------------[0m
+[0;32mI (14734) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (14744) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (14744) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (14754) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (14754) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (14764) ADBMS6830_Test: ------------------------[0m
+[0;32mI (15764) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (15774) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (15774) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (15784) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (15784) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (15794) ADBMS6830_Test: ------------------------[0m
+[0;32mI (16794) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (16804) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (16804) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (16814) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (16814) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (16824) ADBMS6830_Test: ------------------------[0m
+[0;32mI (17824) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (17834) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (17834) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (17844) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (17844) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (17854) ADBMS6830_Test: ------------------------[0m
+[0;32mI (18854) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (18864) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (18864) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (18874) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (18874) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (18884) ADBMS6830_Test: ------------------------[0m
+[0;32mI (19884) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (19894) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (19894) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (19904) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (19904) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (19914) ADBMS6830_Test: ------------------------[0m
+[0;32mI (20914) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (20924) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (20924) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (20934) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (20934) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (20944) ADBMS6830_Test: ------------------------[0m
+[0;32mI (21944) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (21954) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (21954) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (21964) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (21964) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (21974) ADBMS6830_Test: ------------------------[0m
+[0;32mI (22974) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (22984) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (22984) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (22994) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (22994) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (23004) ADBMS6830_Test: ------------------------[0m
+[0;32mI (24004) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (24014) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (24014) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (24024) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (24024) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (24034) ADBMS6830_Test: ------------------------[0m
+[0;32mI (25034) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (25044) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (25044) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (25054) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (25054) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (25064) ADBMS6830_Test: ------------------------[0m
+[0;32mI (26064) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (26074) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (26074) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (26084) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (26084) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (26094) ADBMS6830_Test: ------------------------[0m
+[0;32mI (27094) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (27104) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (27104) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (27114) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (27114) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (27124) ADBMS6830_Test: ------------------------[0m
+[0;32mI (28124) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (28134) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (28134) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (28144) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (28144) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (28154) ADBMS6830_Test: ------------------------[0m
+[0;32mI (29154) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (29164) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (29164) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (29174) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (29174) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (29184) ADBMS6830_Test: ------------------------[0m
+[0;32mI (30184) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (30194) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (30194) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (30204) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (30204) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (30214) ADBMS6830_Test: ------------------------[0m
+[0;32mI (31214) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (31224) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (31224) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (31234) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (31234) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (31244) ADBMS6830_Test: ------------------------[0m
+[0;32mI (32244) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (32254) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (32254) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (32264) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (32264) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (32274) ADBMS6830_Test: ------------------------[0m
+[0;32mI (33274) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (33284) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (33284) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (33294) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (33294) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (33304) ADBMS6830_Test: ------------------------[0m
+[0;32mI (34304) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (34314) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (34314) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (34324) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (34324) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (34334) ADBMS6830_Test: ------------------------[0m
+[0;32mI (35334) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (35344) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (35344) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (35354) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (35354) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (35364) ADBMS6830_Test: ------------------------[0m
+[0;32mI (36364) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (36374) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (36374) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (36384) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (36384) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (36394) ADBMS6830_Test: ------------------------[0m
+[0;32mI (37394) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (37404) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (37404) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (37414) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (37414) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (37424) ADBMS6830_Test: ------------------------[0m
+[0;32mI (38424) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (38434) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (38434) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (38444) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (38444) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (38454) ADBMS6830_Test: ------------------------[0m
+[0;32mI (39454) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (39464) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (39464) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (39474) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (39474) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (39484) ADBMS6830_Test: ------------------------[0m
+[0;32mI (40484) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (40494) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (40494) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (40504) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (40504) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (40514) ADBMS6830_Test: ------------------------[0m
+[0;32mI (41514) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (41524) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (41524) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (41534) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (41534) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (41544) ADBMS6830_Test: ------------------------[0m
+[0;32mI (42544) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (42554) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (42554) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (42564) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (42564) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (42574) ADBMS6830_Test: ------------------------[0m
+[0;32mI (43574) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (43584) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (43584) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (43594) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (43594) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (43604) ADBMS6830_Test: ------------------------[0m
+[0;32mI (44604) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (44614) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (44614) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (44624) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (44624) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (44634) ADBMS6830_Test: ------------------------[0m
+[0;32mI (45634) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (45644) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (45644) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (45654) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (45654) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (45664) ADBMS6830_Test: ------------------------[0m
+[0;32mI (46664) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (46674) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (46674) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (46684) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (46684) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (46694) ADBMS6830_Test: ------------------------[0m
+[0;32mI (47694) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (47704) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (47704) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (47714) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (47714) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (47724) ADBMS6830_Test: ------------------------[0m
+[0;32mI (48724) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (48734) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (48734) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (48744) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (48744) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (48754) ADBMS6830_Test: ------------------------[0m
+[0;32mI (49754) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (49764) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (49764) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (49774) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (49774) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (49784) ADBMS6830_Test: ------------------------[0m
+[0;32mI (50784) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (50794) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (50794) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (50804) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (50804) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (50814) ADBMS6830_Test: ------------------------[0m
+[0;32mI (51814) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (51824) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (51824) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (51834) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (51834) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (51844) ADBMS6830_Test: ------------------------[0m
+[0;32mI (52844) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (52854) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (52854) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (52864) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (52864) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (52874) ADBMS6830_Test: ------------------------[0m
+[0;32mI (53874) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (53884) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (53884) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (53894) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (53894) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (53904) ADBMS6830_Test: ------------------------[0m
+[0;32mI (54904) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (54914) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (54914) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (54924) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (54924) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (54934) ADBMS6830_Test: ------------------------[0m
+[0;32mI (55934) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (55944) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (55944) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (55954) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (55954) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (55964) ADBMS6830_Test: ------------------------[0m
+[0;32mI (56964) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (56974) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (56974) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (56984) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (56984) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (56994) ADBMS6830_Test: ------------------------[0m
+[0;32mI (57994) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (58004) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (58004) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (58014) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (58014) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (58024) ADBMS6830_Test: ------------------------[0m
+[0;32mI (59024) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (59034) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (59034) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (59044) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (59044) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (59054) ADBMS6830_Test: ------------------------[0m
+[0;32mI (60054) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (60064) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (60064) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (60074) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (60074) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (60084) ADBMS6830_Test: ------------------------[0m
+[0;32mI (61084) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (61094) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (61094) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (61104) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (61104) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (61114) ADBMS6830_Test: ------------------------[0m
+[0;32mI (62114) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (62124) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (62124) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (62134) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (62134) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (62144) ADBMS6830_Test: ------------------------[0m
+[0;32mI (63144) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (63154) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (63154) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (63164) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (63164) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (63174) ADBMS6830_Test: ------------------------[0m
+[0;32mI (64174) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (64184) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (64184) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (64194) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (64194) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (64204) ADBMS6830_Test: ------------------------[0m
+[0;32mI (65204) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (65214) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (65214) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (65224) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (65224) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (65234) ADBMS6830_Test: ------------------------[0m
+[0;32mI (66234) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (66244) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (66244) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (66254) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (66254) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (66264) ADBMS6830_Test: ------------------------[0m
+[0;32mI (67264) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (67274) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (67274) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (67284) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (67284) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (67294) ADBMS6830_Test: ------------------------[0m
+[0;32mI (68294) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (68304) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (68304) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (68314) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (68314) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (68324) ADBMS6830_Test: ------------------------[0m
+[0;32mI (69324) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (69334) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (69334) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (69344) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (69344) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (69354) ADBMS6830_Test: ------------------------[0m
+[0;32mI (70354) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (70364) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (70364) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (70374) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (70374) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (70384) ADBMS6830_Test: ------------------------[0m
+[0;32mI (71384) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (71394) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (71394) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (71404) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (71404) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (71414) ADBMS6830_Test: ------------------------[0m
+[0;32mI (72414) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (72424) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (72424) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (72434) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (72434) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (72444) ADBMS6830_Test: ------------------------[0m
+[0;32mI (73444) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (73454) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (73454) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (73464) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (73464) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (73474) ADBMS6830_Test: ------------------------[0m
+[0;32mI (74474) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (74484) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (74484) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (74494) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (74494) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (74504) ADBMS6830_Test: ------------------------[0m
+[0;32mI (75504) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (75514) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (75514) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (75524) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (75524) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (75534) ADBMS6830_Test: ------------------------[0m
+[0;32mI (76534) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (76544) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (76544) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (76554) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (76554) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (76564) ADBMS6830_Test: ------------------------[0m
+[0;32mI (77564) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (77574) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (77574) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (77584) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (77584) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (77594) ADBMS6830_Test: ------------------------[0m
+[0;32mI (78594) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (78604) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (78604) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (78614) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (78614) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (78624) ADBMS6830_Test: ------------------------[0m
+[0;32mI (79624) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (79634) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (79634) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (79644) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (79644) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (79654) ADBMS6830_Test: ------------------------[0m
+[0;32mI (80654) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (80664) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (80664) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (80674) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (80674) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (80684) ADBMS6830_Test: ------------------------[0m
+[0;32mI (81684) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (81694) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (81694) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (81704) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (81704) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (81714) ADBMS6830_Test: ------------------------[0m
+[0;32mI (82714) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (82724) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (82724) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (82734) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (82734) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (82744) ADBMS6830_Test: ------------------------[0m
+[0;32mI (83744) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (83754) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (83754) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (83764) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (83764) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (83774) ADBMS6830_Test: ------------------------[0m
+[0;32mI (84774) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (84784) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (84784) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (84794) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (84794) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (84804) ADBMS6830_Test: ------------------------[0m
+[0;32mI (85804) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (85814) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (85814) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (85824) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (85824) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (85834) ADBMS6830_Test: ------------------------[0m
+[0;32mI (86834) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (86844) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (86844) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (86854) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (86854) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (86864) ADBMS6830_Test: ------------------------[0m
+[0;32mI (87864) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (87874) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (87874) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (87884) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (87884) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (87894) ADBMS6830_Test: ------------------------[0m
+[0;32mI (88894) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (88904) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (88904) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (88914) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (88914) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (88924) ADBMS6830_Test: ------------------------[0m
+[0;32mI (89924) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (89934) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (89934) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (89944) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (89944) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (89954) ADBMS6830_Test: ------------------------[0m
+[0;32mI (90954) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (90964) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (90964) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (90974) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (90974) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (90984) ADBMS6830_Test: ------------------------[0m
+[0;32mI (91984) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (91994) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (91994) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (92004) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (92004) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (92014) ADBMS6830_Test: ------------------------[0m
+[0;32mI (93014) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (93024) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (93024) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (93034) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (93034) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (93044) ADBMS6830_Test: ------------------------[0m
+[0;32mI (94044) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (94054) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (94054) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (94064) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (94064) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (94074) ADBMS6830_Test: ------------------------[0m
+[0;32mI (95074) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (95084) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (95084) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (95094) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (95094) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (95104) ADBMS6830_Test: ------------------------[0m
+[0;32mI (96104) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (96114) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (96114) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (96124) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (96124) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (96134) ADBMS6830_Test: ------------------------[0m
+[0;32mI (97134) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (97144) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (97144) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (97154) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (97154) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (97164) ADBMS6830_Test: ------------------------[0m
+[0;32mI (98164) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (98174) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (98174) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (98184) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (98184) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (98194) ADBMS6830_Test: ------------------------[0m
+[0;32mI (99194) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (99204) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (99204) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (99214) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (99214) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (99224) ADBMS6830_Test: ------------------------[0m
+[0;32mI (100224) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (100234) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (100234) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (100244) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (100244) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (100254) ADBMS6830_Test: ------------------------[0m
+[0;32mI (101254) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (101264) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (101264) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (101274) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (101274) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (101284) ADBMS6830_Test: ------------------------[0m
+[0;32mI (102284) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (102294) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (102294) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (102304) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (102304) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (102314) ADBMS6830_Test: ------------------------[0m
+[0;32mI (103314) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (103324) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (103324) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (103334) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (103334) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (103344) ADBMS6830_Test: ------------------------[0m
+[0;32mI (104344) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (104354) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (104354) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (104364) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (104364) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (104374) ADBMS6830_Test: ------------------------[0m
+[0;32mI (105374) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (105384) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (105384) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (105394) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (105394) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (105404) ADBMS6830_Test: ------------------------[0m
+[0;32mI (106404) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (106414) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (106414) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (106424) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (106424) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (106434) ADBMS6830_Test: ------------------------[0m
+[0;32mI (107434) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (107444) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (107444) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (107454) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (107454) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (107464) ADBMS6830_Test: ------------------------[0m
+[0;32mI (108464) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (108474) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (108474) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (108484) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (108484) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (108494) ADBMS6830_Test: ------------------------[0m
+[0;32mI (109494) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (109504) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (109504) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (109514) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (109514) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (109524) ADBMS6830_Test: ------------------------[0m
+[0;32mI (110524) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (110534) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (110534) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (110544) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (110544) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (110554) ADBMS6830_Test: ------------------------[0m
+[0;32mI (111554) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (111564) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (111564) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (111574) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (111574) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (111584) ADBMS6830_Test: ------------------------[0m
+[0;32mI (112584) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (112594) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (112594) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (112604) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (112604) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (112614) ADBMS6830_Test: ------------------------[0m
+[0;32mI (113614) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (113624) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (113624) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (113634) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (113634) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (113644) ADBMS6830_Test: ------------------------[0m
+[0;32mI (114644) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (114654) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (114654) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (114664) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (114664) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (114674) ADBMS6830_Test: ------------------------[0m
+[0;32mI (115674) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (115684) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (115684) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (115694) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (115694) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (115704) ADBMS6830_Test: ------------------------[0m
+[0;32mI (116704) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (116714) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (116714) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (116724) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (116724) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (116734) ADBMS6830_Test: ------------------------[0m
+[0;32mI (117734) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (117744) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (117744) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (117754) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (117754) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (117764) ADBMS6830_Test: ------------------------[0m
+[0;32mI (118764) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (118774) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (118774) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (118784) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (118784) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (118794) ADBMS6830_Test: ------------------------[0m
+[0;32mI (119794) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (119804) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (119804) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (119814) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (119814) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (119824) ADBMS6830_Test: ------------------------[0m
+[0;32mI (120824) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (120834) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (120834) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (120844) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (120844) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (120854) ADBMS6830_Test: ------------------------[0m
+[0;32mI (121854) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (121864) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (121864) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (121874) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (121874) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (121884) ADBMS6830_Test: ------------------------[0m
+[0;32mI (122884) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (122894) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (122894) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (122904) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (122904) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (122914) ADBMS6830_Test: ------------------------[0m
+[0;32mI (123914) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (123924) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (123924) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (123934) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (123934) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (123944) ADBMS6830_Test: ------------------------[0m
+[0;32mI (124944) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (124954) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (124954) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (124964) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (124964) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (124974) ADBMS6830_Test: ------------------------[0m
+[0;32mI (125974) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (125984) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (125984) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (125994) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (125994) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (126004) ADBMS6830_Test: ------------------------[0m
+[0;32mI (127004) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (127014) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (127014) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (127024) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (127024) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (127034) ADBMS6830_Test: ------------------------[0m
+[0;32mI (128034) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (128044) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (128044) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (128054) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (128054) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (128064) ADBMS6830_Test: ------------------------[0m
+[0;32mI (129064) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (129074) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (129074) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (129084) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (129084) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (129094) ADBMS6830_Test: ------------------------[0m
+[0;32mI (130094) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (130104) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (130104) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (130114) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (130114) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (130124) ADBMS6830_Test: ------------------------[0m
+[0;32mI (131124) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (131134) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (131134) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (131144) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (131144) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (131154) ADBMS6830_Test: ------------------------[0m
+[0;32mI (132154) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (132164) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (132164) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (132174) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (132174) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (132184) ADBMS6830_Test: ------------------------[0m
+[0;32mI (133184) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (133194) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (133194) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (133204) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (133204) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (133214) ADBMS6830_Test: ------------------------[0m
+[0;32mI (134214) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (134224) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (134224) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (134234) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (134234) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (134244) ADBMS6830_Test: ------------------------[0m
+[0;32mI (135244) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (135254) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (135254) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (135264) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (135264) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (135274) ADBMS6830_Test: ------------------------[0m
+[0;32mI (136274) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (136284) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (136284) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (136294) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (136294) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (136304) ADBMS6830_Test: ------------------------[0m
+[0;32mI (137304) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (137314) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (137314) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (137324) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (137324) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (137334) ADBMS6830_Test: ------------------------[0m
+[0;32mI (138334) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (138344) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (138344) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (138354) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (138354) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (138364) ADBMS6830_Test: ------------------------[0m
+[0;32mI (139364) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (139374) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (139374) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (139384) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (139384) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (139394) ADBMS6830_Test: ------------------------[0m
+[0;32mI (140394) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (140404) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (140404) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (140414) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (140414) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (140424) ADBMS6830_Test: ------------------------[0m
+[0;32mI (141424) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (141434) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (141434) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (141444) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (141444) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (141454) ADBMS6830_Test: ------------------------[0m
+[0;32mI (142454) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (142464) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (142464) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (142474) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (142474) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (142484) ADBMS6830_Test: ------------------------[0m
+[0;32mI (143484) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (143494) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (143494) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (143504) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (143504) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (143514) ADBMS6830_Test: ------------------------[0m
+[0;32mI (144514) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (144524) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (144524) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (144534) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (144534) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (144544) ADBMS6830_Test: ------------------------[0m
+[0;32mI (145544) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (145554) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (145554) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (145564) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (145564) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (145574) ADBMS6830_Test: ------------------------[0m
+[0;32mI (146574) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (146584) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (146584) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (146594) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (146594) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (146604) ADBMS6830_Test: ------------------------[0m
+[0;32mI (147604) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (147614) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (147614) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (147624) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (147624) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (147634) ADBMS6830_Test: ------------------------[0m
+[0;32mI (148634) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (148644) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (148644) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (148654) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (148654) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (148664) ADBMS6830_Test: ------------------------[0m
+[0;32mI (149664) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (149674) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (149674) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (149684) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (149684) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (149694) ADBMS6830_Test: ------------------------[0m
+[0;32mI (150694) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (150704) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (150704) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (150714) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (150714) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (150724) ADBMS6830_Test: ------------------------[0m
+[0;32mI (151724) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (151734) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (151734) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (151744) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (151744) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (151754) ADBMS6830_Test: ------------------------[0m
+[0;32mI (152754) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (152764) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (152764) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (152774) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (152774) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (152784) ADBMS6830_Test: ------------------------[0m
+[0;32mI (153784) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (153794) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (153794) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (153804) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (153804) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (153814) ADBMS6830_Test: ------------------------[0m
+[0;32mI (154814) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (154824) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (154824) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (154834) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (154834) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (154844) ADBMS6830_Test: ------------------------[0m
+[0;32mI (155844) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (155854) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (155854) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (155864) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (155864) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (155874) ADBMS6830_Test: ------------------------[0m
+[0;32mI (156874) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (156884) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (156884) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (156894) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (156894) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (156904) ADBMS6830_Test: ------------------------[0m
+[0;32mI (157904) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (157914) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (157914) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (157924) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (157924) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (157934) ADBMS6830_Test: ------------------------[0m
+[0;32mI (158934) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (158944) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (158944) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (158954) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (158954) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (158964) ADBMS6830_Test: ------------------------[0m
+[0;32mI (159964) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (159974) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (159974) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (159984) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (159984) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (159994) ADBMS6830_Test: ------------------------[0m
+[0;32mI (160994) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (161004) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (161004) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (161014) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (161014) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (161024) ADBMS6830_Test: ------------------------[0m
+[0;32mI (162024) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (162034) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (162034) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (162044) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (162044) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (162054) ADBMS6830_Test: ------------------------[0m
+[0;32mI (163054) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (163064) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (163064) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (163074) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (163074) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (163084) ADBMS6830_Test: ------------------------[0m
+[0;32mI (164084) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (164094) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (164094) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (164104) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (164104) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (164114) ADBMS6830_Test: ------------------------[0m
+[0;32mI (165114) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (165124) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (165124) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (165134) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (165134) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (165144) ADBMS6830_Test: ------------------------[0m
+[0;32mI (166144) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (166154) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (166154) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (166164) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (166164) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (166174) ADBMS6830_Test: ------------------------[0m
+[0;32mI (167174) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (167184) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (167184) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (167194) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (167194) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (167204) ADBMS6830_Test: ------------------------[0m
+[0;32mI (168204) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (168214) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (168214) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (168224) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (168224) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (168234) ADBMS6830_Test: ------------------------[0m
+[0;32mI (169234) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (169244) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (169244) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (169254) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (169254) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (169264) ADBMS6830_Test: ------------------------[0m
+[0;32mI (170264) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (170274) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (170274) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (170284) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (170284) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (170294) ADBMS6830_Test: ------------------------[0m
+[0;32mI (171294) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (171304) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (171304) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (171314) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (171314) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (171324) ADBMS6830_Test: ------------------------[0m
+[0;32mI (172324) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (172334) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (172334) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (172344) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (172344) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (172354) ADBMS6830_Test: ------------------------[0m
+[0;32mI (173354) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (173364) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (173364) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (173374) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (173374) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (173384) ADBMS6830_Test: ------------------------[0m
+[0;32mI (174384) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (174394) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (174394) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (174404) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (174404) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (174414) ADBMS6830_Test: ------------------------[0m
+[0;32mI (175414) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (175424) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (175424) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (175434) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (175434) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (175444) ADBMS6830_Test: ------------------------[0m
+[0;32mI (176444) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (176454) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (176454) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (176464) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (176464) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (176474) ADBMS6830_Test: ------------------------[0m
+[0;32mI (177474) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (177484) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (177484) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (177494) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (177494) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (177504) ADBMS6830_Test: ------------------------[0m
+[0;32mI (178504) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (178514) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (178514) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (178524) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (178524) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (178534) ADBMS6830_Test: ------------------------[0m
+[0;32mI (179534) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (179544) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (179544) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (179554) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (179554) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (179564) ADBMS6830_Test: ------------------------[0m
+[0;32mI (180564) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (180574) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (180574) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (180584) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (180584) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (180594) ADBMS6830_Test: ------------------------[0m
+[0;32mI (181594) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (181604) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (181604) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (181614) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (181614) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (181624) ADBMS6830_Test: ------------------------[0m
+[0;32mI (182624) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (182634) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (182634) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (182644) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (182644) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (182654) ADBMS6830_Test: ------------------------[0m
+[0;32mI (183654) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (183664) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (183664) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (183674) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (183674) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (183684) ADBMS6830_Test: ------------------------[0m
+[0;32mI (184684) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (184694) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (184694) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (184704) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (184704) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (184714) ADBMS6830_Test: ------------------------[0m
+[0;32mI (185714) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (185724) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (185724) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (185734) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (185734) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (185744) ADBMS6830_Test: ------------------------[0m
+[0;32mI (186744) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (186754) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (186754) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (186764) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (186764) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (186774) ADBMS6830_Test: ------------------------[0m
+[0;32mI (187774) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (187784) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (187784) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (187794) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (187794) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (187804) ADBMS6830_Test: ------------------------[0m
+[0;32mI (188804) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (188814) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (188814) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (188824) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (188824) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (188834) ADBMS6830_Test: ------------------------[0m
+[0;32mI (189834) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (189844) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (189844) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (189854) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (189854) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (189864) ADBMS6830_Test: ------------------------[0m
+[0;32mI (190864) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (190874) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (190874) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (190884) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (190884) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (190894) ADBMS6830_Test: ------------------------[0m
+[0;32mI (191894) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (191904) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (191904) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (191914) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (191914) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (191924) ADBMS6830_Test: ------------------------[0m
+[0;32mI (192924) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (192934) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (192934) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (192944) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (192944) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (192954) ADBMS6830_Test: ------------------------[0m
+[0;32mI (193954) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (193964) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (193964) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (193974) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (193974) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (193984) ADBMS6830_Test: ------------------------[0m
+[0;32mI (194984) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (194994) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (194994) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (195004) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (195004) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (195014) ADBMS6830_Test: ------------------------[0m
+[0;32mI (196014) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (196024) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (196024) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (196034) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (196034) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (196044) ADBMS6830_Test: ------------------------[0m
+[0;32mI (197044) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (197054) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (197054) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (197064) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (197064) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (197074) ADBMS6830_Test: ------------------------[0m
+[0;32mI (198074) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (198084) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (198084) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (198094) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (198094) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (198104) ADBMS6830_Test: ------------------------[0m
+[0;32mI (199104) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (199114) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (199114) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (199124) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (199124) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (199134) ADBMS6830_Test: ------------------------[0m
+[0;32mI (200134) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (200144) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (200144) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (200154) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (200154) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (200164) ADBMS6830_Test: ------------------------[0m
+[0;32mI (201164) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (201174) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (201174) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (201184) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (201184) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (201194) ADBMS6830_Test: ------------------------[0m
+[0;32mI (202194) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (202204) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (202204) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (202214) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (202214) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (202224) ADBMS6830_Test: ------------------------[0m
+[0;32mI (203224) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (203234) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (203234) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (203244) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (203244) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (203254) ADBMS6830_Test: ------------------------[0m
+[0;32mI (204254) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (204264) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (204264) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (204274) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (204274) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (204284) ADBMS6830_Test: ------------------------[0m
+[0;32mI (205284) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (205294) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (205294) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (205304) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (205304) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (205314) ADBMS6830_Test: ------------------------[0m
+[0;32mI (206314) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (206324) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (206324) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (206334) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (206334) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (206344) ADBMS6830_Test: ------------------------[0m
+[0;32mI (207344) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (207354) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (207354) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (207364) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (207364) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (207374) ADBMS6830_Test: ------------------------[0m
+[0;32mI (208374) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (208384) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (208384) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (208394) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (208394) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (208404) ADBMS6830_Test: ------------------------[0m
+[0;32mI (209404) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (209414) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (209414) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (209424) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (209424) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (209434) ADBMS6830_Test: ------------------------[0m
+[0;32mI (210434) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (210444) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (210444) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (210454) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (210454) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (210464) ADBMS6830_Test: ------------------------[0m
+[0;32mI (211464) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (211474) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (211474) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (211484) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (211484) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (211494) ADBMS6830_Test: ------------------------[0m
+[0;32mI (212494) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (212504) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (212504) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (212514) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (212514) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (212524) ADBMS6830_Test: ------------------------[0m
+[0;32mI (213524) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (213534) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (213534) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (213544) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (213544) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (213554) ADBMS6830_Test: ------------------------[0m
+[0;32mI (214554) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (214564) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (214564) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (214574) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (214574) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (214584) ADBMS6830_Test: ------------------------[0m
+[0;32mI (215584) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (215594) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (215594) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (215604) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (215604) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (215614) ADBMS6830_Test: ------------------------[0m
+[0;32mI (216614) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (216624) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (216624) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (216634) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (216634) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (216644) ADBMS6830_Test: ------------------------[0m
+[0;32mI (217644) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (217654) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (217654) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (217664) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (217664) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (217674) ADBMS6830_Test: ------------------------[0m
+[0;32mI (218674) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (218684) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (218684) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (218694) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (218694) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (218704) ADBMS6830_Test: ------------------------[0m
+[0;32mI (219704) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (219714) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (219714) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (219724) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (219724) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (219734) ADBMS6830_Test: ------------------------[0m
+[0;32mI (220734) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (220744) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (220744) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (220754) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (220754) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (220764) ADBMS6830_Test: ------------------------[0m
+[0;32mI (221764) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (221774) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (221774) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (221784) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (221784) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (221794) ADBMS6830_Test: ------------------------[0m
+[0;32mI (222794) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (222804) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (222804) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (222814) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (222814) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (222824) ADBMS6830_Test: ------------------------[0m
+[0;32mI (223824) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (223834) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (223834) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (223844) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (223844) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (223854) ADBMS6830_Test: ------------------------[0m
+[0;32mI (224854) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (224864) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (224864) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (224874) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (224874) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (224884) ADBMS6830_Test: ------------------------[0m
+[0;32mI (225884) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (225894) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (225894) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (225904) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (225904) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (225914) ADBMS6830_Test: ------------------------[0m
+[0;32mI (226914) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (226924) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (226924) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (226934) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (226934) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (226944) ADBMS6830_Test: ------------------------[0m
+[0;32mI (227944) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (227954) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (227954) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (227964) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (227964) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (227974) ADBMS6830_Test: ------------------------[0m
+[0;32mI (228974) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (228984) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (228984) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (228994) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (228994) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (229004) ADBMS6830_Test: ------------------------[0m
+[0;32mI (230004) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (230014) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (230014) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (230024) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (230024) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (230034) ADBMS6830_Test: ------------------------[0m
+[0;32mI (231034) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (231044) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (231044) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (231054) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (231054) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (231064) ADBMS6830_Test: ------------------------[0m
+[0;32mI (232064) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (232074) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (232074) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (232084) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (232084) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (232094) ADBMS6830_Test: ------------------------[0m
+[0;32mI (233094) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (233104) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (233104) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (233114) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (233114) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (233124) ADBMS6830_Test: ------------------------[0m
+[0;32mI (234124) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (234134) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (234134) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (234144) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (234144) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (234154) ADBMS6830_Test: ------------------------[0m
+[0;32mI (235154) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (235164) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (235164) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (235174) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (235174) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (235184) ADBMS6830_Test: ------------------------[0m
+[0;32mI (236184) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (236194) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (236194) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (236204) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (236204) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (236214) ADBMS6830_Test: ------------------------[0m
+[0;32mI (237214) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (237224) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (237224) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (237234) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (237234) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (237244) ADBMS6830_Test: ------------------------[0m
+[0;32mI (238244) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (238254) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (238254) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (238264) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (238264) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (238274) ADBMS6830_Test: ------------------------[0m
+[0;32mI (239274) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (239284) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (239284) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (239294) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (239294) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (239304) ADBMS6830_Test: ------------------------[0m
+[0;32mI (240304) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (240314) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (240314) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (240324) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (240324) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (240334) ADBMS6830_Test: ------------------------[0m
+[0;32mI (241334) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (241344) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (241344) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (241354) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (241354) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (241364) ADBMS6830_Test: ------------------------[0m
+[0;32mI (242364) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (242374) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (242374) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (242384) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (242384) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (242394) ADBMS6830_Test: ------------------------[0m
+[0;32mI (243394) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (243404) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (243404) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (243414) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (243414) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (243424) ADBMS6830_Test: ------------------------[0m
+[0;32mI (244424) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (244434) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (244434) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (244444) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (244444) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (244454) ADBMS6830_Test: ------------------------[0m
+[0;32mI (245454) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (245464) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (245464) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (245474) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (245474) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (245484) ADBMS6830_Test: ------------------------[0m
+[0;32mI (246484) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (246494) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (246494) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (246504) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (246504) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (246514) ADBMS6830_Test: ------------------------[0m
+[0;32mI (247514) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (247524) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (247524) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (247534) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (247534) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (247544) ADBMS6830_Test: ------------------------[0m
+[0;32mI (248544) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (248554) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (248554) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (248564) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (248564) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (248574) ADBMS6830_Test: ------------------------[0m
+[0;32mI (249574) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (249584) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (249584) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (249594) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (249594) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (249604) ADBMS6830_Test: ------------------------[0m
+[0;32mI (250604) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (250614) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (250614) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (250624) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (250624) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (250634) ADBMS6830_Test: ------------------------[0m
+[0;32mI (251634) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (251644) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (251644) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (251654) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (251654) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (251664) ADBMS6830_Test: ------------------------[0m
+[0;32mI (252664) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (252674) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (252674) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (252684) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (252684) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (252694) ADBMS6830_Test: ------------------------[0m
+[0;32mI (253694) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (253704) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (253704) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (253714) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (253714) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (253724) ADBMS6830_Test: ------------------------[0m
+[0;32mI (254724) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (254734) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (254734) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (254744) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (254744) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (254754) ADBMS6830_Test: ------------------------[0m
+[0;32mI (255754) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (255764) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (255764) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (255774) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (255774) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (255784) ADBMS6830_Test: ------------------------[0m
+[0;32mI (256784) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (256794) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (256794) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (256804) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (256804) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (256814) ADBMS6830_Test: ------------------------[0m
+[0;32mI (257814) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (257824) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (257824) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (257834) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (257834) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (257844) ADBMS6830_Test: ------------------------[0m
+[0;32mI (258844) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (258854) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (258854) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (258864) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (258864) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (258874) ADBMS6830_Test: ------------------------[0m
+[0;32mI (259874) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (259884) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (259884) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (259894) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (259894) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (259904) ADBMS6830_Test: ------------------------[0m
+[0;32mI (260904) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (260914) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (260914) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (260924) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (260924) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (260934) ADBMS6830_Test: ------------------------[0m
+[0;32mI (261934) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (261944) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (261944) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (261954) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (261954) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (261964) ADBMS6830_Test: ------------------------[0m
+[0;32mI (262964) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (262974) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (262974) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (262984) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (262984) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (262994) ADBMS6830_Test: ------------------------[0m
+[0;32mI (263994) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (264004) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (264004) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (264014) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (264014) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (264024) ADBMS6830_Test: ------------------------[0m
+[0;32mI (265024) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (265034) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (265034) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (265044) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (265044) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (265054) ADBMS6830_Test: ------------------------[0m
+[0;32mI (266054) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (266064) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (266064) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (266074) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (266074) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (266084) ADBMS6830_Test: ------------------------[0m
+[0;32mI (267084) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (267094) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (267094) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (267104) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (267104) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (267114) ADBMS6830_Test: ------------------------[0m
+[0;32mI (268114) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (268124) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (268124) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (268134) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (268134) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (268144) ADBMS6830_Test: ------------------------[0m
+[0;32mI (269144) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (269154) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (269154) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (269164) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (269164) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (269174) ADBMS6830_Test: ------------------------[0m
+[0;32mI (270174) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (270184) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (270184) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (270194) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (270194) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (270204) ADBMS6830_Test: ------------------------[0m
+[0;32mI (271204) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (271214) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (271214) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (271224) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (271224) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (271234) ADBMS6830_Test: ------------------------[0m
+[0;32mI (272234) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (272244) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (272244) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (272254) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (272254) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (272264) ADBMS6830_Test: ------------------------[0m
+[0;32mI (273264) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (273274) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (273274) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (273284) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (273284) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (273294) ADBMS6830_Test: ------------------------[0m
+[0;32mI (274294) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (274304) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (274304) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (274314) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (274314) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (274324) ADBMS6830_Test: ------------------------[0m
+[0;32mI (275324) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (275334) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (275334) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (275344) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (275344) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (275354) ADBMS6830_Test: ------------------------[0m
+[0;32mI (276354) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (276364) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (276364) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (276374) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (276374) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (276384) ADBMS6830_Test: ------------------------[0m
+[0;32mI (277384) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (277394) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (277394) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (277404) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (277404) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (277414) ADBMS6830_Test: ------------------------[0m
+[0;32mI (278414) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (278424) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (278424) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (278434) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (278434) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (278444) ADBMS6830_Test: ------------------------[0m
+[0;32mI (279444) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (279454) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (279454) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (279464) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (279464) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (279474) ADBMS6830_Test: ------------------------[0m
+[0;32mI (280474) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (280484) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (280484) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (280494) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (280494) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (280504) ADBMS6830_Test: ------------------------[0m
+[0;32mI (281504) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (281514) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (281514) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (281524) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (281524) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (281534) ADBMS6830_Test: ------------------------[0m
+[0;32mI (282534) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (282544) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (282544) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (282554) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (282554) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (282564) ADBMS6830_Test: ------------------------[0m
+[0;32mI (283564) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (283574) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (283574) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (283584) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (283584) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (283594) ADBMS6830_Test: ------------------------[0m
+[0;32mI (284594) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (284604) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (284604) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (284614) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (284614) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (284624) ADBMS6830_Test: ------------------------[0m
+[0;32mI (285624) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (285634) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (285634) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (285644) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (285644) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (285654) ADBMS6830_Test: ------------------------[0m
+[0;32mI (286654) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (286664) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (286664) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (286674) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (286674) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (286684) ADBMS6830_Test: ------------------------[0m
+[0;32mI (287684) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (287694) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (287694) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (287704) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (287704) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (287714) ADBMS6830_Test: ------------------------[0m
+[0;32mI (288714) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (288724) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (288724) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (288734) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (288734) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (288744) ADBMS6830_Test: ------------------------[0m
+[0;32mI (289744) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (289754) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (289754) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (289764) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (289764) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (289774) ADBMS6830_Test: ------------------------[0m
+[0;32mI (290774) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (290784) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (290784) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (290794) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (290794) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (290804) ADBMS6830_Test: ------------------------[0m
+[0;32mI (291804) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (291814) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (291814) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (291824) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (291824) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (291834) ADBMS6830_Test: ------------------------[0m
+[0;32mI (292834) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (292844) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (292844) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (292854) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (292854) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (292864) ADBMS6830_Test: ------------------------[0m
+[0;32mI (293864) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (293874) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (293874) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (293884) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (293884) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (293894) ADBMS6830_Test: ------------------------[0m
+[0;32mI (294894) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (294904) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (294904) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (294914) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (294914) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (294924) ADBMS6830_Test: ------------------------[0m
+[0;32mI (295924) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (295934) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (295934) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (295944) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (295944) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (295954) ADBMS6830_Test: ------------------------[0m
+[0;32mI (296954) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (296964) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (296964) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (296974) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (296974) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (296984) ADBMS6830_Test: ------------------------[0m
+[0;32mI (297984) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (297994) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (297994) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (298004) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (298004) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (298014) ADBMS6830_Test: ------------------------[0m
+[0;32mI (299014) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (299024) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (299024) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (299034) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (299034) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (299044) ADBMS6830_Test: ------------------------[0m
+[0;32mI (300044) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (300054) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (300054) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (300064) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (300064) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (300074) ADBMS6830_Test: ------------------------[0m
+[0;32mI (301074) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (301084) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (301084) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (301094) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (301094) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (301104) ADBMS6830_Test: ------------------------[0m
+[0;32mI (302104) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (302114) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (302114) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (302124) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (302124) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (302134) ADBMS6830_Test: ------------------------[0m
+[0;32mI (303134) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (303144) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (303144) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (303154) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (303154) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (303164) ADBMS6830_Test: ------------------------[0m
+[0;32mI (304164) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (304174) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (304174) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (304184) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (304184) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (304194) ADBMS6830_Test: ------------------------[0m
+[0;32mI (305194) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (305204) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (305204) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (305214) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (305214) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (305224) ADBMS6830_Test: ------------------------[0m
+[0;32mI (306224) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (306234) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (306234) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (306244) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (306244) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (306254) ADBMS6830_Test: ------------------------[0m
+[0;32mI (307254) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (307264) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (307264) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (307274) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (307274) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (307284) ADBMS6830_Test: ------------------------[0m
+[0;32mI (308284) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (308294) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (308294) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (308304) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (308304) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (308314) ADBMS6830_Test: ------------------------[0m
+[0;32mI (309314) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (309324) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (309324) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (309334) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (309334) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (309344) ADBMS6830_Test: ------------------------[0m
+[0;32mI (310344) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (310354) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (310354) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (310364) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (310364) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (310374) ADBMS6830_Test: ------------------------[0m
+[0;32mI (311374) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (311384) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (311384) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (311394) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (311394) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (311404) ADBMS6830_Test: ------------------------[0m
+[0;32mI (312404) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (312414) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (312414) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (312424) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (312424) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (312434) ADBMS6830_Test: ------------------------[0m
+[0;32mI (313434) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (313444) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (313444) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (313454) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (313454) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (313464) ADBMS6830_Test: ------------------------[0m
+[0;32mI (314464) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (314474) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (314474) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (314484) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (314484) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (314494) ADBMS6830_Test: ------------------------[0m
+[0;32mI (315494) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (315504) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (315504) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (315514) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (315514) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (315524) ADBMS6830_Test: ------------------------[0m
+[0;32mI (316524) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (316534) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (316534) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (316544) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (316544) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (316554) ADBMS6830_Test: ------------------------[0m
+[0;32mI (317554) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (317564) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (317564) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (317574) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (317574) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (317584) ADBMS6830_Test: ------------------------[0m
+[0;32mI (318584) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (318594) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (318594) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (318604) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (318604) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (318614) ADBMS6830_Test: ------------------------[0m
+[0;32mI (319614) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (319624) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (319624) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (319634) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (319634) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (319644) ADBMS6830_Test: ------------------------[0m
+[0;32mI (320644) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (320654) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (320654) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (320664) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (320664) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (320674) ADBMS6830_Test: ------------------------[0m
+[0;32mI (321674) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (321684) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (321684) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (321694) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (321694) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (321704) ADBMS6830_Test: ------------------------[0m
+[0;32mI (322704) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (322714) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (322714) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (322724) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (322724) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (322734) ADBMS6830_Test: ------------------------[0m
+[0;32mI (323734) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (323744) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (323744) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (323754) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (323754) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (323764) ADBMS6830_Test: ------------------------[0m
+[0;32mI (324764) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (324774) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (324774) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (324784) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (324784) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (324794) ADBMS6830_Test: ------------------------[0m
+[0;32mI (325794) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (325804) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (325804) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (325814) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (325814) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (325824) ADBMS6830_Test: ------------------------[0m
+[0;32mI (326824) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (326834) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (326834) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (326844) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (326844) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (326854) ADBMS6830_Test: ------------------------[0m
+[0;32mI (327854) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (327864) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (327864) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (327874) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (327874) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (327884) ADBMS6830_Test: ------------------------[0m
+[0;32mI (328884) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (328894) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (328894) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (328904) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (328904) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (328914) ADBMS6830_Test: ------------------------[0m
+[0;32mI (329914) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (329924) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (329924) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (329934) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (329934) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (329944) ADBMS6830_Test: ------------------------[0m
+[0;32mI (330944) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (330954) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (330954) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (330964) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (330964) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (330974) ADBMS6830_Test: ------------------------[0m
+[0;32mI (331974) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (331984) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (331984) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (331994) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (331994) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (332004) ADBMS6830_Test: ------------------------[0m
+[0;32mI (333004) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (333014) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (333014) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (333024) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (333024) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (333034) ADBMS6830_Test: ------------------------[0m
+[0;32mI (334034) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (334044) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (334044) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (334054) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (334054) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (334064) ADBMS6830_Test: ------------------------[0m
+[0;32mI (335064) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (335074) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (335074) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (335084) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (335084) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (335094) ADBMS6830_Test: ------------------------[0m
+[0;32mI (336094) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (336104) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (336104) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (336114) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (336114) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (336124) ADBMS6830_Test: ------------------------[0m
+[0;32mI (337124) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (337134) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (337134) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (337144) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (337144) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (337154) ADBMS6830_Test: ------------------------[0m
+[0;32mI (338154) ADBMS6830_Test: Testing Main device with 672 bytes...[0m
+[0;32mI (338164) ADBMS6830_Test: Main device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (338164) ADBMS6830_Test: Testing AUX device with 672 bytes...[0m
+[0;32mI (338174) ADBMS6830_Test: AUX device first 16 bytes:[0m
+FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF 
+[0;32mI (338174) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (338184) ADBMS6830_Test: ------------------------[0m

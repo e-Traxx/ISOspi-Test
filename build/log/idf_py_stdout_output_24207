@@ -1,0 +1,980 @@
+header.
+[0;32mI (255) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (261) sESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0ca68h ( 51816) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001ca90 vaddr=3fc94600 size=02aech ( 10988) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f584 vaddr=40374000 size=00a94h (  2708) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c5a0h (116128) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c5c8 vaddr=40374a94 size=0fb38h ( 64312) load[0m
+[0;32mI (146) esp_image: segment 5: paddr=0004c108 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (181) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (186) app_init: ELF file SHA256:  05a7c8a36...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FC979E8 len 00051D28 (327 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (234) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (275) main_task: Calling app_main()[0m
+[0;32mI (275) ADBMS6830: Starting ADBMS6830 Device ID Reader with Enhanced Wake-up[0m
+[0;32mI (275) ADBMS6830: Pin Configuration:[0m
+[0;32mI (285) ADBMS6830:   MISO: GPIO35[0m
+[0;32mI (285) ADBMS6830:   MOSI: GPIO36[0m
+[0;32mI (285) ADBMS6830:   CLK:  GPIO37[0m
+[0;32mI (295) ADBMS6830:   CS1:  GPIO38[0m
+[0;32mI (295) ADBMS6830:   CS2:  GPIO39[0m
+[0;32mI (295) ADBMS6830: SPI initialized successfully[0m
+[0;32mI (305) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (405) ADBMS6830: === SPI Connectivity Test ===[0m
+[0;32mI (405) ADBMS6830: SPI Test - Sent: AA 55 CC 33[0m
+[0;32mI (405) ADBMS6830: SPI Test - Recv: FF FF FF FF[0m
+[0;32mI (405) ADBMS6830: GPIO Level Check:[0m
+[0;32mI (405) ADBMS6830: MISO (GPIO35): 1[0m
+[0;32mI (405) ADBMS6830: MOSI (GPIO36): 0[0m
+[0;32mI (415) ADBMS6830: CLK  (GPIO37): 1[0m
+[0;32mI (415) ADBMS6830: CS1  (GPIO38): 1[0m
+[0;32mI (415) ADBMS6830: CS2  (GPIO39): 0[0m
+[0;32mI (425) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (425) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (495) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (495) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (495) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (595) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (595) ADBMS6830: [0m
+=== Hardware Troubleshooting Guide ===
+[0;32mI (595) ADBMS6830: If you see all 0xFF responses, check:[0m
+[0;32mI (595) ADBMS6830: 1. Power supply to LTC6820 and ADBMS6830[0m
+[0;32mI (595) ADBMS6830: 2. SPI connections (MISO/MOSI/CLK/CS)[0m
+[0;32mI (605) ADBMS6830: 3. Ground connections[0m
+[0;32mI (605) ADBMS6830: 4. Pull-up resistors on isoSPI lines if required[0m
+[0;32mI (615) ADBMS6830: 5. LTC6820 configuration jumpers/settings[0m
+[0;32mI (615) ADBMS6830: 6. isoSPI cable connections and termination[0m
+[0;32mI (625) ADBMS6830: =======================================[0m
+
+[0;32mI (625) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (635) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (635) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (645) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (645) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (655) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (655) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (665) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (665) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (675) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (675) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (685) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (685) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (755) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (755) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (755) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (855) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (10855) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (10855) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (10855) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (10855) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (10855) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (10865) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (10865) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (10875) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (10875) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (10885) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (10885) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (10895) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (10905) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (10965) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (10965) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (10965) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (11065) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (21065) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (21065) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (21065) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (21065) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (21065) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (21075) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (21075) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (21085) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (21085) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (21095) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (21095) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (21105) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (21115) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (21175) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (21175) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (21175) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (21275) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (31275) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (31275) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (31275) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (31275) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (31275) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (31285) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (31285) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (31295) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (31295) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (31305) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (31305) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (31315) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (31325) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (31385) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (31385) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (31385) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (31485) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (41485) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (41485) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (41485) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (41485) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (41485) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (41495) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (41495) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (41505) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (41505) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (41515) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (41515) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (41525) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (41535) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (41595) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (41595) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (41595) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (41695) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (51695) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (51695) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (51695) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (51695) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (51695) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (51705) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (51705) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (51715) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (51715) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (51725) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (51725) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (51735) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (51745) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (51805) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (51805) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (51805) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (51905) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (61905) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (61905) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (61905) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (61905) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (61905) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (61915) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (61915) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (61925) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (61925) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (61935) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (61935) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (61945) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (61955) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (62015) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (62015) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (62015) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (62115) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (72115) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (72115) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (72115) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (72115) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (72115) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (72125) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (72125) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (72135) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (72135) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (72145) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (72145) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (72155) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (72165) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (72225) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (72225) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (72225) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (72325) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (82325) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (82325) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (82325) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (82325) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (82325) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (82335) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (82335) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (82345) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (82345) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (82355) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (82355) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (82365) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (82375) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (82435) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (82435) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (82435) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (82535) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (92535) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (92535) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (92535) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (92535) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (92535) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (92545) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (92545) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (92555) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (92555) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (92565) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (92565) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (92575) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (92585) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (92645) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (92645) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (92645) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (92745) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (102745) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (102745) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (102745) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (102745) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (102745) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (102755) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (102755) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (102765) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (102765) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (102775) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (102785) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (102785) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (102795) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (102855) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (102855) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (102855) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (102955) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (112955) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (112955) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (112955) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (112955) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (112955) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (112965) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (112965) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (112975) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (112975) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (112985) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (112995) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (112995) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (113005) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (113065) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (113065) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (113065) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (113165) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (123165) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (123165) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (123165) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (123165) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (123165) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (123175) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (123175) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (123185) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (123185) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (123195) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (123205) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (123205) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (123215) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (123275) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (123275) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (123275) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (123375) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (133375) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (133375) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (133375) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (133375) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (133375) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (133385) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (133385) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (133395) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (133395) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (133405) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (133415) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (133415) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (133425) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (133485) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (133485) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (133485) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (133585) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (143585) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (143585) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (143585) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (143585) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (143585) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (143595) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (143595) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (143605) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (143605) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (143615) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (143625) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (143625) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (143635) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (143695) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (143695) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (143695) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (143795) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (153795) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (153795) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (153795) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (153795) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (153795) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (153805) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (153805) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (153815) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (153815) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (153825) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (153835) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (153835) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (153845) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (153905) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (153905) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (153905) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (154005) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (164005) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (164005) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (164005) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (164005) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (164005) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (164015) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (164015) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (164025) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (164025) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (164035) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (164045) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (164045) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (164055) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (164115) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (164115) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (164115) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (164215) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (174215) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (174215) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (174215) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (174215) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (174215) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (174225) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (174225) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (174235) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (174235) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (174245) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (174255) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (174255) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (174265) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (174325) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (174325) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (174325) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (174425) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (184425) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (184425) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (184425) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (184425) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (184425) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (184435) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (184435) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (184445) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (184445) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (184455) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (184465) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (184465) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (184475) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (184535) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (184535) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (184535) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (184635) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (194635) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (194635) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (194635) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (194635) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (194635) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (194645) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (194645) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (194655) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (194655) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (194665) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (194675) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (194675) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (194685) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (194745) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (194745) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (194745) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (194845) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (204845) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (204845) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (204845) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (204845) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (204845) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (204855) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (204855) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (204865) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (204865) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (204875) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (204885) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (204885) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (204895) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (204955) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (204955) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (204955) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (205055) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (215055) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (215055) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (215055) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (215055) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (215055) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (215065) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (215065) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (215075) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (215075) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (215085) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (215095) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (215095) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (215105) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (215165) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (215165) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (215165) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (215265) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (225265) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (225265) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (225265) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (225265) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (225265) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (225275) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (225275) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (225285) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (225285) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (225295) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (225305) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (225305) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (225315) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (225375) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (225375) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (225375) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (225475) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (235475) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (235475) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (235475) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (235475) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (235475) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (235485) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (235485) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (235495) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (235495) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (235505) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (235515) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (235515) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (235525) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (235585) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (235585) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (235585) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (235685) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (245685) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (245685) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (245685) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (245685) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (245685) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (245695) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (245695) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (245705) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (245705) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (245715) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (245725) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (245725) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (245735) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (245795) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (245795) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (245795) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (245895) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (255895) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (255895) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (255895) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (255895) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (255895) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (255905) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (255905) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (255915) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (255915) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (255925) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (255935) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (255935) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (255945) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (256005) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (256005) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (256005) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (256105) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (266105) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (266105) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (266105) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (266105) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (266105) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (266115) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (266115) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (266125) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (266125) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (266135) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (266145) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (266145) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (266155) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (266215) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (266215) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (266215) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (266315) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (276315) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (276315) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (276315) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (276315) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (276315) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (276325) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (276325) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (276335) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (276335) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (276345) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (276355) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (276355) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (276365) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (276425) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (276425) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (276425) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (276525) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (286525) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (286525) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (286525) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (286525) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (286525) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (286535) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (286535) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (286545) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (286545) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (286555) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (286565) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (286565) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (286575) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (286635) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (286635) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (286635) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (286735) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (296735) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (296735) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (296735) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (296735) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (296735) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (296745) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (296745) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (296755) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (296755) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (296765) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (296775) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (296775) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (296785) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (296845) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (296845) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (296845) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (296945) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (306945) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (306945) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (306945) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (306945) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (306945) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (306955) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (306955) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (306965) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (306965) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (306975) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (306985) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (306985) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (306995) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (307055) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (307055) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (307055) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (307155) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (317155) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (317155) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (317155) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (317155) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (317155) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (317165) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (317165) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (317175) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (317175) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (317185) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (317195) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (317195) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (317205) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (317265) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (317265) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (317265) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (317365) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (327365) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (327365) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (327365) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (327365) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (327365) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (327375) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (327375) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (327385) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (327385) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (327395) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (327405) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (327405) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (327415) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (327475) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (327475) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (327475) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (327575) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (337575) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (337575) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (337575) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (337575) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (337575) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (337585) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (337585) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (337595) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (337595) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (337605) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (337615) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (337615) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (337625) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (337685) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (337685) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (337685) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (337785) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (347785) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (347785) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (347785) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (347785) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (347785) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (347795) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (347795) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (347805) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (347805) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (347815) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (347825) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (347825) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (347835) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (347895) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (347895) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (347895) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (347995) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (357995) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (357995) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (357995) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (357995) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (357995) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (358005) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (358005) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (358015) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (358015) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (358025) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (358035) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (358035) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (358045) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (358105) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (358105) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (358105) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (358205) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (368205) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (368205) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (368205) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (368205) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (368205) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (368215) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (368215) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (368225) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (368225) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (368235) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (368245) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (368245) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (368255) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (368315) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (368315) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (368315) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (368415) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (378415) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (378415) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (378415) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (378415) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (378415) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (378425) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (378425) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (378435) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (378435) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (378445) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (378455) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (378455) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (378465) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (378525) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (378525) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (378525) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (378625) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (388625) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (388625) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (388625) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (388625) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (388625) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (388635) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (388635) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (388645) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (388645) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (388655) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (388665) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (388665) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (388675) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (388735) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (388735) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (388735) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (388835) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (398835) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (398835) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (398835) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (398835) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (398835) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (398845) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (398845) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (398855) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (398855) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (398865) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (398875) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (398875) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (398885) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (398945) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (398945) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (398945) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (399045) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (409045) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (409045) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (409045) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (409045) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (409045) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (409055) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (409055) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (409065) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (409065) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (409075) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (409085) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (409085) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (409095) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (409155) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (409155) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (409155) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (409255) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (419255) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (419255) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (419255) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (419255) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (419255) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (419265) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (419265) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (419275) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (419275) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (419285) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (419295) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (419295) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (419305) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (419365) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (419365) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (419365) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (419465) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (429465) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (429465) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (429465) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (429465) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (429465) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (429475) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (429475) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (429485) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (429485) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (429495) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (429505) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (429505) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (429515) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (429575) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (429575) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (429575) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (429675) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (439675) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (439675) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (439675) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (439675) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (439675) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (439685) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (439685) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (439695) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (439695) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (439705) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (439715) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (439715) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (439725) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (439785) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (439785) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (439785) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (439885) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (449885) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (449885) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (449885) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (449885) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (449885) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (449895) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (449895) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (449905) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (449905) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (449915) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (449925) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (449925) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (449935) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (449995) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (449995) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (449995) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (450095) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (460095) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (460095) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (460095) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (460095) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (460095) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (460105) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (460105) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (460115) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (460115) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (460125) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (460135) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (460135) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (460145) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (460205) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (460205) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (460205) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (460305) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (470305) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (470305) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (470305) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (470305) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (470305) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (470315) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (470315) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (470325) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (470325) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (470335) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (470345) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (470345) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (470355) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (470415) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (470415) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (470415) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (470515) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (480515) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (490765) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (490765) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (490765) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (490765) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (490765) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (490775) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (490775) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (490785) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (490785) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (490795) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (490805) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (490805) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (490815) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (490875) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (490875) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (490875) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (490975) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (500975) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (500975) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (500975) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (500975) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (500975) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (500985) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (500985) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (500995) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (500995) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (501005) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (501015) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (501015) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (501025) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (501085) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (501085) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (501085) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (501185) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (511185) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (511185) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (511185) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (511185) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (511185) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (511195) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (511195) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (511205) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (511205) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (511215) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (511225) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (511225) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (511235) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (511295) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (511295) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (511295) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (511395) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (521395) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (521395) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (521395) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (521395) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (521395) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (521405) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (521405) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (521415) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (521415) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (521425) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (521435) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (521435) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (521445) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (521505) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (521505) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (521505) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (521605) ADBMS6830: Full system wake-up completed[0m
+[0;32mI (531605) ADBMS6830: --- New Reading Cycle ---[0m
+[0;32mI (531605) ADBMS6830: Reading ADBMS6830 Device ID...[0m
+[0;32mI (531605) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (531605) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (531605) ADBMS6830: Sending command: 0x02C4 with PEC: 0x3FC4[0m
+[0;32mI (531615) ADBMS6830: Command packet: 02 C4 3F C4[0m
+[0;32mI (531615) ADBMS6830: Command echo: FF FF FF FF[0m
+[0;32mI (531625) ADBMS6830: Raw response: FF FF FF FF FF FF FF FF[0m
+[1;31mE (531625) ADBMS6830: No response from device - check connections and power[0m
+[1;31mE (531635) ADBMS6830: Failed to read device ID: ESP_ERR_NOT_FOUND[0m
+[0;32mI (531645) ADBMS6830: Attempting full system wake-up recovery...[0m
+[0;32mI (531645) ADBMS6830: === Full System Wake-up Sequence ===[0m
+[0;32mI (531655) ADBMS6830: Performing hardware reset sequence...[0m
+[0;32mI (531715) ADBMS6830: Hardware reset sequence completed[0m
+[0;32mI (531715) ADBMS6830: Sending enhanced isoSPI wake-up sequence...[0m
+[0;32mI (531715) ADBMS6830: Wake-up sequence completed[0m
+[0;32mI (531815) ADBMS6830: Full system wake-up completed[0m

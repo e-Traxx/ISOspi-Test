@@ -1,0 +1,192 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4201abd4: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:164 (discriminator 1)
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x4037cda4: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+[0m
+[0;33m--- 0x40056f5c: memcpy in ROM
+--- 0x40056f72: memcpy in ROM
+[0m
+[0;33m--- 0x4037cda1: xTaskRemoveFromEventList at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3898
+--- 0x4037b334: xQueueGenericSendFromISR at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1264
+--- 0x40378db1: spi_intr at /Users/akame/esp/esp-idf/components/esp_driver_spi/src/gpspi/spi_master.c:957
+--- 0x403773f9: _xt_lowint1 at /Users/akame/esp/esp-idf/components/xtensa/xtensa_vectors.S:1240
+--- 0x40379327: xt_utils_wait_for_intr at /Users/akame/esp/esp-idf/components/xtensa/include/xt_utils.h:82
+---  (inlined by) esp_cpu_wait_for_intr at /Users/akame/esp/esp-idf/components/esp_hw_support/cpu.c:55
+--- 0x42002c66: esp_vApplicationIdleHook at /Users/akame/esp/esp-idf/components/esp_system/freertos_hooks.c:58
+--- 0x4037c68d: prvIdleTask at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4353 (discriminator 1)
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

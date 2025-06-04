@@ -1,0 +1,22 @@
+[1/5] cd /Users/akame/Documents/ISOSPI_TEST/build/esp-idf/esptool_py && /Users/akame/.espressif/python_env/idf5.4_py3.9_env/bin/python /Users/akame/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/akame/Documents/ISOSPI_TEST/build/partition_table/partition-table.bin /Users/akame/Documents/ISOSPI_TEST/build/dc2792b_test.bin
+dc2792b_test.bin binary size 0x3a420 bytes. Smallest app partition is 0x100000 bytes. 0xc5be0 bytes (77%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /Users/akame/Documents/ISOSPI_TEST/build/bootloader/esp-idf/esptool_py && /Users/akame/.espressif/python_env/idf5.4_py3.9_env/bin/python /Users/akame/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/akame/Documents/ISOSPI_TEST/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /Users/akame/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/akame/esp/esp-idf -D "SERIAL_TOOL=/Users/akame/.espressif/python_env/idf5.4_py3.9_env/bin/python;;/Users/akame/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/akame/Documents/ISOSPI_TEST/build -P /Users/akame/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/cu.usbmodem59710772451 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 2MB 0x0 bootloader/bootloader.bin 0x10000 dc2792b_test.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/cu.usbmodem59710772451
+Connecting....
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: e8:06:90:a1:2c:d0
+Uploading stub...
+
+A fatal error occurred: Failed to write to target RAM (result was 01070000: Operation timed out)
+FAILED: CMakeFiles/flash /Users/akame/Documents/ISOSPI_TEST/build/CMakeFiles/flash 
+cd /Users/akame/esp/esp-idf/components/esptool_py && /opt/homebrew/bin/cmake -D IDF_PATH=/Users/akame/esp/esp-idf -D "SERIAL_TOOL=/Users/akame/.espressif/python_env/idf5.4_py3.9_env/bin/python;;/Users/akame/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/Users/akame/Documents/ISOSPI_TEST/build -P /Users/akame/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+ninja: build stopped: subcommand failed.

@@ -1,0 +1,1109 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x400490cf
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+3D 7B 95 AC A1 07 B2 EF 8A D1 44 C3 4A C8 F3 03 
+FC E4 5A 3A 92 9E 4D A2 78 1F 65 1C E3 32 94 7E 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+3D 7B 95 AC A1 07 B2 EF 8A D1 44 C3 4A C8 F3 03 
+FC E4 5A 3A 92 9E 4D A2 78 1F 65 1C E3 32 94 7E 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+6B 1D 0C 8F 7C B7 77 4E 1B 0F 9C 03 36 8E FF DF 
+9D 00 CC 5D 0C 4F 6A 92 D9 0A CB 2F 5F 77 01 02 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+6B 1D 0C 8F 7C B7 77 4E 1B 0F 9C 03 36 8E FF DF 
+9D 00 CC 5D 0C 4F 6A 92 D9 0A CB 2F 5F 77 01 02 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+98 BF 83 73 56 67 3B AE AB 4E F4 43 22 53 0A BC 
+3F 1B 3F 80 85 00 88 82 39 F5 32 42 DB BC 6E 86 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+98 BF 83 73 56 67 3B AE AB 4E F4 43 22 53 0A BC 
+3F 1B 3F 80 85 00 88 82 39 F5 32 42 DB BC 6E 86 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+98 BF 83 73 56 67 3B AE AB 4E F4 43 22 53 0A BC 
+3F 1B 3F 80 85 00 88 82 39 F5 32 42 DB BC 6E 86 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+C5 61 FA 56 30 17 00 0D 3C 8D 4C 83 0E 19 16 98 
+E0 37 B1 A4 FF B1 A5 72 99 E0 99 55 56 02 DC 0A 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+C5 61 FA 56 30 17 00 0D 3C 8D 4C 83 0E 19 16 98 
+E0 37 B1 A4 FF B1 A5 72 99 E0 99 55 56 02 DC 0A 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+F3 03 71 3A 0B C8 C5 6C CC CB A4 C4 FA DF 22 75 
+81 53 24 C7 79 62 C2 62 F9 CA 00 68 D2 47 49 8E 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+F3 03 71 3A 0B C8 C5 6C CC CB A4 C4 FA DF 22 75 
+81 53 24 C7 79 62 C2 62 F9 CA 00 68 D2 47 49 8E 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+F3 03 71 3A 0B C8 C5 6C CC CB A4 C4 FA DF 22 75 
+81 53 24 C7 79 62 C2 62 F9 CA 00 68 D2 47 49 8E 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4a0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004b8bc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  d51d04db8...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+20 A5 E8 1D E5 78 89 CB 5D 0A FC 04 E6 A4 2E 51 
+22 6F 97 EA F2 13 E0 51 59 B5 66 7B 4E 8C B7 12 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x0000[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 00 00[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+
+***ERROR*** A stack overflow in task main has been detected.
+
+
+Backtrace: 0x40375b41:0x3fc99100 0x4037ad11:0x3fc99120 0x4037baaa:0x3fc99140 0x4037cca3:0x3fc991c0 0x4037bb70:0x3fc991e0 0x4037bb66:0x3fc9b650 0x3fc9934d:0xb33fffff |<-CORRUPTED
+
+
+
+
+ELF file SHA256: d51d04db8
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375a80
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (26) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (26) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (29) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (40) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (44) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (51) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (64) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (77) boot: End of partition table[0m
+[0;32mI (80) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (99) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (103) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c478h (115832) map[0m

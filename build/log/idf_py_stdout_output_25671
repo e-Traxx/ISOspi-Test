@@ -1,0 +1,1352 @@
+ the binary image header(2048k). Using the siESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c010h ( 49168) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c038 vaddr=3fc94600 size=02adch ( 10972) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001eb1c vaddr=40374000 size=014fch (  5372) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b37ch (111484) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003b3a4 vaddr=403754fc size=0f0d0h ( 61648) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004a47c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (184) app_init: ELF file SHA256:  1bfcbf2f3...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC97BB8 len 00051B58 (326 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+[0;32mI (273) RDSID_TEST: SPI ready, clock 500000 Hz[0m
+[0;32mI (273) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (1283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (1283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (1783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (1783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (2283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (2283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (2783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (2783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (3283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (3283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (3783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (3783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (4283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (4283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (4783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (4783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (5283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (5283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (5783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (5783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (6283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (6283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (6783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (6783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (7283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (7283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (7783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (7783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (8283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (8283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (8783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (8783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (9283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (9283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (9783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (9783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (10283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (10283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (10783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (10783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (11283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (11283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (11783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (11783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (12283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (12283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (12783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (12783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (13283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (13283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (13783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (13783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (14283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (14283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (14783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (14783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (15283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (15283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (15783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (15783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (16283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (16283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (16783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (16783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (17283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (17283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (17783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (17783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (18283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (18283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (18783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (18783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (19283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (19283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (19783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (19783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (20283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (20283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (20783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (20783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (21283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (21283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (21783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (21783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (22283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (22283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (22783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (22783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (23283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (23283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (23783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (23783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (24283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (24283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (24783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (24783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (25283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (25283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (25783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (25783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (26283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (26283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (26783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (26783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (27283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (27283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (27783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (27783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (28283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (28283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (28783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (28783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (29283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (29283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (29783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (29783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (30283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (30283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (30783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (30783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (31283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (31283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (31783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (31783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (32283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (32283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (32783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (32783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (33283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (33283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (33783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (33783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (34283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (34283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (34783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (34783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (35283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (35283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (35783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (35783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (36283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (36283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (36783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (36783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (37283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (37283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (37783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (37783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (38283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (38283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (38783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (38783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (39283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (39283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (39783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (39783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (40283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (40283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (40783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (40783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (41283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (41283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (41783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (41783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (42283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (42283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (42783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (42783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (43283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (43283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (43783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (43783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (44283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (44283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (44783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (44783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (45283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (45283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (45783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (45783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (46283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (46283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (46783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (46783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (47283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (47283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (47783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (47783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (48283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (48283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (48783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (48783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (49283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (49283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (49783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (49783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (50283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (50283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (50783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (50783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (51283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (51283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (51783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (51783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (52283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (52283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (52783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (52783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (53283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (53283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (53783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (53783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (54283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (54283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (54783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (54783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (55283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (55283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (55783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (55783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (56283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (56283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (56783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (56783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (57283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (57283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (57783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (57783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (58283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (58283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (58783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (58783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (59283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (59283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (59783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (59783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (60283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (60283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (60783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (60783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (61283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (61283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (61783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (61783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (62283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (62283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (62783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (62783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (63283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (63283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (63783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (63783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (64283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (64283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (64783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (64783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (65283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (65283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (65783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (65783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (66283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (66283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (66783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (66783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (67283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (67283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (67783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (67783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (68283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (68283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (68783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (68783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (69283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (69283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (69783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (69783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (70283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (70283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (70783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (70783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (71283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (71283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (71783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (71783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (72283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (72283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (72783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (72783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (73283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (73283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (73783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (73783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (74283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (74283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (74783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (74783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (75283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (75283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (75783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (75783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (76283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (76283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (76783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (76783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (77283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (77283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (77783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (77783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (78283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (78283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (78783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (78783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (79283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (79283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (79783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (79783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (80283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (80283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (80783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (80783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (81283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (81283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (81783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (81783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (82283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (82283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (82783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (82783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (83283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (83283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (83783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (83783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (84283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (84283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (84783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (84783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (85283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (85283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (85783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (85783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (86283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (86283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (86783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (86783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (87283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (87283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (87783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (87783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (88283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (88283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (88783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (88783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (89283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (89283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (89783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (89783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (90283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (90283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (90783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (90783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (91283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (91283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (91783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (91783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (92283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (92283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (92783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (92783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (93283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (93283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (93783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (93783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (94283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (94283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (94783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (94783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (95283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (95283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (95783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (95783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (96283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (96283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (96783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (96783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (97283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (97283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (97783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (97783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (98283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (98283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (98783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (98783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (99283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (99283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (99783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (99783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (100283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (100283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (100783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (100783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (101283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (101283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (101783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (101783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (102283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (102283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (102783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (102783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (103283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (103283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (103783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (103783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (104283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (104283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (104783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (104783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (105283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (105283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (105783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (105783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (106283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (106283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (106783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (106783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (107283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (107283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (107783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (107783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (108283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (108283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (108783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (108783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (109283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (109283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (109783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (109783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (110283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (110283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (110783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (110783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (111283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (111283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (111783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (111783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (112283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (112283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (112783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (112783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (113283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (113283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (113783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (113783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (114283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (114283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (114783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (114783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (115283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (115283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (115783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (115783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (116283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (116283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (116783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (116783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (117283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (117283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (117783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (117783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (118283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (118283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (118783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (118783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (119283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (119283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (119783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (119783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (120283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (120283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (120783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (120783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (121283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (121283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (121783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (121783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (122283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (122283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (122783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (122783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (123283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (123283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (123783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (123783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (124283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (124283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (124783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (124783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (125283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (125283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (125783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (125783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (126283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (126283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (126783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (126783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (127283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (127283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (127783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (127783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (128283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (128283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (128783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (128783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (129283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (129283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (129783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (129783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (130283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (130283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (130783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (130783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (131283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (131283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (131783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (131783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (132283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (132283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (132783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (132783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (133283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (133283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (133783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (133783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (134283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (134283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (134783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (134783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (135283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (135283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (135783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (135783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (136283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (136283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (136783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (136783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (137283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (137283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (137783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (137783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (138283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (138283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (138783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (138783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (139283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (139283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (139783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (139783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (140283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (140283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (140783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (140783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (141283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (141283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (141783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (141783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (142283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (142283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (142783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (142783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (143283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (143283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (143783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (143783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (144283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (144283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (144783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (144783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (145283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (145283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (145783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (145783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (146283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (146283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (146783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (146783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (147283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (147283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (147783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (147783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (148283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (148283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (148783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (148783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (149283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (149283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (149783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (149783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (150283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (150283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (150783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (150783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (151283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (151283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (151783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (151783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (152283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (152283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (152783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (152783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (153283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (153283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (153783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (153783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (154283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (154283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (154783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (154783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (155283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (155283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (155783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (155783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (156283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (156283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (156783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (156783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (157283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (157283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (157783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (157783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (158283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (158283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (158783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (158783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (159283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (159283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (159783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (159783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (160283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (160283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (160783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (160783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (161283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (161283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (161783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (161783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (162283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (162283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (162783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (162783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (163283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (163283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (163783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (163783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (164283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (164283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (164783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (164783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (165283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (165283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (165783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (165783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (166283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (166283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (166783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (166783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (167283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (167283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (167783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (167783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (168283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (168283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (168783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (168783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (169283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (169283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (169783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (169783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (170283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (170283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (170783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (170783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (171283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (171283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (171783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (171783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (172283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (172283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (172783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (172783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (173283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (173283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (173783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (173783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (174283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (174283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (174783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (174783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (175283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (175283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (175783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (175783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (176283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (176283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (176783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (176783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (177283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (177283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (177783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (177783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (178283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (178283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (178783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (178783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (179283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (179283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (179783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (179783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (180283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (180283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (180783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (180783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (181283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (181283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (181783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (181783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (182283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (182283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (182783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (182783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (183283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (183283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (183783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (183783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (184283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (184283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (184783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (184783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (185283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (185283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (185783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (185783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (186283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (186283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (186783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (186783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (187283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (187283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (187783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (187783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (188283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (188283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (188783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (188783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (189283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (189283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (189783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (189783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (190283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (190283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (190783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (190783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (191283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (191283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (191783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (191783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (192283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (192283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (192783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (192783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (193283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (193283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (193783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (193783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (194283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (194283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (194783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (194783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (195283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (195283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (195783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (195783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (196283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (196283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (196783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (196783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (197283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (197283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (197783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (197783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (198283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (198283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (198783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (198783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (199283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (199283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (199783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (199783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (200283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (200283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (200783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (200783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (201283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (201283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (201783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (201783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (202283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (202283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (202783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (202783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (203283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (203283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (203783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (203783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (204283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (204283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (204783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (204783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (205283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (205283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (205783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (205783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (206283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (206283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (206783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (206783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (207283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (207283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (207783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (207783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (208283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (208283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (208783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (208783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (209283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (209283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (209783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (209783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (210283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (210283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (210783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (210783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (211283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (211283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (211783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (211783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (212283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (212283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (212783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (212783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (213283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (213283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (213783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (213783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (214283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (214283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (214783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (214783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (215283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (215283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (215783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (215783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (216283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (216283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (216783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (216783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (217283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (217283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (217783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (217783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (218283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (218283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (218783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (218783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (219283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (219283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (219783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (219783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (220283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (220283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (220783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (220783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (221283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (221283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (221783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (221783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (222283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (222283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (222783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (222783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (223283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (223283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (223783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (223783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (224283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (224283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (224783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (224783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (225283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (225283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (225783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (225783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (226283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (226283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (226783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (226783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (227283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (227283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (227783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (227783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (228283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (228283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (228783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (228783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (229283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (229283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (229783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (229783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (230283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (230283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (230783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (230783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (231283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (231283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (231783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (231783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (232283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (232283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (232783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (232783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (233283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (233283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (233783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (233783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (234283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (234283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (234783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (234783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (235283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (235283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (235783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (235783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (236283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (236283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (236783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (236783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (237283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (237283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (237783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (237783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (238283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (238283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (238783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (238783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (239283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (239283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (239783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (239783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (240283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (240283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (240783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (240783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (241283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (241283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (241783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (241783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (242283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (242283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (242783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (242783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (243283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (243283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (243783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (243783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (244283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (244283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (244783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (244783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (245283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (245283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (245783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (245783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (246283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (246283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (246783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (246783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (247283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (247283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (247783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (247783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (248283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (248283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (248783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (248783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (249283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (249283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (249783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (249783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (250283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (250283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (250783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (250783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (251283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (251283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (251783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (251783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (252283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (252283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (252783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (252783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (253283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (253283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (253783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (253783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (254283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (254283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (254783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (254783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (255283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (255283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (255783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (255783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (256283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (256283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (256783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (256783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (257283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (257283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (257783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (257783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (258283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (258283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (258783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (258783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (259283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (259283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (259783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (259783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (260283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (260283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (260783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (260783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (261283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (261283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (261783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (261783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (262283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (262283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (262783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (262783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (263283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (263283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (263783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (263783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (264283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (264283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (264783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (264783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (265283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (265283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (265783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (265783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (266283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (266283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (266783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (266783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (267283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (267283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (267783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (267783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (268283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (268283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (268783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (268783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (269283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (269283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (269783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (269783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (270283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (270283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (270783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (270783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (271283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (271283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (271783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (271783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (272283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (272283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (272783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (272783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (273283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (273283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (273783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (273783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (274283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (274283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (274783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (274783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (275283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (275283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (275783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (275783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (276283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (276283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (276783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (276783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (277283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (277283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (277783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (277783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (278283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (278283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (278783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (278783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (279283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (279283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (279783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (279783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (280283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (280283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (280783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (280783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (281283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (281283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (281783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (281783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (282283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (282283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (282783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (282783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (283283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (283283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (283783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (283783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (284283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (284283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (284783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (284783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (285283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (285283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (285783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (285783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (286283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (286283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (286783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (286783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (287283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (287283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (287783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (287783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (288283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (288283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (288783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (288783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (289283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (289283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (289783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (289783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (290283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (290283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (290783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (290783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (291283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (291283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (291783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (291783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (292283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (292283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (292783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (292783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (293283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (293283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (293783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (293783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (294283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (294283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (294783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (294783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (295283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (295283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (295783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (295783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (296283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (296283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (296783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (296783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (297283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (297283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (297783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (297783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (298283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (298283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (298783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (298783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (299283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (299283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (299783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (299783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (300283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (300283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (300783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (300783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (301283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (301283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (301783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (301783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (302283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (302283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (302783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (302783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (303283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (303283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (303783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (303783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (304283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (304283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (304783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (304783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (305283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (305283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (305783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (305783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (306283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (306283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (306783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (306783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (307283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (307283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (307783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (307783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (308283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (308283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (308783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (308783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (309283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (309283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (309783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (309783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (310283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (310283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (310783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (310783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (311283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (311283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (311783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (311783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (312283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (312283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (312783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (312783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (313283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (313283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (313783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (313783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (314283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (314283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (314783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (314783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (315283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (315283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (315783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (315783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (316283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (316283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (316783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (316783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (317283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (317283) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (317783) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (317783) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (318283) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[0;32mI (343833) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (343833) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (344333) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (344333) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (344833) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (344833) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (345333) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (345333) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (345833) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (345833) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (346333) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (346333) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (346833) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (346833) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (347333) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (347333) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (347833) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (347833) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m
+[0;32mI (348333) RDSID_TEST: RDSID raw: FF FF FF FF FF FF | PEC FFFF[0m
+[1;31mE (348333) RDSID_TEST: ✗ FAIL – bad PEC (expected 664C)[0m

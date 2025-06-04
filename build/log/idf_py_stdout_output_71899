@@ -1,0 +1,42 @@
+[1/9] Performing build step for 'bootloader'
+[1/1] cd /Users/akame/Documents/ISOSPI_TEST/build/bootloader/esp-idf/esptool_py && /Users/akame/.espressif/python_env/idf5.4_py3.9_env/bin/python /Users/akame/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /Users/akame/Documents/ISOSPI_TEST/build/bootloader/bootloader.bin
+Bootloader binary size 0x5220 bytes. 0x2de0 bytes (36%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/Users/akame/Documents/ISOSPI_TEST/main/main.c: In function 'verify_data_integrity':
+/Users/akame/Documents/ISOSPI_TEST/main/main.c:212:52: warning: passing argument 1 of 'adbms6830_calc_pec15' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  212 |     uint16_t calculated_pec = adbms6830_calc_pec15(rx_data_start, len);
+      |                                                    ^~~~~~~~~~~~~
+/Users/akame/Documents/ISOSPI_TEST/main/main.c:78:47: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'const uint8_t *' {aka 'const unsigned char *'}
+   78 | static uint16_t adbms6830_calc_pec15(uint8_t *data, int len) {
+      |                                      ~~~~~~~~~^~~~
+In file included from /Users/akame/Documents/ISOSPI_TEST/main/main.c:13:
+/Users/akame/Documents/ISOSPI_TEST/main/main.c: In function 'adbms6830_test_isospi_communication':
+/Users/akame/esp/esp-idf/components/esp_driver_spi/include/driver/spi_master.h:109:39: warning: initialized field overwritten [-Woverride-init]
+  109 | #define SPI_TRANS_USE_RXDATA          (1<<2)  ///< Receive into rx_data member of spi_transaction_t instead into memory at rx_buffer.
+      |                                       ^
+/Users/akame/Documents/ISOSPI_TEST/main/main.c:275:18: note: in expansion of macro 'SPI_TRANS_USE_RXDATA'
+  275 |         .flags = SPI_TRANS_USE_RXDATA  // Use DMA for receiving
+      |                  ^~~~~~~~~~~~~~~~~~~~
+/Users/akame/esp/esp-idf/components/esp_driver_spi/include/driver/spi_master.h:109:39: note: (near initialization for 't.flags')
+  109 | #define SPI_TRANS_USE_RXDATA          (1<<2)  ///< Receive into rx_data member of spi_transaction_t instead into memory at rx_buffer.
+      |                                       ^
+/Users/akame/Documents/ISOSPI_TEST/main/main.c:275:18: note: in expansion of macro 'SPI_TRANS_USE_RXDATA'
+  275 |         .flags = SPI_TRANS_USE_RXDATA  // Use DMA for receiving
+      |                  ^~~~~~~~~~~~~~~~~~~~
+/Users/akame/Documents/ISOSPI_TEST/main/main.c: At top level:
+/Users/akame/Documents/ISOSPI_TEST/main/main.c:187:13: warning: 'generate_test_pattern' defined but not used [-Wunused-function]
+  187 | static void generate_test_pattern(uint8_t *buffer, size_t len) {
+      |             ^~~~~~~~~~~~~~~~~~~~~
+[5/9] Linking C static library esp-idf/main/libmain.a
+[6/9] Generating ld/sections.ld
+[7/9] Linking CXX executable dc2792b_test.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /Users/akame/Documents/ISOSPI_TEST/build/dc2792b_test.bin
+[9/9] cd /Users/akame/Documents/ISOSPI_TEST/build/esp-idf/esptool_py && /Users/akame/.espressif/python_env/idf5.4_py3.9_env/bin/python /Users/akame/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /Users/akame/Documents/ISOSPI_TEST/build/partition_table/partition-table.bin /Users/akame/Documents/ISOSPI_TEST/build/dc2792b_test.bin
+dc2792b_test.bin binary size 0x3b810 bytes. Smallest app partition is 0x100000 bytes. 0xc47f0 bytes (77%) free.

@@ -1,0 +1,1466 @@
+state
+[0;32mI (260) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40001f74
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c170h ( 49520) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c198 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001ec80 vaddr=40374000 size=01398h (  5016) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1beech (114412) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003bf14 vaddr=40375398 size=0eea4h ( 61092) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004adc0 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  2d05b497b...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976D8 len 00052038 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) BMS_TEST: SPI initialized, waking BMS IC...[0m
+[0;32mI (284) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (284) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (1294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (1294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (1294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (1794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (1794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (1794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (2294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (2294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (2294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (2794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (2794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (2794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (3294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (3294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (3294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (3794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (3794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (3794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (4294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (4294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (4294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (4794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (4794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (4794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (5294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (5294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (5294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (5794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (5794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (5794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (6294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (6294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (6294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (6794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (6794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (6794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (7294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (7294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (7294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (7794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (7794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (7794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (8294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (8294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (8294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (8794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (8794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (8794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (9294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (9294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (9294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (9794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (9794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (9794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (10294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (10294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (10294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (10794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (10794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (10794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (11294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (11294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (11294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (11794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (11794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (11794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (12294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (12294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (12294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (12794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (12794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (12794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (13294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (13294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (13294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (13794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (13794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (13794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (14294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (14294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (14294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (14794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (14794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (14794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (15294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (15294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (15294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (15794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (15794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (15794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (16294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (16294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (16294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (16794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (16794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (16794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (17294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (17294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (17294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (17794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (17794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (17794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (18294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (18294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (18294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (18794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (18794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (18794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (19294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (19294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (19294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (19794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (19794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (19794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (20294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (20294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (20294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (20794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (20794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (20794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (21294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (21294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (21294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (21794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (21794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (21794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (22294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (22294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (22294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (22794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (22794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (22794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (23294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (23294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (23294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (23794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (23794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (23794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (24294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (24294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (24294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (24794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (24794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (24794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (25294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (25294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (25294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (25794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (25794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (25794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (26294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (26294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (26294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (26794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (26794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (26794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (27294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (27294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (27294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (27794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (27794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (27794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (28294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (28294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (28294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (28794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (28794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (28794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (29294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (29294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (29294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (29794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (29794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (29794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (30294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (30294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (30294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (30794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (30794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (30794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (31294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (31294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (31294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (31794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (31794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (31794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (32294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (32294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (32294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (32794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (32794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (32794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (33294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (33294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (33294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (33794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (33794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (33794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (34294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (34294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (34294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (34794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (34794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (34794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (35294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (35294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (35294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (35794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (35794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (35794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (36294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (36294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (36294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (36794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (36794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (36794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (37294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (37294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (37294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (37794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (37794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (37794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (38294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (38294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (38294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (38794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (38794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (38794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (39294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (39294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (39294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (39794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (39794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (39794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (40294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (40294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (40294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (40794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (40794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (40794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (41294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (41294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (41294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (41794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (41794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (41794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (42294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (42294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (42294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (42794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (42794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (42794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (43294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (43294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (43294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (43794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (43794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (43794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (44294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (44294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (44294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (44794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (44794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (44794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (45294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (45294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (45294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (45794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (45794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (45794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (46294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (46294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (46294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (46794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (46794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (46794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (47294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (47294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (47294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (47794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (47794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (47794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (48294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (48294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (48294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (48794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (48794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (48794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (49294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (49294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (49294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (49794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (49794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (49794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (50294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (50294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (50294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (50794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (50794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (50794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (51294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (51294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (51294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (51794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (51794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (51794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (52294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (52294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (52294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (52794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (52794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (52794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (53294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (53294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (53294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (53794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (53794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (53794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (54294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (54294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (54294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (54794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (54794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (54794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (55294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (55294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (55294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (55794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (55794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (55794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (56294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (56294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (56294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (56794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (56794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (56794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (57294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (57294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (57294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (57794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (57794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (57794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (58294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (58294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (58294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (58794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (58794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (58794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (59294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (59294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (59294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (59794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (59794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (59794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (60294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (60294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (60294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (60794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (60794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (60794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (61294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (61294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (61294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (61794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (61794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (61794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (62294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (62294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (62294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (62794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (62794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (62794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (63294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (63294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (63294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (63794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (63794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (63794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (64294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (64294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (64294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (64794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (64794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (64794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (65294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (65294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (65294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (65794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (65794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (65794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (66294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (66294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (66294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (66794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (66794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (66794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (67294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (67294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (67294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (67794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (67794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (67794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (68294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (68294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (68294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (68794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (68794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (68794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (69294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (69294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (69294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (69794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (69794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (69794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (70294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (70294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (70294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (70794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (70794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (70794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (71294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (71294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (71294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (71794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (71794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (71794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (72294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (72294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (72294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (72794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (72794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (72794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (73294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (73294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (73294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (73794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (73794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (73794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (74294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (74294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (74294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (74794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (74794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (74794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (75294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (75294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (75294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (75794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (75794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (75794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (76294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (76294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (76294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (76794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (76794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (76794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (77294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (77294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (77294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (77794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (77794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (77794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (78294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (78294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (78294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (78794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (78794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (78794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (79294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (79294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (79294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (79794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (79794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (79794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (80294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (80294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (80294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (80794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (80794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (80794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (81294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (81294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (81294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (81794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (81794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (81794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (82294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (82294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (82294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (82794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (82794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (82794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (83294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (83294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (83294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (83794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (83794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (83794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (84294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (84294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (84294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (84794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (84794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (84794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (85294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (85294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (85294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (85794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (85794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (85794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (86294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (86294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (86294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (86794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (86794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (86794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (87294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (87294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (87294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (87794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (87794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (87794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (88294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (88294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (88294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (88794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (88794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (88794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (89294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (89294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (89294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (89794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (89794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (89794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (90294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (90294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (90294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (90794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (90794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (90794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (91294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (91294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (91294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (91794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (91794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (91794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (92294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (92294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (92294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (92794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (92794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (92794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (93294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (93294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (93294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (93794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (93794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (93794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (94294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (94294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (94294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (94794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (94794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (94794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (95294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (95294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (95294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (95794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (95794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (95794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (96294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (96294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (96294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (96794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (96794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (96794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (97294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (97294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (97294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (97794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (97794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (97794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (98294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (98294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (98294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (98794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (98794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (98794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (99294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (99294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (99294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (99794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (99794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (99794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (100294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (100294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (100294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (100794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (100794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (100794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (101294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (101294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (101294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (101794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (101794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (101794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (102294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (102294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (102294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (102794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (102794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (102794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (103294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (103294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (103294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (103794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (103794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (103794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (104294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (104294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (104294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (104794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (104794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (104794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (105294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (105294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (105294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (105794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (105794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (105794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (106294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (106294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (106294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (106794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (106794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (106794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (107294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (107294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (107294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (107794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (107794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (107794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (108294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (108294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (108294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (108794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (108794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (108794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (109294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (109294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (109294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (109794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (109794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (109794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (110294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (110294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (110294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (110794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (110794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (110794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (111294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (111294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (111294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (111794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (111794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (111794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (112294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (112294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (112294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (112794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (112794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (112794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (113294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (113294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (113294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (113794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (113794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (113794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (114294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (114294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (114294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (114794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (114794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (114794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (115294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (115294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (115294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (115794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (115794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (115794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (116294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (116294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (116294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (116794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (116794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (116794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (117294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (117294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (117294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (117794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (117794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (117794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (118294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (118294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (118294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (118794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (118794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (118794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (119294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (119294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (119294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (119794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (119794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (119794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (120294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (120294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (120294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (120794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (120794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (120794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (121294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (121294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (121294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (121794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (121794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (121794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (122294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (122294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (122294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (122794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (122794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (122794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (123294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (123294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (123294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (123794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (123794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (123794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (124294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (124294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (124294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (124794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (124794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (124794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (125294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (125294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (125294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (125794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (125794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (125794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (126294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (126294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (126294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (126794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (126794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (126794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (127294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (127294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (127294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (127794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (127794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (127794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (128294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (128294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (128294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (128794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (128794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (128794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (129294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (129294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (129294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (129794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (129794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (129794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (130294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (130294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (130294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (130794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (130794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (130794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (131294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (131294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (131294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (131794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (131794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (131794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (132294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (132294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (132294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (132794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (132794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (132794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (133294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (133294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (133294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (133794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (133794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (133794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (134294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (134294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (134294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (134794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (134794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (134794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (135294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (135294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (135294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (135794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (135794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (135794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (136294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (136294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (136294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (136794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (136794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (136794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (137294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (137294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (137294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (137794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (137794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (137794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (138294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (138294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (138294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (138794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (138794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (138794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (139294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (139294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (139294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (139794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (139794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (139794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (140294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (140294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (140294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (140794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (140794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (140794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (141294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (141294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (141294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (141794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (141794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (141794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (142294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (142294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (142294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (142794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (142794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (142794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (143294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (143294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (143294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (143794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (143794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (143794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (144294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (144294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (144294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (144794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (144794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (144794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (145294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (145294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (145294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (145794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (145794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (145794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (146294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (146294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (146294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (146794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (146794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (146794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (147294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (147294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (147294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (147794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (147794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (147794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (148294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (148294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (148294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (148794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (148794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (148794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (149294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (149294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (149294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (149794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (149794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (149794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (150294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (150294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (150294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (150794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (150794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (150794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (151294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (151294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (151294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (151794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (151794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (151794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (152294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (152294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (152294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (152794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (152794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (152794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (153294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (153294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (153294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (153794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (153794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (153794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (154294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (154294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (154294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (154794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (154794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (154794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (155294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (155294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (155294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (155794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (155794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (155794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (156294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (156294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (156294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (156794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (156794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (156794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (157294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (157294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (157294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (157794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (157794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (157794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (158294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (158294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (158294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (158794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (158794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (158794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (159294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (159294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (159294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (159794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (159794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (159794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (160294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (160294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (160294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (160794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (160794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (160794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (161294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (161294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (161294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (161794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (161794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (161794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (162294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (162294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (162294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (162794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (162794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (162794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (163294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (163294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (163294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (163794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (163794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (163794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (164294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (164294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (164294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (164794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (164794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (164794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (165294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (165294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (165294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (165794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (165794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (165794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (166294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (166294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (166294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (166794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (166794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (166794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (167294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (167294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (167294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (167794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (167794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (167794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (168294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (168294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (168294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (168794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (168794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (168794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (169294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (169294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (169294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (169794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (169794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (169794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (170294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (170294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (170294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (170794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (170794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (170794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (171294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (171294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (171294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (171794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (171794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (171794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (172294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (172294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (172294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (172794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (172794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (172794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (173294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (173294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (173294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (173794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (173794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (173794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (174294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (174294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (174294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (174794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (174794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (174794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (175294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (175294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (175294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (175794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (175794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (175794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (176294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (176294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (176294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (176794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (176794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (176794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (177294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (177294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (177294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (177794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (177794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (177794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (178294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (178294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (178294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (178794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (178794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (178794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (179294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (179294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (179294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (179794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (179794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (179794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (180294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (180294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (180294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (180794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (180794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (180794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (181294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (181294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (181294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (181794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (181794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (181794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (182294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (182294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (182294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (182794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (182794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (182794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (183294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (183294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (183294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (183794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (183794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (183794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (184294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (184294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (184294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (184794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (184794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (184794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (185294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (185294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (185294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (185794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (185794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (185794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (186294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (186294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (186294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (186794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (186794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (186794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (187294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (187294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (187294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (187794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (187794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (187794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (188294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (188294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (188294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (188794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (188794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (188794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (189294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (189294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (189294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (189794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (189794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (189794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (190294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (190294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (190294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (190794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (190794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (190794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (191294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (191294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (191294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (191794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (191794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (191794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (192294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (192294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (192294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (192794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (192794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (192794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (193294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (193294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (193294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (193794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (193794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (193794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (194294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (194294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (194294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (194794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (194794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (194794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (195294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (195294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (195294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (195794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (195794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (195794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (196294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (196294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (196294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (196794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (196794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (196794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (197294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (197294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (197294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (197794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (197794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (197794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (198294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (198294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (198294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (198794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (198794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (198794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (199294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (199294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (199294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (199794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (199794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (199794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (200294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (200294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (200294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (200794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (200794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (200794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (201294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (201294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (201294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (201794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (201794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (201794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (202294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (202294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (202294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (202794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (202794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (202794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (203294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (203294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (203294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (203794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (203794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (203794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (204294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (204294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (204294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (204794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (204794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (204794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (205294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (205294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (205294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (205794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (205794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (205794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (206294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (206294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (206294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (206794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (206794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (206794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (207294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (207294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (207294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (207794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (207794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (207794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (208294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (208294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (208294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (208794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (208794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (208794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (209294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (209294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (209294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (209794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (209794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (209794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (210294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (210294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (210294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (210794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (210794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (210794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (211294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (211294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (211294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (211794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (211794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (211794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (212294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (212294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (212294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (212794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (212794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (212794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (213294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (213294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (213294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (213794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (213794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (213794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (214294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (214294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (214294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (214794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (214794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (214794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (215294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (215294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (215294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (215794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (215794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (215794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (216294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (216294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (216294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (216794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (216794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (216794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (217294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (217294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (217294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (217794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (217794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (217794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (218294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (218294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (218294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (218794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (218794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (218794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (219294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (219294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (219294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (219794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (219794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (219794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (220294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (220294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (220294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (220794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (220794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (220794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (221294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (221294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (221294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (221794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (221794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (221794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (222294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (222294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (222294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (222794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (222794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (222794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (223294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (223294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (223294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (223794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (223794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (223794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (224294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (224294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (224294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (224794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (224794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (224794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (225294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (225294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (225294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (225794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (225794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (225794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (226294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (226294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (226294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (226794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (226794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (226794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (227294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (227294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (227294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (227794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (227794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (227794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (228294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (228294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (228294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (228794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (228794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (228794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (229294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (229294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (229294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (229794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (229794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (229794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (230294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (230294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (230294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (230794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (230794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (230794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (231294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (231294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (231294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (231794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (231794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (231794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (232294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (232294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (232294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (232794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (232794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (232794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (233294) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (233294) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (233294) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m
+[0;32mI (233794) BMS_TEST: Waking BMS IC...[0m
+[0;32mI (233794) BMS_TEST: Read config: 0xFFFF[0m
+[0;33mW (233794) BMS_TEST: ❗ Unexpected config: expected 0xFC90.[0m

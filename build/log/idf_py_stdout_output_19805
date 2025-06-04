@@ -1,0 +1,508 @@
+p state
+[0;32mI (261) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006bab
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c4d8h ( 50392) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c500 vaddr=3fc94600 size=02aech ( 10988) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001eff4 vaddr=40374000 size=01024h (  4132) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c94ch (117068) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c974 vaddr=40375024 size=0f5a8h ( 62888) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004bf24 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (181) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (186) app_init: ELF file SHA256:  f1a16379c...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FC97A20 len 00051CF0 (327 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (234) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (275) main_task: Calling app_main()[0m
+[0;32mI (275) ADBMS6830_TEST: ESP32-S3 ADBMS6830 Test Application[0m
+[0;32mI (275) ADBMS6830_TEST: -------------------------------------[0m
+[0;32mI (285) ADBMS6830_TEST: Starting ADBMS6830 test[0m
+[0;32mI (285) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (295) main_task: Returned from app_main()[0m
+[0;32mI (435) ADBMS6830_TEST: Configuring ADBMS6830[0m
+[1;31mE (445) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (445) ADBMS6830_TEST: Failed to read configuration[0m
+[0;32mI (545) ADBMS6830_TEST: Running diagnostics[0m
+[1;31mE (555) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (555) ADBMS6830_TEST: Failed to read diagnostic result[0m
+[0;32mI (655) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (905) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (905) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (905) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (915) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (915) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (925) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (925) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (935) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (935) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (945) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (945) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (955) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (1205) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (1205) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (1205) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (1215) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (1215) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (1225) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (6225) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (6475) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (6475) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6475) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (6485) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6485) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (6495) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6495) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (6505) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6505) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (6515) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6515) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (6525) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (6775) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (6775) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6775) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (6785) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (6785) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (6795) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (11795) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (12045) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (12045) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12045) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (12055) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12055) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (12065) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12065) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (12075) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12075) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (12085) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12085) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (12095) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (12345) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (12345) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12345) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (12355) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (12355) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (12365) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (17365) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (17615) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (17615) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17615) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (17625) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17625) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (17635) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17635) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (17645) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17645) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (17655) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17655) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (17665) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (17915) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (17915) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17915) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (17925) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (17925) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (17935) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (22935) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (23185) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (23185) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23185) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (23195) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23195) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (23205) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23205) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (23215) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23215) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (23225) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23225) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (23235) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (23485) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (23485) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23485) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (23495) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (23495) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (23505) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (28505) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (28755) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (28755) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (28755) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (28765) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (28765) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (28775) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (28775) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (28785) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (28785) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (28795) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (28795) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (28805) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (29055) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (29055) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (29055) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (29065) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (29065) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (29075) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (34075) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (34325) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (34325) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34325) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (34335) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34335) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (34345) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34345) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (34355) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34355) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (34365) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34365) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (34375) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (34625) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (34625) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34625) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (34635) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (34635) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (34645) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (39645) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (39895) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (39895) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (39895) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (39905) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (39905) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (39915) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (39915) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (39925) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (39925) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (39935) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (39935) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (39945) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (40195) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (40195) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (40195) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (40205) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (40205) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (40215) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (45215) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (45465) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (45465) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45465) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (45475) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45475) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (45485) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45485) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (45495) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45495) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (45505) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45505) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (45515) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (45765) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (45765) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45765) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (45775) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (45775) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (45785) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (50785) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (51035) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (51035) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51035) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (51045) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51045) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (51055) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51055) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (51065) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51065) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (51075) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51075) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (51085) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (51335) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (51335) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51335) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (51345) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (51345) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (51355) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (56355) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (56605) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (56605) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56605) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (56615) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56615) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (56625) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56625) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (56635) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56635) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (56645) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56645) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (56655) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (56905) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (56905) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56905) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (56915) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (56915) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (56925) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (61925) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (62175) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (62175) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62175) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (62185) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62185) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (62195) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62195) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (62205) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62205) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (62215) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62215) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (62225) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (62475) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (62475) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62475) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (62485) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (62485) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (62495) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (67495) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (67745) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (67745) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (67745) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (67755) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (67755) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (67765) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (67765) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (67775) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (67775) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (67785) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (67785) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (67795) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (68045) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (68045) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (68045) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (68055) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (68055) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (68065) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (73065) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (73315) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (73315) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73315) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (73325) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73325) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (73335) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73335) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (73345) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73345) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (73355) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73355) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (73365) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (73615) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (73615) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73615) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (73625) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (73625) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (73635) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (78635) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (78885) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (78885) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (78885) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (78895) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (78895) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (78905) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (78905) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (78915) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (78915) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (78925) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (78925) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (78935) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (79185) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (79185) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (79185) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (79195) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (79195) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (79205) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (84205) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (84455) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (84455) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84455) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (84465) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84465) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (84475) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84475) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (84485) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84485) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (84495) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84495) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (84505) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (84755) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (84755) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84755) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (84765) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (84765) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (84775) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (89775) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (90025) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (90025) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90025) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (90035) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90035) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (90045) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90045) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (90055) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90055) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (90065) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90065) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (90075) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (90325) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (90325) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90325) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (90335) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (90335) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (90345) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (95345) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (95595) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (95595) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95595) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (95605) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95605) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (95615) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95615) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (95625) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95625) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (95635) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95635) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (95645) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (95895) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (95895) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95895) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (95905) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (95905) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (95915) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (100915) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (101165) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (101165) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101165) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (101175) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101175) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (101185) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101185) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (101195) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101195) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (101205) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101205) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (101215) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (101465) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (101465) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101465) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (101475) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (101475) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (101485) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (106485) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (106735) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (106735) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (106735) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (106745) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (106745) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (106755) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (106755) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (106765) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (106765) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (106775) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (106775) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (106785) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (107035) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (107035) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (107035) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (107045) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (107045) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (107055) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (112055) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (112305) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (112305) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112305) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (112315) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112315) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (112325) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112325) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (112335) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112335) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (112345) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112345) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (112355) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (112605) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (112605) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112605) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (112615) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (112615) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (112625) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (117625) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (117875) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (117875) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (117875) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (117885) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (117885) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (117895) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (117895) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (117905) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (117905) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (117915) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (117915) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (117925) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (118175) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (118175) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (118175) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (118185) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (118185) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (118195) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m
+[0;32mI (123195) ADBMS6830_TEST: Starting cell voltage measurement[0m
+[0;32mI (123445) ADBMS6830_TEST: Reading cell voltages[0m
+[1;31mE (123445) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123445) ADBMS6830_TEST: Failed to read cell voltage register group 0[0m
+[1;31mE (123455) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123455) ADBMS6830_TEST: Failed to read cell voltage register group 1[0m
+[1;31mE (123465) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123465) ADBMS6830_TEST: Failed to read cell voltage register group 2[0m
+[1;31mE (123475) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123475) ADBMS6830_TEST: Failed to read cell voltage register group 3[0m
+[1;31mE (123485) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123485) ADBMS6830_TEST: Failed to read cell voltage register group 4[0m
+[0;32mI (123495) ADBMS6830_TEST: Starting temperature measurement[0m
+[0;32mI (123745) ADBMS6830_TEST: Reading temperatures[0m
+[1;31mE (123745) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123745) ADBMS6830_TEST: Failed to read temperature register group 0[0m
+[1;31mE (123755) ADBMS6830_TEST: PEC check failed at offset 0[0m
+[1;31mE (123755) ADBMS6830_TEST: Failed to read temperature register group 1[0m
+[0;32mI (123765) ADBMS6830_TEST: Test cycle completed. Waiting for next cycle...[0m

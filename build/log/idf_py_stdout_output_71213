@@ -1,0 +1,85 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x0 (DOWNLOAD(USB/UART0))
+Saved PC:0x400490d5
+waiting for download
+[1;31mE (1335) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (1335) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (1345) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (1345) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (1345) ADBMS6830_Test: ------------------------[0m
+[1;31mE (2355) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (2355) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (2365) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (2365) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (2365) ADBMS6830_Test: ------------------------[0m
+[1;31mE (3375) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (3375) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (3385) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (3385) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (3385) ADBMS6830_Test: ------------------------[0m
+[1;31mE (4395) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (4395) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (4405) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (4405) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (4405) ADBMS6830_Test: ------------------------[0m
+[1;31mE (5415) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (5415) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (5425) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (5425) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (5425) ADBMS6830_Test: ------------------------[0m
+[1;31mE (6435) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (6435) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (6445) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (6445) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (6445) ADBMS6830_Test: ------------------------[0m
+[1;31mE (7455) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (7455) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (7465) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (7465) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (7465) ADBMS6830_Test: ------------------------[0m
+[1;31mE (8475) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (8475) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (8485) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (8485) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (8485) ADBMS6830_Test: ------------------------[0m
+[1;31mE (9495) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (9495) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (9505) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (9505) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (9505) ADBMS6830_Test: ------------------------[0m
+[1;31mE (10515) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (10515) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (10525) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (10525) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (10525) ADBMS6830_Test: ------------------------[0m
+[1;31mE (11535) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (11535) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (11545) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (11545) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (11545) ADBMS6830_Test: ------------------------[0m
+[1;31mE (12555) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (12555) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (12565) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (12565) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (12565) ADBMS6830_Test: ------------------------[0m
+[1;31mE (13575) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (13575) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (13585) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (13585) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (13585) ADBMS6830_Test: ------------------------[0m
+[1;31mE (14595) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (14595) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (14605) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (14605) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (14605) ADBMS6830_Test: ------------------------[0m
+[1;31mE (15615) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (15615) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (15625) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (15625) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (15625) ADBMS6830_Test: ------------------------[0m
+[1;31mE (16635) ADBMS6830_Test: PEC mismatch in cell voltage data[0m
+[1;31mE (16635) ADBMS6830_Test: Failed to read cell voltages: 265[0m
+[1;31mE (16645) ADBMS6830_Test: PEC mismatch in auxiliary data[0m
+[1;31mE (16645) ADBMS6830_Test: Failed to read auxiliary channels: 265[0m
+[0;32mI (16645) ADBMS6830_Test: ------------------------[0m

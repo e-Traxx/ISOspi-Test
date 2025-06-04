@@ -1,0 +1,646 @@
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleepESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048836
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c030h ( 49200) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c058 vaddr=3fc94600 size=02adch ( 10972) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001eb3c vaddr=40374000 size=014dch (  5340) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b47ch (111740) map[0m
+[0;32mI (130) esp_image: segment 4: paddr=0003b4a4 vaddr=403754dc size=0f0f0h ( 61680) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004a59c vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (184) app_init: ELF file SHA256:  bbe064e94...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC979B8 len 00051D58 (327 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830B: ========== isoSPI cycle 1 ==========[0m
+[1;31mE (274) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (2284) ADBMS6830B: ========== isoSPI cycle 2 ==========[0m
+[1;31mE (2284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (4284) ADBMS6830B: ========== isoSPI cycle 3 ==========[0m
+[1;31mE (4284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (6284) ADBMS6830B: ========== isoSPI cycle 4 ==========[0m
+[1;31mE (6284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (8284) ADBMS6830B: ========== isoSPI cycle 5 ==========[0m
+[1;31mE (8284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (10284) ADBMS6830B: ========== isoSPI cycle 6 ==========[0m
+[1;31mE (10284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (12284) ADBMS6830B: ========== isoSPI cycle 7 ==========[0m
+[1;31mE (12284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (14284) ADBMS6830B: ========== isoSPI cycle 8 ==========[0m
+[1;31mE (14284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (16284) ADBMS6830B: ========== isoSPI cycle 9 ==========[0m
+[1;31mE (16284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (18284) ADBMS6830B: ========== isoSPI cycle 10 ==========[0m
+[1;31mE (18284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (20284) ADBMS6830B: ========== isoSPI cycle 11 ==========[0m
+[1;31mE (20284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (22284) ADBMS6830B: ========== isoSPI cycle 12 ==========[0m
+[1;31mE (22284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (24284) ADBMS6830B: ========== isoSPI cycle 13 ==========[0m
+[1;31mE (24284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (26284) ADBMS6830B: ========== isoSPI cycle 14 ==========[0m
+[1;31mE (26284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (28284) ADBMS6830B: ========== isoSPI cycle 15 ==========[0m
+[1;31mE (28284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (30284) ADBMS6830B: ========== isoSPI cycle 16 ==========[0m
+[1;31mE (30284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (32284) ADBMS6830B: ========== isoSPI cycle 17 ==========[0m
+[1;31mE (32284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (34284) ADBMS6830B: ========== isoSPI cycle 18 ==========[0m
+[1;31mE (34284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (36284) ADBMS6830B: ========== isoSPI cycle 19 ==========[0m
+[1;31mE (36284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (38284) ADBMS6830B: ========== isoSPI cycle 20 ==========[0m
+[1;31mE (38284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (40284) ADBMS6830B: ========== isoSPI cycle 21 ==========[0m
+[1;31mE (40284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (42284) ADBMS6830B: ========== isoSPI cycle 22 ==========[0m
+[1;31mE (42284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (44284) ADBMS6830B: ========== isoSPI cycle 23 ==========[0m
+[1;31mE (44284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (46284) ADBMS6830B: ========== isoSPI cycle 24 ==========[0m
+[1;31mE (46284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (48284) ADBMS6830B: ========== isoSPI cycle 25 ==========[0m
+[1;31mE (48284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (50284) ADBMS6830B: ========== isoSPI cycle 26 ==========[0m
+[1;31mE (50284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (52284) ADBMS6830B: ========== isoSPI cycle 27 ==========[0m
+[1;31mE (52284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (54284) ADBMS6830B: ========== isoSPI cycle 28 ==========[0m
+[1;31mE (54284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (56284) ADBMS6830B: ========== isoSPI cycle 29 ==========[0m
+[1;31mE (56284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (58284) ADBMS6830B: ========== isoSPI cycle 30 ==========[0m
+[1;31mE (58284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (60284) ADBMS6830B: ========== isoSPI cycle 31 ==========[0m
+[1;31mE (60284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (62284) ADBMS6830B: ========== isoSPI cycle 32 ==========[0m
+[1;31mE (62284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (64284) ADBMS6830B: ========== isoSPI cycle 33 ==========[0m
+[1;31mE (64284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (66284) ADBMS6830B: ========== isoSPI cycle 34 ==========[0m
+[1;31mE (66284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (68284) ADBMS6830B: ========== isoSPI cycle 35 ==========[0m
+[1;31mE (68284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (70284) ADBMS6830B: ========== isoSPI cycle 36 ==========[0m
+[1;31mE (70284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (72284) ADBMS6830B: ========== isoSPI cycle 37 ==========[0m
+[1;31mE (72284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (74284) ADBMS6830B: ========== isoSPI cycle 38 ==========[0m
+[1;31mE (74284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (76284) ADBMS6830B: ========== isoSPI cycle 39 ==========[0m
+[1;31mE (76284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (78284) ADBMS6830B: ========== isoSPI cycle 40 ==========[0m
+[1;31mE (78284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (80284) ADBMS6830B: ========== isoSPI cycle 41 ==========[0m
+[1;31mE (80284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (82284) ADBMS6830B: ========== isoSPI cycle 42 ==========[0m
+[1;31mE (82284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (84284) ADBMS6830B: ========== isoSPI cycle 43 ==========[0m
+[1;31mE (84284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (86284) ADBMS6830B: ========== isoSPI cycle 44 ==========[0m
+[1;31mE (86284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (88284) ADBMS6830B: ========== isoSPI cycle 45 ==========[0m
+[1;31mE (88284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (90284) ADBMS6830B: ========== isoSPI cycle 46 ==========[0m
+[1;31mE (90284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (92284) ADBMS6830B: ========== isoSPI cycle 47 ==========[0m
+[1;31mE (92284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (94284) ADBMS6830B: ========== isoSPI cycle 48 ==========[0m
+[1;31mE (94284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (96284) ADBMS6830B: ========== isoSPI cycle 49 ==========[0m
+[1;31mE (96284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (98284) ADBMS6830B: ========== isoSPI cycle 50 ==========[0m
+[1;31mE (98284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (100284) ADBMS6830B: ========== isoSPI cycle 51 ==========[0m
+[1;31mE (100284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (102284) ADBMS6830B: ========== isoSPI cycle 52 ==========[0m
+[1;31mE (102284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (104284) ADBMS6830B: ========== isoSPI cycle 53 ==========[0m
+[1;31mE (104284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (106284) ADBMS6830B: ========== isoSPI cycle 54 ==========[0m
+[1;31mE (106284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (108284) ADBMS6830B: ========== isoSPI cycle 55 ==========[0m
+[1;31mE (108284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (110284) ADBMS6830B: ========== isoSPI cycle 56 ==========[0m
+[1;31mE (110284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (112284) ADBMS6830B: ========== isoSPI cycle 57 ==========[0m
+[1;31mE (112284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (114284) ADBMS6830B: ========== isoSPI cycle 58 ==========[0m
+[1;31mE (114284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (116284) ADBMS6830B: ========== isoSPI cycle 59 ==========[0m
+[1;31mE (116284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (118284) ADBMS6830B: ========== isoSPI cycle 60 ==========[0m
+[1;31mE (118284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (120284) ADBMS6830B: ========== isoSPI cycle 61 ==========[0m
+[1;31mE (120284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (122284) ADBMS6830B: ========== isoSPI cycle 62 ==========[0m
+[1;31mE (122284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (124284) ADBMS6830B: ========== isoSPI cycle 63 ==========[0m
+[1;31mE (124284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (126284) ADBMS6830B: ========== isoSPI cycle 64 ==========[0m
+[1;31mE (126284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (128284) ADBMS6830B: ========== isoSPI cycle 65 ==========[0m
+[1;31mE (128284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (130284) ADBMS6830B: ========== isoSPI cycle 66 ==========[0m
+[1;31mE (130284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (132284) ADBMS6830B: ========== isoSPI cycle 67 ==========[0m
+[1;31mE (132284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (134284) ADBMS6830B: ========== isoSPI cycle 68 ==========[0m
+[1;31mE (134284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (136284) ADBMS6830B: ========== isoSPI cycle 69 ==========[0m
+[1;31mE (136284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (138284) ADBMS6830B: ========== isoSPI cycle 70 ==========[0m
+[1;31mE (138284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (140284) ADBMS6830B: ========== isoSPI cycle 71 ==========[0m
+[1;31mE (140284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (142284) ADBMS6830B: ========== isoSPI cycle 72 ==========[0m
+[1;31mE (142284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (144284) ADBMS6830B: ========== isoSPI cycle 73 ==========[0m
+[1;31mE (144284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (146284) ADBMS6830B: ========== isoSPI cycle 74 ==========[0m
+[1;31mE (146284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (148284) ADBMS6830B: ========== isoSPI cycle 75 ==========[0m
+[1;31mE (148284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (150284) ADBMS6830B: ========== isoSPI cycle 76 ==========[0m
+[1;31mE (150284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (152284) ADBMS6830B: ========== isoSPI cycle 77 ==========[0m
+[1;31mE (152284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (154284) ADBMS6830B: ========== isoSPI cycle 78 ==========[0m
+[1;31mE (154284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (156284) ADBMS6830B: ========== isoSPI cycle 79 ==========[0m
+[1;31mE (156284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (158284) ADBMS6830B: ========== isoSPI cycle 80 ==========[0m
+[1;31mE (158284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (160284) ADBMS6830B: ========== isoSPI cycle 81 ==========[0m
+[1;31mE (160284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (162284) ADBMS6830B: ========== isoSPI cycle 82 ==========[0m
+[1;31mE (162284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (164284) ADBMS6830B: ========== isoSPI cycle 83 ==========[0m
+[1;31mE (164284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (166284) ADBMS6830B: ========== isoSPI cycle 84 ==========[0m
+[1;31mE (166284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (168284) ADBMS6830B: ========== isoSPI cycle 85 ==========[0m
+[1;31mE (168284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (170284) ADBMS6830B: ========== isoSPI cycle 86 ==========[0m
+[1;31mE (170284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (172284) ADBMS6830B: ========== isoSPI cycle 87 ==========[0m
+[1;31mE (172284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (174284) ADBMS6830B: ========== isoSPI cycle 88 ==========[0m
+[1;31mE (174284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (176284) ADBMS6830B: ========== isoSPI cycle 89 ==========[0m
+[1;31mE (176284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (178284) ADBMS6830B: ========== isoSPI cycle 90 ==========[0m
+[1;31mE (178284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (180284) ADBMS6830B: ========== isoSPI cycle 91 ==========[0m
+[1;31mE (180284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (182284) ADBMS6830B: ========== isoSPI cycle 92 ==========[0m
+[1;31mE (182284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (184284) ADBMS6830B: ========== isoSPI cycle 93 ==========[0m
+[1;31mE (184284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (186284) ADBMS6830B: ========== isoSPI cycle 94 ==========[0m
+[1;31mE (186284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (188284) ADBMS6830B: ========== isoSPI cycle 95 ==========[0m
+[1;31mE (188284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (190284) ADBMS6830B: ========== isoSPI cycle 96 ==========[0m
+[1;31mE (190284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (192284) ADBMS6830B: ========== isoSPI cycle 97 ==========[0m
+[1;31mE (192284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (194284) ADBMS6830B: ========== isoSPI cycle 98 ==========[0m
+[1;31mE (194284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (196284) ADBMS6830B: ========== isoSPI cycle 99 ==========[0m
+[1;31mE (196284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (198284) ADBMS6830B: ========== isoSPI cycle 100 ==========[0m
+[1;31mE (198284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (200284) ADBMS6830B: ========== isoSPI cycle 101 ==========[0m
+[1;31mE (200284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (202284) ADBMS6830B: ========== isoSPI cycle 102 ==========[0m
+[1;31mE (202284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (204284) ADBMS6830B: ========== isoSPI cycle 103 ==========[0m
+[1;31mE (204284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (206284) ADBMS6830B: ========== isoSPI cycle 104 ==========[0m
+[1;31mE (206284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (208284) ADBMS6830B: ========== isoSPI cycle 105 ==========[0m
+[1;31mE (208284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (210284) ADBMS6830B: ========== isoSPI cycle 106 ==========[0m
+[1;31mE (210284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (212284) ADBMS6830B: ========== isoSPI cycle 107 ==========[0m
+[1;31mE (212284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (214284) ADBMS6830B: ========== isoSPI cycle 108 ==========[0m
+[1;31mE (214284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (216284) ADBMS6830B: ========== isoSPI cycle 109 ==========[0m
+[1;31mE (216284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (218284) ADBMS6830B: ========== isoSPI cycle 110 ==========[0m
+[1;31mE (218284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (220284) ADBMS6830B: ========== isoSPI cycle 111 ==========[0m
+[1;31mE (220284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (222284) ADBMS6830B: ========== isoSPI cycle 112 ==========[0m
+[1;31mE (222284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (224284) ADBMS6830B: ========== isoSPI cycle 113 ==========[0m
+[1;31mE (224284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (226284) ADBMS6830B: ========== isoSPI cycle 114 ==========[0m
+[1;31mE (226284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (228284) ADBMS6830B: ========== isoSPI cycle 115 ==========[0m
+[1;31mE (228284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (230284) ADBMS6830B: ========== isoSPI cycle 116 ==========[0m
+[1;31mE (230284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (232284) ADBMS6830B: ========== isoSPI cycle 117 ==========[0m
+[1;31mE (232284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (234284) ADBMS6830B: ========== isoSPI cycle 118 ==========[0m
+[1;31mE (234284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (236284) ADBMS6830B: ========== isoSPI cycle 119 ==========[0m
+[1;31mE (236284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (238284) ADBMS6830B: ========== isoSPI cycle 120 ==========[0m
+[1;31mE (238284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (240284) ADBMS6830B: ========== isoSPI cycle 121 ==========[0m
+[1;31mE (240284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (242284) ADBMS6830B: ========== isoSPI cycle 122 ==========[0m
+[1;31mE (242284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (244284) ADBMS6830B: ========== isoSPI cycle 123 ==========[0m
+[1;31mE (244284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (246284) ADBMS6830B: ========== isoSPI cycle 124 ==========[0m
+[1;31mE (246284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (248284) ADBMS6830B: ========== isoSPI cycle 125 ==========[0m
+[1;31mE (248284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (250284) ADBMS6830B: ========== isoSPI cycle 126 ==========[0m
+[1;31mE (250284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (252284) ADBMS6830B: ========== isoSPI cycle 127 ==========[0m
+[1;31mE (252284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (254284) ADBMS6830B: ========== isoSPI cycle 128 ==========[0m
+[1;31mE (254284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (256284) ADBMS6830B: ========== isoSPI cycle 129 ==========[0m
+[1;31mE (256284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (258284) ADBMS6830B: ========== isoSPI cycle 130 ==========[0m
+[1;31mE (258284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (260284) ADBMS6830B: ========== isoSPI cycle 131 ==========[0m
+[1;31mE (260284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (262284) ADBMS6830B: ========== isoSPI cycle 132 ==========[0m
+[1;31mE (262284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (264284) ADBMS6830B: ========== isoSPI cycle 133 ==========[0m
+[1;31mE (264284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (266284) ADBMS6830B: ========== isoSPI cycle 134 ==========[0m
+[1;31mE (266284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (268284) ADBMS6830B: ========== isoSPI cycle 135 ==========[0m
+[1;31mE (268284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (270284) ADBMS6830B: ========== isoSPI cycle 136 ==========[0m
+[1;31mE (270284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (272284) ADBMS6830B: ========== isoSPI cycle 137 ==========[0m
+[1;31mE (272284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (274284) ADBMS6830B: ========== isoSPI cycle 138 ==========[0m
+[1;31mE (274284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (276284) ADBMS6830B: ========== isoSPI cycle 139 ==========[0m
+[1;31mE (276284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (278284) ADBMS6830B: ========== isoSPI cycle 140 ==========[0m
+[1;31mE (278284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (280284) ADBMS6830B: ========== isoSPI cycle 141 ==========[0m
+[1;31mE (280284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (282284) ADBMS6830B: ========== isoSPI cycle 142 ==========[0m
+[1;31mE (282284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (284284) ADBMS6830B: ========== isoSPI cycle 143 ==========[0m
+[1;31mE (284284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (286284) ADBMS6830B: ========== isoSPI cycle 144 ==========[0m
+[1;31mE (286284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (288284) ADBMS6830B: ========== isoSPI cycle 145 ==========[0m
+[1;31mE (288284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (290284) ADBMS6830B: ========== isoSPI cycle 146 ==========[0m
+[1;31mE (290284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (292284) ADBMS6830B: ========== isoSPI cycle 147 ==========[0m
+[1;31mE (292284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (294284) ADBMS6830B: ========== isoSPI cycle 148 ==========[0m
+[1;31mE (294284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (296284) ADBMS6830B: ========== isoSPI cycle 149 ==========[0m
+[1;31mE (296284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (298284) ADBMS6830B: ========== isoSPI cycle 150 ==========[0m
+[1;31mE (298284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (300284) ADBMS6830B: ========== isoSPI cycle 151 ==========[0m
+[1;31mE (300284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (302284) ADBMS6830B: ========== isoSPI cycle 152 ==========[0m
+[1;31mE (302284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (304284) ADBMS6830B: ========== isoSPI cycle 153 ==========[0m
+[1;31mE (304284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (306284) ADBMS6830B: ========== isoSPI cycle 154 ==========[0m
+[1;31mE (306284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (308284) ADBMS6830B: ========== isoSPI cycle 155 ==========[0m
+[1;31mE (308284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (310284) ADBMS6830B: ========== isoSPI cycle 156 ==========[0m
+[1;31mE (310284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (312284) ADBMS6830B: ========== isoSPI cycle 157 ==========[0m
+[1;31mE (312284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (314284) ADBMS6830B: ========== isoSPI cycle 158 ==========[0m
+[1;31mE (314284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (316284) ADBMS6830B: ========== isoSPI cycle 159 ==========[0m
+[1;31mE (316284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (318284) ADBMS6830B: ========== isoSPI cycle 160 ==========[0m
+[1;31mE (318284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (320284) ADBMS6830B: ========== isoSPI cycle 161 ==========[0m
+[1;31mE (320284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (322284) ADBMS6830B: ========== isoSPI cycle 162 ==========[0m
+[1;31mE (322284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (324284) ADBMS6830B: ========== isoSPI cycle 163 ==========[0m
+[1;31mE (324284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (326284) ADBMS6830B: ========== isoSPI cycle 164 ==========[0m
+[1;31mE (326284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (328284) ADBMS6830B: ========== isoSPI cycle 165 ==========[0m
+[1;31mE (328284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (330284) ADBMS6830B: ========== isoSPI cycle 166 ==========[0m
+[1;31mE (330284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (332284) ADBMS6830B: ========== isoSPI cycle 167 ==========[0m
+[1;31mE (332284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (334284) ADBMS6830B: ========== isoSPI cycle 168 ==========[0m
+[1;31mE (334284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (336284) ADBMS6830B: ========== isoSPI cycle 169 ==========[0m
+[1;31mE (336284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (338284) ADBMS6830B: ========== isoSPI cycle 170 ==========[0m
+[1;31mE (338284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (340284) ADBMS6830B: ========== isoSPI cycle 171 ==========[0m
+[1;31mE (340284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (342284) ADBMS6830B: ========== isoSPI cycle 172 ==========[0m
+[1;31mE (342284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (344284) ADBMS6830B: ========== isoSPI cycle 173 ==========[0m
+[1;31mE (344284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (346284) ADBMS6830B: ========== isoSPI cycle 174 ==========[0m
+[1;31mE (346284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (348284) ADBMS6830B: ========== isoSPI cycle 175 ==========[0m
+[1;31mE (348284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (350284) ADBMS6830B: ========== isoSPI cycle 176 ==========[0m
+[1;31mE (350284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (352284) ADBMS6830B: ========== isoSPI cycle 177 ==========[0m
+[1;31mE (352284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (354284) ADBMS6830B: ========== isoSPI cycle 178 ==========[0m
+[1;31mE (354284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (356284) ADBMS6830B: ========== isoSPI cycle 179 ==========[0m
+[1;31mE (356284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (358284) ADBMS6830B: ========== isoSPI cycle 180 ==========[0m
+[1;31mE (358284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (360284) ADBMS6830B: ========== isoSPI cycle 181 ==========[0m
+[1;31mE (360284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (362284) ADBMS6830B: ========== isoSPI cycle 182 ==========[0m
+[1;31mE (362284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (364284) ADBMS6830B: ========== isoSPI cycle 183 ==========[0m
+[1;31mE (364284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (366284) ADBMS6830B: ========== isoSPI cycle 184 ==========[0m
+[1;31mE (366284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (2284) ADBMS6830B: ========== isoSPI cycle 2 ==========[0m
+[1;31mE (2284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (4284) ADBMS6830B: ========== isoSPI cycle 3 ==========[0m
+[1;31mE (4284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (6284) ADBMS6830B: ========== isoSPI cycle 4 ==========[0m
+[1;31mE (6284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (8284) ADBMS6830B: ========== isoSPI cycle 5 ==========[0m
+[1;31mE (8284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (10284) ADBMS6830B: ========== isoSPI cycle 6 ==========[0m
+[1;31mE (10284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (12284) ADBMS6830B: ========== isoSPI cycle 7 ==========[0m
+[1;31mE (12284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (14284) ADBMS6830B: ========== isoSPI cycle 8 ==========[0m
+[1;31mE (14284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (16284) ADBMS6830B: ========== isoSPI cycle 9 ==========[0m
+[1;31mE (16284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (18284) ADBMS6830B: ========== isoSPI cycle 10 ==========[0m
+[1;31mE (18284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (20284) ADBMS6830B: ========== isoSPI cycle 11 ==========[0m
+[1;31mE (20284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (22284) ADBMS6830B: ========== isoSPI cycle 12 ==========[0m
+[1;31mE (22284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (24284) ADBMS6830B: ========== isoSPI cycle 13 ==========[0m
+[1;31mE (24284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (26284) ADBMS6830B: ========== isoSPI cycle 14 ==========[0m
+[1;31mE (26284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (28284) ADBMS6830B: ========== isoSPI cycle 15 ==========[0m
+[1;31mE (28284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (30284) ADBMS6830B: ========== isoSPI cycle 16 ==========[0m
+[1;31mE (30284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (32284) ADBMS6830B: ========== isoSPI cycle 17 ==========[0m
+[1;31mE (32284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (34284) ADBMS6830B: ========== isoSPI cycle 18 ==========[0m
+[1;31mE (34284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (36284) ADBMS6830B: ========== isoSPI cycle 19 ==========[0m
+[1;31mE (36284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (38284) ADBMS6830B: ========== isoSPI cycle 20 ==========[0m
+[1;31mE (38284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (40284) ADBMS6830B: ========== isoSPI cycle 21 ==========[0m
+[1;31mE (40284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (42284) ADBMS6830B: ========== isoSPI cycle 22 ==========[0m
+[1;31mE (42284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (44284) ADBMS6830B: ========== isoSPI cycle 23 ==========[0m
+[1;31mE (44284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (46284) ADBMS6830B: ========== isoSPI cycle 24 ==========[0m
+[1;31mE (46284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (48284) ADBMS6830B: ========== isoSPI cycle 25 ==========[0m
+[1;31mE (48284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (50284) ADBMS6830B: ========== isoSPI cycle 26 ==========[0m
+[1;31mE (50284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (52284) ADBMS6830B: ========== isoSPI cycle 27 ==========[0m
+[1;31mE (52284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (54284) ADBMS6830B: ========== isoSPI cycle 28 ==========[0m
+[1;31mE (54284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (56284) ADBMS6830B: ========== isoSPI cycle 29 ==========[0m
+[1;31mE (56284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (58284) ADBMS6830B: ========== isoSPI cycle 30 ==========[0m
+[1;31mE (58284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (60284) ADBMS6830B: ========== isoSPI cycle 31 ==========[0m
+[1;31mE (60284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (62284) ADBMS6830B: ========== isoSPI cycle 32 ==========[0m
+[1;31mE (62284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (64284) ADBMS6830B: ========== isoSPI cycle 33 ==========[0m
+[1;31mE (64284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (66284) ADBMS6830B: ========== isoSPI cycle 34 ==========[0m
+[1;31mE (66284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (68284) ADBMS6830B: ========== isoSPI cycle 35 ==========[0m
+[1;31mE (68284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (70284) ADBMS6830B: ========== isoSPI cycle 36 ==========[0m
+[1;31mE (70284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (72284) ADBMS6830B: ========== isoSPI cycle 37 ==========[0m
+[1;31mE (72284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (74284) ADBMS6830B: ========== isoSPI cycle 38 ==========[0m
+[1;31mE (74284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (76284) ADBMS6830B: ========== isoSPI cycle 39 ==========[0m
+[1;31mE (76284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (78284) ADBMS6830B: ========== isoSPI cycle 40 ==========[0m
+[1;31mE (78284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (80284) ADBMS6830B: ========== isoSPI cycle 41 ==========[0m
+[1;31mE (80284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (82284) ADBMS6830B: ========== isoSPI cycle 42 ==========[0m
+[1;31mE (82284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (84284) ADBMS6830B: ========== isoSPI cycle 43 ==========[0m
+[1;31mE (84284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (86284) ADBMS6830B: ========== isoSPI cycle 44 ==========[0m
+[1;31mE (86284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (88284) ADBMS6830B: ========== isoSPI cycle 45 ==========[0m
+[1;31mE (88284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (90284) ADBMS6830B: ========== isoSPI cycle 46 ==========[0m
+[1;31mE (90284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (92284) ADBMS6830B: ========== isoSPI cycle 47 ==========[0m
+[1;31mE (92284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (94284) ADBMS6830B: ========== isoSPI cycle 48 ==========[0m
+[1;31mE (94284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (96284) ADBMS6830B: ========== isoSPI cycle 49 ==========[0m
+[1;31mE (96284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (98284) ADBMS6830B: ========== isoSPI cycle 50 ==========[0m
+[1;31mE (98284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (100284) ADBMS6830B: ========== isoSPI cycle 51 ==========[0m
+[1;31mE (100284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (102284) ADBMS6830B: ========== isoSPI cycle 52 ==========[0m
+[1;31mE (102284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (104284) ADBMS6830B: ========== isoSPI cycle 53 ==========[0m
+[1;31mE (104284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (106284) ADBMS6830B: ========== isoSPI cycle 54 ==========[0m
+[1;31mE (106284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (108284) ADBMS6830B: ========== isoSPI cycle 55 ==========[0m
+[1;31mE (108284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (110284) ADBMS6830B: ========== isoSPI cycle 56 ==========[0m
+[1;31mE (110284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (112284) ADBMS6830B: ========== isoSPI cycle 57 ==========[0m
+[1;31mE (112284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (114284) ADBMS6830B: ========== isoSPI cycle 58 ==========[0m
+[1;31mE (114284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (116284) ADBMS6830B: ========== isoSPI cycle 59 ==========[0m
+[1;31mE (116284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (118284) ADBMS6830B: ========== isoSPI cycle 60 ==========[0m
+[1;31mE (118284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (120284) ADBMS6830B: ========== isoSPI cycle 61 ==========[0m
+[1;31mE (120284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (122284) ADBMS6830B: ========== isoSPI cycle 62 ==========[0m
+[1;31mE (122284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (124284) ADBMS6830B: ========== isoSPI cycle 63 ==========[0m
+[1;31mE (124284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (126284) ADBMS6830B: ========== isoSPI cycle 64 ==========[0m
+[1;31mE (126284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (128284) ADBMS6830B: ========== isoSPI cycle 65 ==========[0m
+[1;31mE (128284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (130284) ADBMS6830B: ========== isoSPI cycle 66 ==========[0m
+[1;31mE (130284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (132284) ADBMS6830B: ========== isoSPI cycle 67 ==========[0m
+[1;31mE (132284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (134284) ADBMS6830B: ========== isoSPI cycle 68 ==========[0m
+[1;31mE (134284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (136284) ADBMS6830B: ========== isoSPI cycle 69 ==========[0m
+[1;31mE (136284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (138284) ADBMS6830B: ========== isoSPI cycle 70 ==========[0m
+[1;31mE (138284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (140284) ADBMS6830B: ========== isoSPI cycle 71 ==========[0m
+[1;31mE (140284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (142284) ADBMS6830B: ========== isoSPI cycle 72 ==========[0m
+[1;31mE (142284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (144284) ADBMS6830B: ========== isoSPI cycle 73 ==========[0m
+[1;31mE (144284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (146284) ADBMS6830B: ========== isoSPI cycle 74 ==========[0m
+[1;31mE (146284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (148284) ADBMS6830B: ========== isoSPI cycle 75 ==========[0m
+[1;31mE (148284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (150284) ADBMS6830B: ========== isoSPI cycle 76 ==========[0m
+[1;31mE (150284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (152284) ADBMS6830B: ========== isoSPI cycle 77 ==========[0m
+[1;31mE (152284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (154284) ADBMS6830B: ========== isoSPI cycle 78 ==========[0m
+[1;31mE (154284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (156284) ADBMS6830B: ========== isoSPI cycle 79 ==========[0m
+[1;31mE (156284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (158284) ADBMS6830B: ========== isoSPI cycle 80 ==========[0m
+[1;31mE (158284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (160284) ADBMS6830B: ========== isoSPI cycle 81 ==========[0m
+[1;31mE (160284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (162284) ADBMS6830B: ========== isoSPI cycle 82 ==========[0m
+[1;31mE (162284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (164284) ADBMS6830B: ========== isoSPI cycle 83 ==========[0m
+[1;31mE (164284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (166284) ADBMS6830B: ========== isoSPI cycle 84 ==========[0m
+[1;31mE (166284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (168284) ADBMS6830B: ========== isoSPI cycle 85 ==========[0m
+[1;31mE (168284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (170284) ADBMS6830B: ========== isoSPI cycle 86 ==========[0m
+[1;31mE (170284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (172284) ADBMS6830B: ========== isoSPI cycle 87 ==========[0m
+[1;31mE (172284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (174284) ADBMS6830B: ========== isoSPI cycle 88 ==========[0m
+[1;31mE (174284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (176284) ADBMS6830B: ========== isoSPI cycle 89 ==========[0m
+[1;31mE (176284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (178284) ADBMS6830B: ========== isoSPI cycle 90 ==========[0m
+[1;31mE (178284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (180284) ADBMS6830B: ========== isoSPI cycle 91 ==========[0m
+[1;31mE (180284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (182284) ADBMS6830B: ========== isoSPI cycle 92 ==========[0m
+[1;31mE (182284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (184284) ADBMS6830B: ========== isoSPI cycle 93 ==========[0m
+[1;31mE (184284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (186284) ADBMS6830B: ========== isoSPI cycle 94 ==========[0m
+[1;31mE (186284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (188284) ADBMS6830B: ========== isoSPI cycle 95 ==========[0m
+[1;31mE (188284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (190284) ADBMS6830B: ========== isoSPI cycle 96 ==========[0m
+[1;31mE (190284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (192284) ADBMS6830B: ========== isoSPI cycle 97 ==========[0m
+[1;31mE (192284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (194284) ADBMS6830B: ========== isoSPI cycle 98 ==========[0m
+[1;31mE (194284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (196284) ADBMS6830B: ========== isoSPI cycle 99 ==========[0m
+[1;31mE (196284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (198284) ADBMS6830B: ========== isoSPI cycle 100 ==========[0m
+[1;31mE (198284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (200284) ADBMS6830B: ========== isoSPI cycle 101 ==========[0m
+[1;31mE (200284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (202284) ADBMS6830B: ========== isoSPI cycle 102 ==========[0m
+[1;31mE (202284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (204284) ADBMS6830B: ========== isoSPI cycle 103 ==========[0m
+[1;31mE (204284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (206284) ADBMS6830B: ========== isoSPI cycle 104 ==========[0m
+[1;31mE (206284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (208284) ADBMS6830B: ========== isoSPI cycle 105 ==========[0m
+[1;31mE (208284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (210284) ADBMS6830B: ========== isoSPI cycle 106 ==========[0m
+[1;31mE (210284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (212284) ADBMS6830B: ========== isoSPI cycle 107 ==========[0m
+[1;31mE (212284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (214284) ADBMS6830B: ========== isoSPI cycle 108 ==========[0m
+[1;31mE (214284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (216284) ADBMS6830B: ========== isoSPI cycle 109 ==========[0m
+[1;31mE (216284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (218284) ADBMS6830B: ========== isoSPI cycle 110 ==========[0m
+[1;31mE (218284) ADBMS6830B: PEC mismatch – wiring/termination?[0m
+[0;32mI (220284) ADBMS6830B: ========== isoSPI cycle 111 ==========[0m
+[1;31mE (220284) ADBMS6830B: PEC mismatch – wiring/termination?[0m

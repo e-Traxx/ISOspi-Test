@@ -1,0 +1,122 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x400490cf: usb_uart_device_rx_one_char in ROM
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b41: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad11: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x4037baaa: vApplicationStackOverflowHook at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:563
+--- 0x4037cca3: vTaskSwitchContext at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:3701 (discriminator 7)
+--- 0x4037bb70: _frxt_dispatch at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:451
+--- 0x4037bb66: _frxt_int_exit at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/portasm.S:246
+[0m
+[0;33m--- 0x40375a80: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

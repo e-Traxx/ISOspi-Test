@@ -1,0 +1,208 @@
+figuration
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x420069a7
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c6e0h ( 50912) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c708 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f1f0 vaddr=40374000 size=00e28h (  3624) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c498h (115864) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c4c0 vaddr=40374e28 size=0f414h ( 62484) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004b8dc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  8b44e5814...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC97F80 len 00051790 (325 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+27 F7 E9 08 84 14 32 80 E8 A8 D6 57 B6 D8 C4 95 
+1C 96 5A 51 7A 5F 63 93 98 87 8F FE 61 4C EC 85 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (324) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (334) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (334) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (354) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (354) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (354) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (364) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (374) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (374) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (384) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (384) ADBMS6830_Test: ------------------------[0m
+[0;32mI (1394) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (1394) ADBMS6830_Test: First 32 bytes of test data:[0m
+84 F5 3C F3 55 E1 74 73 8D 61 68 9F 68 3A E7 2D 
+4A A6 B3 B3 9D EA 60 E5 64 96 30 D4 2C C9 82 85 
+[0;32mI (1394) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (1404) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (1404) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (1414) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (1434) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (1434) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (1434) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (1434) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (1444) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (1454) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (1454) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (1464) ADBMS6830_Test: ------------------------[0m
+[0;32mI (2464) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (2464) ADBMS6830_Test: First 32 bytes of test data:[0m
+40 C7 0C 68 1E 4C 66 E0 BC 87 DC 24 9B 4D 9C 36 
+6F 19 84 5D 41 D2 6E B8 C7 57 05 FF 36 F3 6F CB 
+[0;32mI (2464) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (2474) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (2474) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (2484) ADBMS6830_Test: Data PEC: 0x3200[0m
+[0;32mI (2504) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (2504) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (2504) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (2504) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (2514) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (2524) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (2524) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (2534) ADBMS6830_Test: ------------------------[0m
+[0;32mI (3534) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (3534) ADBMS6830_Test: First 32 bytes of test data:[0m
+66 E9 80 68 AB B0 45 2F FC 6B AE 80 D2 A5 50 7C 
+83 55 AC 4A 8F 8B 11 79 D8 C7 B9 47 54 1C D9 1D 
+[0;32mI (3534) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (3544) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (3544) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (3554) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (3574) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (3574) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (3574) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (3574) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (3584) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (3594) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (3594) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (3604) ADBMS6830_Test: ------------------------[0m
+[0;32mI (4604) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (4604) ADBMS6830_Test: First 32 bytes of test data:[0m
+1D 4F CE 2A 07 D2 03 54 25 F2 E7 DD A9 DC CF C6 
+E0 51 FA 1A D1 18 98 D4 68 55 FF 8A 83 6C 03 1B 
+[0;32mI (4604) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (4614) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (4614) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (4624) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (4644) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (4644) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (4644) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (4644) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (4654) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (4664) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (4664) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (4674) ADBMS6830_Test: ------------------------[0m
+[0;32mI (5674) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (5674) ADBMS6830_Test: First 32 bytes of test data:[0m
+65 28 1D 44 96 5A 3E C4 90 B2 AA 48 4E 36 94 42 
+6D 02 B4 FC 02 55 1D A7 DB A9 AB EB 68 83 C2 FD 
+[0;32mI (5674) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (5684) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (5684) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (5694) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (5714) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (5714) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (5714) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (5714) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (5724) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (5734) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (5734) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (5744) ADBMS6830_Test: ------------------------[0m
+[0;32mI (6744) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (6744) ADBMS6830_Test: First 32 bytes of test data:[0m
+E9 60 7B 4A A9 7B 75 9D 56 24 B8 EB E0 94 87 7E 
+7F BE C1 B1 43 6A 19 8B 3E 20 D1 05 8B F2 40 BD 
+[0;32mI (6744) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (6754) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (6754) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (6764) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (6784) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (6784) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (6784) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (6784) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (6794) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (6804) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (6804) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (6814) ADBMS6830_Test: ------------------------[0m
+[0;32mI (7814) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (7814) ADBMS6830_Test: First 32 bytes of test data:[0m
+A9 30 E6 41 63 B0 8A 0C 93 52 3B CD A9 D5 9E 20 
+BC 6E FB 83 97 D3 04 71 05 13 B4 3E EA 16 DD 5E 
+[0;32mI (7814) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (7824) ADBMS6830_Test: Command: 0x0001, PEC: 0x4599[0m
+[0;32mI (7824) ADBMS6830_Test: Command bytes: 00 01 45 99[0m
+[0;32mI (7834) ADBMS6830_Test: Data PEC: 0x0000[0m
+[0;32mI (7854) ADBMS6830_Test: Reading back data from AUX device...[0m
+[0;32mI (7854) ADBMS6830_Test: Command: 0x0002, PEC: 0x4EAB[0m
+[0;32mI (7854) ADBMS6830_Test: Command bytes: 00 02 4E AB[0m
+[0;32mI (7854) ADBMS6830_Test: First 32 bytes received from AUX:[0m
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF FF 
+[1;31mE (7864) ADBMS6830_Test: PEC mismatch: received 0xFFFF, calculated 0x0000[0m
+[1;31mE (7874) ADBMS6830_Test: Data integrity check FAILED[0m
+[1;31mE (7874) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (7884) ADBMS6830_Test: ------------------------[0m

@@ -1,0 +1,5 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4201aa41: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:164 (discriminator 1)
+[0m
+[0m

@@ -1,0 +1,102 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x42006934: uart_ll_get_txfifo_len at /Users/akame/esp/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h:410
+---  (inlined by) uart_tx_char at /Users/akame/esp/esp-idf/components/esp_driver_uart/src/uart_vfs.c:190
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x40375b49: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037ad61: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382321: __assert_func at /Users/akame/esp/esp-idf/components/newlib/assert.c:80
+--- 0x40380d32: tlsf_free at /Users/akame/esp/esp-idf/components/heap/tlsf/tlsf.c:629 (discriminator 1)
+--- 0x40380bd0: multi_heap_free_impl at /Users/akame/esp/esp-idf/components/heap/multi_heap.c:233
+--- 0x403763be: heap_caps_free at /Users/akame/esp/esp-idf/components/heap/heap_caps_base.c:75
+--- 0x42009a71: send_isospi_command at /Users/akame/Documents/ISOSPI_TEST/main/main.c:120
+--- 0x42009b32: isospi_test_task at /Users/akame/Documents/ISOSPI_TEST/main/main.c:157
+--- 0x4037b715: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375a88: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

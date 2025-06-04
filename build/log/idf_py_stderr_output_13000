@@ -1,0 +1,279 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x400490d5: usb_uart_device_rx_one_char in ROM
+[0m
+[1;31m--- Error: read failed: [Errno 6] Device not configured[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[1;31m--- Error: read failed: [Errno 6] Device not configured[0m
+[0;33m--- Waiting for the device to reconnect[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m.[0m[0;33m[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0;33m--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+[0m
+[0;33m--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+[0m
+[0;33m--- 0x40375b7d: panic_abort at /Users/akame/esp/esp-idf/components/esp_system/panic.c:454
+--- 0x4037b18d: esp_system_abort at /Users/akame/esp/esp-idf/components/esp_system/port/esp_system_chip.c:87
+--- 0x40382549: abort at /Users/akame/esp/esp-idf/components/newlib/abort.c:38
+--- 0x4037b183: _esp_error_check_failed at /Users/akame/esp/esp-idf/components/esp_system/esp_err.c:49
+--- 0x420099e2: isoSPI_xfer at /Users/akame/Documents/ISOSPI_TEST/main/main.c:133 (discriminator 1)
+--- 0x42009aec: app_main at /Users/akame/Documents/ISOSPI_TEST/main/main.c:84
+--- 0x4201a8a7: main_task at /Users/akame/esp/esp-idf/components/freertos/app_startup.c:208
+--- 0x4037ba55: vPortTaskWrapper at /Users/akame/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:139
+[0m
+[0;33m--- 0x40375abc: esp_restart_noos at /Users/akame/esp/esp-idf/components/esp_system/port/soc/esp32s3/system_internal.c:160
+[0m
+[0m

@@ -1,0 +1,304 @@
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006b5f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c7b0h ( 51120) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c7d8 vaddr=3fc94700 size=02aech ( 10988) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f2cc vaddr=40374000 size=00d4ch (  3404) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c818h (116760) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c840 vaddr=40374d4c size=0f8b8h ( 63672) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004c100 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (181) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (186) app_init: ELF file SHA256:  5e0c1cb50...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FC97AE8 len 00051C28 (327 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (234) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (275) main_task: Calling app_main()[0m
+[0;32mI (275) ADBMS6830_RAW: ESP32-S3 ADBMS6830 RAW DATA TEST[0m
+[0;32mI (275) ADBMS6830_RAW: =================================[0m
+[0;32mI (285) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (295) ADBMS6830_RAW: === LOOPBACK TEST ===[0m
+[0;32mI (295) ADBMS6830_RAW: Connect MOSI to MISO temporarily for this test[0m
+[0;32mI (305) ADBMS6830_RAW: TX: AA 55 FF 00 12 34[0m
+[0;32mI (305) ADBMS6830_RAW: RX: FF FF FF FF FF FF[0m
+[0;32mI (305) ADBMS6830_RAW: Loopback test: FAIL[0m
+[0;32mI (315) main_task: Returned from app_main()[0m
+[0;32mI (1315) ADBMS6830_RAW: Testing different SPI modes...[0m
+[0;32mI (1315) ADBMS6830_RAW: === TESTING SPI MODE 0 ===[0m
+[0;32mI (1335) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (1335) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (1335) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (1335) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (1345) ADBMS6830_RAW: [0m
+[0;32mI (1445) ADBMS6830_RAW: === TESTING SPI MODE 1 ===[0m
+[0;32mI (1465) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (1465) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (1465) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (1465) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (1475) ADBMS6830_RAW: [0m
+[0;32mI (1575) ADBMS6830_RAW: === TESTING SPI MODE 2 ===[0m
+[0;32mI (1595) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (1595) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (1595) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (1595) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (1605) ADBMS6830_RAW: [0m
+[0;32mI (1705) ADBMS6830_RAW: === TESTING SPI MODE 3 ===[0m
+[0;32mI (1725) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (1725) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (1725) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (1725) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (1735) ADBMS6830_RAW: [0m
+[0;32mI (2835) ADBMS6830_RAW: Testing different clock speeds...[0m
+[0;32mI (2835) ADBMS6830_RAW: === TESTING 10000 Hz ===[0m
+[0;32mI (2845) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (2845) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (2845) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (2845) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (2855) ADBMS6830_RAW: [0m
+[0;32mI (3055) ADBMS6830_RAW: === TESTING 50000 Hz ===[0m
+[0;32mI (3065) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (3065) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (3065) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (3065) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (3075) ADBMS6830_RAW: [0m
+[0;32mI (3275) ADBMS6830_RAW: === TESTING 100000 Hz ===[0m
+[0;32mI (3285) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (3285) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (3285) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (3285) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (3295) ADBMS6830_RAW: [0m
+[0;32mI (3495) ADBMS6830_RAW: === TESTING 500000 Hz ===[0m
+[0;32mI (3505) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (3505) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (3505) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (3505) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (3515) ADBMS6830_RAW: [0m
+[0;32mI (3715) ADBMS6830_RAW: === TESTING 1000000 Hz ===[0m
+[0;32mI (3725) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (3725) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (3725) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (3725) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (3735) ADBMS6830_RAW: [0m
+[0;32mI (4935) ADBMS6830_RAW: [0m
+
+=== MAIN TEST CYCLE ===
+[0;32mI (4935) ADBMS6830_RAW: Starting raw communication test...[0m
+[0;32mI (4935) ADBMS6830_RAW: Multiple wake-up attempts:[0m
+[0;32mI (4935) ADBMS6830_RAW: Wake-up attempt 1[0m
+[0;32mI (4945) ADBMS6830_RAW: Wake-up attempt 2[0m
+[0;32mI (4955) ADBMS6830_RAW: Wake-up attempt 3[0m
+[0;32mI (4965) ADBMS6830_RAW: Wake-up attempt 4[0m
+[0;32mI (4975) ADBMS6830_RAW: Wake-up attempt 5[0m
+[0;32mI (5085) ADBMS6830_RAW: Trying to read configuration register...[0m
+[0;32mI (5085) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (5085) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (5085) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (5085) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (5095) ADBMS6830_RAW: [0m
+[0;32mI (5595) ADBMS6830_RAW: Trying to start voltage measurement...[0m
+[0;32mI (5595) ADBMS6830_RAW: === Sending Command 0x0010 ===[0m
+[0;32mI (5595) ADBMS6830_RAW: TX: 00 10 76 B9[0m
+[0;32mI (5595) ADBMS6830_RAW: [0m
+[0;32mI (5895) ADBMS6830_RAW: Trying to read voltage register group 0...[0m
+[0;32mI (5895) ADBMS6830_RAW: === Sending Command 0x0004 ===[0m
+[0;32mI (5895) ADBMS6830_RAW: TX: 00 04 03 E1[0m
+[0;32mI (5895) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (5895) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (5905) ADBMS6830_RAW: [0m
+[0;32mI (6005) ADBMS6830_RAW: Trying to read voltage register group 1...[0m
+[0;32mI (6005) ADBMS6830_RAW: === Sending Command 0x0006 ===[0m
+[0;32mI (6005) ADBMS6830_RAW: TX: 00 06 4D 4A[0m
+[0;32mI (6005) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (6005) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (6015) ADBMS6830_RAW: [0m
+[0;32mI (6115) ADBMS6830_RAW: Trying to read voltage register group 2...[0m
+[0;32mI (6115) ADBMS6830_RAW: === Sending Command 0x0008 ===[0m
+[0;32mI (6115) ADBMS6830_RAW: TX: 00 08 2F 29[0m
+[0;32mI (6115) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (6115) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (6125) ADBMS6830_RAW: [0m
+[0;32mI (6225) ADBMS6830_RAW: Trying to read voltage register group 3...[0m
+[0;32mI (6225) ADBMS6830_RAW: === Sending Command 0x000A ===[0m
+[0;32mI (6225) ADBMS6830_RAW: TX: 00 0A 61 82[0m
+[0;32mI (6225) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (6225) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (6235) ADBMS6830_RAW: [0m
+[0;32mI (6335) ADBMS6830_RAW: Trying to read voltage register group 4...[0m
+[0;32mI (6335) ADBMS6830_RAW: === Sending Command 0x0009 ===[0m
+[0;32mI (6335) ADBMS6830_RAW: TX: 00 09 6A B0[0m
+[0;32mI (6335) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (6335) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (6345) ADBMS6830_RAW: [0m
+[0;32mI (6445) ADBMS6830_RAW: Waiting 10 seconds before next test...[0m
+[0;32mI (16445) ADBMS6830_RAW: [0m
+
+=== MAIN TEST CYCLE ===
+[0;32mI (16445) ADBMS6830_RAW: Starting raw communication test...[0m
+[0;32mI (16445) ADBMS6830_RAW: Multiple wake-up attempts:[0m
+[0;32mI (16445) ADBMS6830_RAW: Wake-up attempt 1[0m
+[0;32mI (16455) ADBMS6830_RAW: Wake-up attempt 2[0m
+[0;32mI (16465) ADBMS6830_RAW: Wake-up attempt 3[0m
+[0;32mI (16475) ADBMS6830_RAW: Wake-up attempt 4[0m
+[0;32mI (16485) ADBMS6830_RAW: Wake-up attempt 5[0m
+[0;32mI (16595) ADBMS6830_RAW: Trying to read configuration register...[0m
+[0;32mI (16595) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (16595) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (16595) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (16595) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (16605) ADBMS6830_RAW: [0m
+[0;32mI (17105) ADBMS6830_RAW: Trying to start voltage measurement...[0m
+[0;32mI (17105) ADBMS6830_RAW: === Sending Command 0x0010 ===[0m
+[0;32mI (17105) ADBMS6830_RAW: TX: 00 10 76 B9[0m
+[0;32mI (17105) ADBMS6830_RAW: [0m
+[0;32mI (17405) ADBMS6830_RAW: Trying to read voltage register group 0...[0m
+[0;32mI (17405) ADBMS6830_RAW: === Sending Command 0x0004 ===[0m
+[0;32mI (17405) ADBMS6830_RAW: TX: 00 04 03 E1[0m
+[0;32mI (17405) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (17405) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (17415) ADBMS6830_RAW: [0m
+[0;32mI (17515) ADBMS6830_RAW: Trying to read voltage register group 1...[0m
+[0;32mI (17515) ADBMS6830_RAW: === Sending Command 0x0006 ===[0m
+[0;32mI (17515) ADBMS6830_RAW: TX: 00 06 4D 4A[0m
+[0;32mI (17515) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (17515) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (17525) ADBMS6830_RAW: [0m
+[0;32mI (17625) ADBMS6830_RAW: Trying to read voltage register group 2...[0m
+[0;32mI (17625) ADBMS6830_RAW: === Sending Command 0x0008 ===[0m
+[0;32mI (17625) ADBMS6830_RAW: TX: 00 08 2F 29[0m
+[0;32mI (17625) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (17625) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (17635) ADBMS6830_RAW: [0m
+[0;32mI (17735) ADBMS6830_RAW: Trying to read voltage register group 3...[0m
+[0;32mI (17735) ADBMS6830_RAW: === Sending Command 0x000A ===[0m
+[0;32mI (17735) ADBMS6830_RAW: TX: 00 0A 61 82[0m
+[0;32mI (17735) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (17735) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (17745) ADBMS6830_RAW: [0m
+[0;32mI (17845) ADBMS6830_RAW: Trying to read voltage register group 4...[0m
+[0;32mI (17845) ADBMS6830_RAW: === Sending Command 0x0009 ===[0m
+[0;32mI (17845) ADBMS6830_RAW: TX: 00 09 6A B0[0m
+[0;32mI (17845) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (17845) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (17855) ADBMS6830_RAW: [0m
+[0;32mI (17955) ADBMS6830_RAW: Waiting 10 seconds before next test...[0m
+[0;32mI (27955) ADBMS6830_RAW: [0m
+
+=== MAIN TEST CYCLE ===
+[0;32mI (27955) ADBMS6830_RAW: Starting raw communication test...[0m
+[0;32mI (27955) ADBMS6830_RAW: Multiple wake-up attempts:[0m
+[0;32mI (27955) ADBMS6830_RAW: Wake-up attempt 1[0m
+[0;32mI (27965) ADBMS6830_RAW: Wake-up attempt 2[0m
+[0;32mI (27975) ADBMS6830_RAW: Wake-up attempt 3[0m
+[0;32mI (27985) ADBMS6830_RAW: Wake-up attempt 4[0m
+[0;32mI (27995) ADBMS6830_RAW: Wake-up attempt 5[0m
+[0;32mI (28105) ADBMS6830_RAW: Trying to read configuration register...[0m
+[0;32mI (28105) ADBMS6830_RAW: === Sending Command 0x0002 ===[0m
+[0;32mI (28105) ADBMS6830_RAW: TX: 00 02 15 85[0m
+[0;32mI (28105) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (28105) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (28115) ADBMS6830_RAW: [0m
+[0;32mI (28615) ADBMS6830_RAW: Trying to start voltage measurement...[0m
+[0;32mI (28615) ADBMS6830_RAW: === Sending Command 0x0010 ===[0m
+[0;32mI (28615) ADBMS6830_RAW: TX: 00 10 76 B9[0m
+[0;32mI (28615) ADBMS6830_RAW: [0m
+[0;32mI (28915) ADBMS6830_RAW: Trying to read voltage register group 0...[0m
+[0;32mI (28915) ADBMS6830_RAW: === Sending Command 0x0004 ===[0m
+[0;32mI (28915) ADBMS6830_RAW: TX: 00 04 03 E1[0m
+[0;32mI (28915) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (28915) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (28925) ADBMS6830_RAW: [0m
+[0;32mI (29025) ADBMS6830_RAW: Trying to read voltage register group 1...[0m
+[0;32mI (29025) ADBMS6830_RAW: === Sending Command 0x0006 ===[0m
+[0;32mI (29025) ADBMS6830_RAW: TX: 00 06 4D 4A[0m
+[0;32mI (29025) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (29025) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (29035) ADBMS6830_RAW: [0m
+[0;32mI (29135) ADBMS6830_RAW: Trying to read voltage register group 2...[0m
+[0;32mI (29135) ADBMS6830_RAW: === Sending Command 0x0008 ===[0m
+[0;32mI (29135) ADBMS6830_RAW: TX: 00 08 2F 29[0m
+[0;32mI (29135) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (29135) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (29145) ADBMS6830_RAW: [0m
+[0;32mI (29245) ADBMS6830_RAW: Trying to read voltage register group 3...[0m
+[0;32mI (29245) ADBMS6830_RAW: === Sending Command 0x000A ===[0m
+[0;32mI (29245) ADBMS6830_RAW: TX: 00 0A 61 82[0m
+[0;32mI (29245) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (29245) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (29255) ADBMS6830_RAW: [0m
+[0;32mI (29355) ADBMS6830_RAW: Trying to read voltage register group 4...[0m
+[0;32mI (29355) ADBMS6830_RAW: === Sending Command 0x0009 ===[0m
+[0;32mI (29355) ADBMS6830_RAW: TX: 00 09 6A B0[0m
+[0;32mI (29355) ADBMS6830_RAW: RX (6 bytes):[0m
+FF FF FF FF FF FF 
+[0;33mW (29355) ADBMS6830_RAW: WARNING: All received data is 0xFF - possible communication failure[0m
+[0;32mI (29365) ADBMS6830_RAW: [0m
+[0;32mI (29465) ADBMS6830_RAW: Waiting 10 seconds before next test...[0m

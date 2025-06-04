@@ -1,0 +1,774 @@
+figuration
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42006920
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c088h ( 49288) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c0b0 vaddr=3fc94300 size=02ac0h ( 10944) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001eb78 vaddr=40374000 size=014a0h (  5280) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b930h (112944) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003b958 vaddr=403754a0 size=0ed9ch ( 60828) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004a6fc vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (184) app_init: ELF file SHA256:  29912f34a...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC97698 len 00052078 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) adbms6830b: SPI ready on 10=SCLK,12=MOSI,11=MISO,13=CS[0m
+[0;32mI (274) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (284) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (284) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (294) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (294) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (304) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (1114) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (1114) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (1114) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (1114) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (1114) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (1124) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (1934) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (1934) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (1934) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (1934) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (1934) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (1944) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (2754) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (2754) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (2754) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (2754) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (2754) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (2764) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (3574) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (3574) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (3574) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (3574) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (3574) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (3584) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (4394) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (4394) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (4394) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (4394) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (4394) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (4404) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (5214) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (5214) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (5214) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (5214) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (5214) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (5224) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (6034) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (6034) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (6034) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (6034) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (6034) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (6044) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (6854) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (6854) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (6854) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (6854) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (6854) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (6864) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (7674) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (7674) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (7674) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (7674) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (7674) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (7684) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (8494) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (8494) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (8494) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (8494) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (8494) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (8504) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (9314) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (9314) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (9314) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (9314) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (9314) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (9324) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (10134) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (10134) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (10134) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (10134) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (10144) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (10144) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (10954) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (10954) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (10954) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (10954) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (10964) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (10964) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (11774) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (11774) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (11774) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (11774) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (11784) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (11784) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (12594) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (12594) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (12594) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (12594) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (12604) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (12604) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (13414) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (13414) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (13414) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (13414) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (13424) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (13424) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (14234) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (14234) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (14234) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (14234) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (14244) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (14244) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (15054) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (15054) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (15054) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (15054) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (15064) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (15064) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (15874) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (15874) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (15874) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (15874) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (15884) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (15884) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (16694) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (16694) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (16694) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (16694) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (16704) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (16704) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (17514) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (17514) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (17514) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (17514) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (17524) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (17524) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (18334) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (18334) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (18334) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (18334) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (18344) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (18344) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (19154) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (19154) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (19154) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (19154) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (19164) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (19164) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (19974) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (19974) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (19974) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (19974) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (19984) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (19984) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (20794) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (20794) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (20794) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (20794) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (20804) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (20804) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (21614) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (21614) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (21614) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (21614) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (21624) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (21624) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (22434) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (22434) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (22434) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (22434) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (22444) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (22444) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (23254) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (23254) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (23254) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (23254) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (23264) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (23264) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (24074) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (24074) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (24074) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (24074) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (24084) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (24084) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (24894) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (24894) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (24894) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (24894) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (24904) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (24904) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (25714) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (25714) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (25714) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (25714) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (25724) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (25724) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (26534) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (26534) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (26534) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (26534) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (26544) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (26544) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (27354) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (27354) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (27354) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (27354) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (27364) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (27364) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (28174) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (28174) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (28174) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (28174) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (28184) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (28184) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (28994) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (28994) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (28994) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (28994) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (29004) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (29004) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (29814) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (29814) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (29814) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (29814) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (29824) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (29824) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (30634) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (30634) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (30634) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (30634) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (30644) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (30644) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (31454) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (31454) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (31454) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (31454) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (31464) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (31464) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (32274) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (32274) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (32274) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (32274) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (32284) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (32284) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (33094) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (33094) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (33094) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (33094) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (33104) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (33104) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (33914) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (33914) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (33914) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (33914) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (33924) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (33924) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (34734) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (34734) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (34734) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (34734) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (34744) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (34744) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (35554) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (35554) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (35554) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (35554) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (35564) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (35564) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (36374) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (36374) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (36374) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (36374) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (36384) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (36384) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (37194) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (37194) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (37194) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (37194) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (37204) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (37204) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (38014) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (38014) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (38014) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (38014) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (38024) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (38024) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (38834) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (38834) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (38834) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (38834) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (38844) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (38844) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (39654) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (39654) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (39654) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (39654) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (39664) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (39664) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (40474) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (40474) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (40474) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (40474) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (40484) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (40484) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (41294) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (41294) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (41294) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (41294) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (41304) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (41304) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (42114) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (42114) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (42114) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (42114) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (42124) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (42124) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (42934) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (42934) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (42934) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (42934) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (42944) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (42944) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (43754) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (43754) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (43754) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (43754) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (43764) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (43764) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (44574) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (44574) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (44574) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (44574) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (44584) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (44584) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (45394) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (45394) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (45394) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (45394) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (45404) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (45404) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (46214) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (46214) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (46214) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (46214) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (46224) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (46224) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (47034) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (47034) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (47034) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (47034) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (47044) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (47044) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (47854) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (47854) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (47854) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (47854) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (47864) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (47864) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (48674) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (48674) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (48674) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (48674) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (48684) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (48684) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (49494) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (49494) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (49494) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (49494) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (49504) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (49504) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (50314) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (50314) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (50314) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (50314) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (50324) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (50324) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (51134) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (51134) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (51134) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (51134) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (51144) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (51144) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (51954) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (51954) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (51954) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (51954) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (51964) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (51964) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (52774) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (52774) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (52774) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (52774) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (52784) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (52784) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (53594) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (53594) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (53594) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (53594) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (53604) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (53604) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (54414) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (54414) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (54414) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (54414) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (54424) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (54424) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (55234) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (55234) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (55234) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (55234) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (55244) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (55244) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (56054) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (56054) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (56054) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (56054) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (56064) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (56064) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (56874) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (56874) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (56874) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (56874) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (56884) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (56884) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (57694) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (57694) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (57694) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (57694) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (57704) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (57704) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (58514) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (58514) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (58514) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (58514) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (58524) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (58524) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (59334) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (59334) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (59334) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (59334) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (59344) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (59344) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (60154) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (60154) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (60154) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (60154) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (60164) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (60164) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (60974) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (60974) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (60974) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (60974) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (60984) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (60984) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (61794) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (61794) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (61794) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (61794) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (61804) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (61804) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (62614) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (62614) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (62614) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (62614) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (62624) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (62624) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (63434) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (63434) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (63434) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (63434) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (63444) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (63444) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (64254) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (64254) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (64254) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (64254) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (64264) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (64264) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (65074) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (65074) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (65074) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (65074) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (65084) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (65084) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (65894) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (65894) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (65894) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (65894) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (65904) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (65904) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (66714) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (66714) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (66714) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (66714) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (66724) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (66724) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (67534) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (67534) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (67534) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (67534) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (67544) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (67544) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (68354) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (68354) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (68354) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (68354) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (68364) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (68364) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (69174) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (69174) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (69174) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (69174) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (69184) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (69184) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (69994) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (69994) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (69994) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (69994) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (70004) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (70004) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (70814) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (70814) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (70814) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (70814) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (70824) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (70824) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (71634) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (71634) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (71634) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (71634) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (71644) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (71644) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (72454) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (72454) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (72454) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (72454) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (72464) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (72464) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (73274) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (73274) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (73274) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (73274) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (73284) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (73284) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (74094) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (74094) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (74094) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (74094) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (74104) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (74104) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (74914) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (74914) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (74914) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (74914) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (74924) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (74924) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (75734) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (75734) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (75734) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (75734) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (75744) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (75744) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (76554) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (76554) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (76554) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (76554) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (76564) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (76564) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (77374) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (77374) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (77374) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (77374) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (77384) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (77384) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (78194) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (78194) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (78194) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (78194) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (78204) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (78204) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (79014) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (79014) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (79014) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (79014) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (79024) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (79024) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (79834) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (79834) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (79834) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (79834) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (79844) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (79844) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (80654) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (80654) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (80654) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (80654) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (80664) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (80664) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (81474) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (81474) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (81474) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (81474) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (81484) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (81484) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (82294) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (82294) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (82294) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (82294) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (82304) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (82304) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (83114) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (83114) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (83114) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (83114) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (83124) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (83124) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (83934) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (83934) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (83934) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (83934) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (83944) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (83944) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (84754) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (84754) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (84754) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (84754) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (84764) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (84764) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (85574) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (85574) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (85574) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (85574) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (85584) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (85584) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (86394) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (86394) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (86394) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (86394) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (86404) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (86404) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (87214) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (87214) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (87214) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (87214) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (87224) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (87224) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (88034) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (88034) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (88034) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (88034) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (88044) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (88044) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (88854) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (88854) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (88854) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (88854) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (88864) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (88864) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (89674) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (89674) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (89674) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (89674) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (89684) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (89684) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (90494) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (90494) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (90494) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (90494) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (90504) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (90504) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (91314) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (91314) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (91314) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (91314) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (91324) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (91324) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (92134) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (92134) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (92134) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (92134) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (92144) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (92144) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (92954) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (92954) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (92954) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (92954) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (92964) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (92964) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (93774) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (93774) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (93774) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (93774) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (93784) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (93784) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (94594) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (94594) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (94594) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (94594) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (94604) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (94604) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (95414) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (95414) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (95414) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (95414) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (95424) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (95424) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (96234) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (96234) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (96234) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (96234) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (96244) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (96244) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m
+[0;32mI (97054) adbms6830b: isoSPI wake pulses sent[0m
+[0;32mI (97054) adbms6830b: raw TX (cmd + dummy):[0m
+[0;32mI (97054) adbms6830b: 0x3fc99f00   00 2c 4c 80 ff ff ff ff  ff ff ff ff              |.,L.........|[0m
+[0;32mI (97054) adbms6830b: raw RX (data + PEC):[0m
+[0;32mI (97064) adbms6830b: 0x3fc99f04   ff ff ff ff ff ff ff ff                           |........|[0m
+[1;31mE (97064) adbms6830b: Data PEC mismatch: got 0x3FF, expected 0x010[0m

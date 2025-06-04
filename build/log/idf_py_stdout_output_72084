@@ -1,0 +1,163 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d00
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c660h ( 50784) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c688 vaddr=3fc94300 size=02ae0h ( 10976) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f170 vaddr=40374000 size=00ea8h (  3752) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c400h (115712) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c428 vaddr=40374ea8 size=0f394h ( 62356) load[0m
+[0;32mI (145) esp_image: segment 5: paddr=0004b7c4 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (172) cpu_start: Pro cpu start user code[0m
+[0;32mI (172) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (180) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (185) app_init: ELF file SHA256:  2bc8966dd...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (193) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (197) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (201) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (205) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (211) heap_init: At 3FC976E0 len 00052030 (328 KiB): RAM[0m
+[0;32mI (216) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (233) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (251) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (257) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (264) main_task: Started on CPU0[0m
+[0;32mI (274) main_task: Calling app_main()[0m
+[0;32mI (274) ADBMS6830_Test: Initializing ADBMS6830 isoSPI test...[0m
+[0;32mI (274) gpio: GPIO[9]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (284) gpio: GPIO[10]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (294) ADBMS6830_Test: ADBMS6830 devices initialized successfully[0m
+[0;32mI (294) ADBMS6830_Test: Testing isoSPI communication in Mode 3 (CPOL=1, CPHA=1)[0m
+[0;32mI (304) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (314) ADBMS6830_Test: First 32 bytes of test data:[0m
+4C 02 F8 71 DF BF 75 D0 7C 83 9C AA FE 17 38 30 
+E8 64 DB 25 A2 D7 1D 74 E6 69 A1 E5 E9 A3 95 9B 
+[0;32mI (324) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (344) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (344) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (344) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (354) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (354) ADBMS6830_Test: ------------------------[0m
+[0;32mI (1354) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (1354) ADBMS6830_Test: First 32 bytes of test data:[0m
+98 09 17 78 C7 B8 EA 78 02 5C B0 A0 86 D5 8F 39 
+5F 18 FC C4 22 DB 82 16 8E 4F CC 0F E0 61 C6 2C 
+[0;32mI (1354) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (1374) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (1374) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (1374) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (1384) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (1384) ADBMS6830_Test: ------------------------[0m
+[0;32mI (2394) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (2394) ADBMS6830_Test: First 32 bytes of test data:[0m
+6B B8 A0 1B CB E1 5A F9 29 1C 51 07 85 30 88 F5 
+9D 88 31 49 7E 6A CB 81 8E C1 0F B0 21 7C EE 25 
+[0;32mI (2394) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (2414) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (2414) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (2414) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (2424) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (2424) ADBMS6830_Test: ------------------------[0m
+[0;32mI (3434) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (3434) ADBMS6830_Test: First 32 bytes of test data:[0m
+DC FE 23 FA DC C9 2B F4 50 3F 7C 2D 87 90 6F E8 
+2A 7F D4 9C 13 E4 F8 73 C1 B1 90 B9 81 05 C0 C3 
+[0;32mI (3434) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (3454) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (3454) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (3454) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (3464) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (3464) ADBMS6830_Test: ------------------------[0m
+[0;32mI (4474) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (4474) ADBMS6830_Test: First 32 bytes of test data:[0m
+85 FA 80 57 4A D4 47 D0 B9 D6 A6 6A BA 65 B7 61 
+98 2E 23 80 6E 0D F9 14 75 E3 C6 CD 41 84 66 E6 
+[0;32mI (4474) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (4494) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (4494) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (4494) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (4504) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (4504) ADBMS6830_Test: ------------------------[0m
+[0;32mI (5514) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (5514) ADBMS6830_Test: First 32 bytes of test data:[0m
+10 8D CF 4F 9F E4 B0 B6 E5 13 AC EB AD E8 FD C8 
+B2 81 62 7F 9E D2 E8 50 C4 06 18 16 D9 D5 DC 59 
+[0;32mI (5514) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (5534) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (5534) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (5534) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (5544) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (5544) ADBMS6830_Test: ------------------------[0m
+[0;32mI (6554) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (6554) ADBMS6830_Test: First 32 bytes of test data:[0m
+76 9A 3A 42 D3 7F 4B 43 EB 4F C5 4B 9B 78 2D A6 
+BE 5C B1 0A 01 75 F0 9A B4 F3 BC 83 EE 18 6A 10 
+[0;32mI (6554) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (6574) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (6574) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (6574) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (6584) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (6584) ADBMS6830_Test: ------------------------[0m
+[0;32mI (7594) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (7594) ADBMS6830_Test: First 32 bytes of test data:[0m
+DF 11 59 AB 6B 96 0B 3A FC B7 20 83 15 E9 19 EF 
+2C 41 8F 99 9A C9 9B 0B F1 C1 F7 63 C9 6C 0E 87 
+[0;32mI (7594) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (7614) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (7614) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (7614) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (7624) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (7624) ADBMS6830_Test: ------------------------[0m
+[0;32mI (8634) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (8634) ADBMS6830_Test: First 32 bytes of test data:[0m
+D5 49 47 69 F1 B0 72 69 13 99 CE 79 A7 CB CC 09 
+0A 7C ED 41 D3 B8 E4 7B 80 21 F1 23 56 23 95 1E 
+[0;32mI (8634) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (8654) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (8654) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (8654) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (8664) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (8664) ADBMS6830_Test: ------------------------[0m
+[0;32mI (9674) ADBMS6830_Test: Generated 728 bytes of random test data[0m
+[0;32mI (9674) ADBMS6830_Test: First 32 bytes of test data:[0m
+5E 46 99 3A C6 11 FC 99 8B FA 36 1E CB 87 65 A6 
+26 DD 41 17 3D 3A 42 F3 C0 35 C0 B5 A0 AB C5 16 
+[0;32mI (9674) ADBMS6830_Test: Sending data to Main device...[0m
+[0;32mI (9694) ADBMS6830_Test: Reading back data from AUX device...[0m
+[1;31mE (9694) spi_master: check_trans_valid(1051): SPI_TRANS_USE_RXDATA only available for rxdata transfer <= 32 bits[0m
+[1;31mE (9694) ADBMS6830_Test: Failed to read from AUX device[0m
+[1;31mE (9704) ADBMS6830_Test: isoSPI communication test failed[0m
+[0;32mI (9704) ADBMS6830_Test: ------------------------[0m

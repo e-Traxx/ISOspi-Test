@@ -1,0 +1,1517 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x0 (DOWNLOAD(USB/UART0))
+Saved PC:0x40048de8
+waiting for download
+[0;32mI (1349) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (1349) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (1349) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (1349) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (1349) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (1359) ADBMS6830_Test: ------------------------[0m
+[0;32mI (2359) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (2359) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (2359) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (2359) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (2359) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (2369) ADBMS6830_Test: ------------------------[0m
+[0;32mI (3369) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (3369) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (3369) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (3369) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (3369) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (3379) ADBMS6830_Test: ------------------------[0m
+[0;32mI (4379) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (4379) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (4379) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (4379) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (4379) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (4389) ADBMS6830_Test: ------------------------[0m
+[0;32mI (5389) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (5389) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (5389) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (5389) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (5389) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (5399) ADBMS6830_Test: ------------------------[0m
+[0;32mI (6399) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (6399) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (6399) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (6399) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (6399) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (6409) ADBMS6830_Test: ------------------------[0m
+[0;32mI (7409) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (7409) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (7409) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (7409) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (7409) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (7419) ADBMS6830_Test: ------------------------[0m
+[0;32mI (8419) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (8419) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (8419) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (8419) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (8419) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (8429) ADBMS6830_Test: ------------------------[0m
+[0;32mI (9429) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (9429) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (9429) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (9429) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (9429) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (9439) ADBMS6830_Test: ------------------------[0m
+[0;32mI (10439) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (10439) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (10439) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (10439) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (10439) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (10449) ADBMS6830_Test: ------------------------[0m
+[0;32mI (11449) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (11449) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (11449) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (11449) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (11449) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (11459) ADBMS6830_Test: ------------------------[0m
+[0;32mI (12459) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (12459) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (12459) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (12459) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (12459) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (12469) ADBMS6830_Test: ------------------------[0m
+[0;32mI (13469) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (13469) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (13469) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (13469) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (13469) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (13479) ADBMS6830_Test: ------------------------[0m
+[0;32mI (14479) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (14479) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (14479) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (14479) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (14479) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (14489) ADBMS6830_Test: ------------------------[0m
+[0;32mI (15489) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (15489) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (15489) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (15489) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (15489) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (15499) ADBMS6830_Test: ------------------------[0m
+[0;32mI (16499) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (16499) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (16499) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (16499) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (16499) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (16509) ADBMS6830_Test: ------------------------[0m
+[0;32mI (17509) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (17509) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (17509) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (17509) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (17509) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (17519) ADBMS6830_Test: ------------------------[0m
+[0;32mI (18519) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (18519) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (18519) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (18519) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (18519) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (18529) ADBMS6830_Test: ------------------------[0m
+[0;32mI (19529) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (19529) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (19529) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (19529) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (19529) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (19539) ADBMS6830_Test: ------------------------[0m
+[0;32mI (20539) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (20539) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (20539) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (20539) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (20539) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (20549) ADBMS6830_Test: ------------------------[0m
+[0;32mI (21549) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (21549) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (21549) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (21549) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (21549) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (21559) ADBMS6830_Test: ------------------------[0m
+[0;32mI (22559) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (22559) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (22559) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (22559) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (22559) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (22569) ADBMS6830_Test: ------------------------[0m
+[0;32mI (23569) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (23569) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (23569) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (23569) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (23569) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (23579) ADBMS6830_Test: ------------------------[0m
+[0;32mI (24579) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (24579) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (24579) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (24579) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (24579) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (24589) ADBMS6830_Test: ------------------------[0m
+[0;32mI (25589) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (25589) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (25589) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (25589) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (25589) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (25599) ADBMS6830_Test: ------------------------[0m
+[0;32mI (26599) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (26599) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (26599) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (26599) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (26599) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (26609) ADBMS6830_Test: ------------------------[0m
+[0;32mI (27609) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (27609) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (27609) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (27609) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (27609) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (27619) ADBMS6830_Test: ------------------------[0m
+[0;32mI (28619) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (28619) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (28619) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (28619) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (28619) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (28629) ADBMS6830_Test: ------------------------[0m
+[0;32mI (29629) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (29629) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (29629) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (29629) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (29629) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (29639) ADBMS6830_Test: ------------------------[0m
+[0;32mI (30639) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (30639) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (30639) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (30639) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (30639) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (30649) ADBMS6830_Test: ------------------------[0m
+[0;32mI (31649) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (31649) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (31649) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (31649) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (31649) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (31659) ADBMS6830_Test: ------------------------[0m
+[0;32mI (32659) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (32659) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (32659) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (32659) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (32659) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (32669) ADBMS6830_Test: ------------------------[0m
+[0;32mI (33669) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (33669) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (33669) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (33669) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (33669) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (33679) ADBMS6830_Test: ------------------------[0m
+[0;32mI (34679) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (34679) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (34679) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (34679) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (34679) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (34689) ADBMS6830_Test: ------------------------[0m
+[0;32mI (35689) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (35689) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (35689) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (35689) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (35689) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (35699) ADBMS6830_Test: ------------------------[0m
+[0;32mI (36699) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (36699) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (36699) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (36699) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (36699) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (36709) ADBMS6830_Test: ------------------------[0m
+[0;32mI (37709) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (37709) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (37709) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (37709) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (37709) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (37719) ADBMS6830_Test: ------------------------[0m
+[0;32mI (38719) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (38719) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (38719) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (38719) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (38719) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (38729) ADBMS6830_Test: ------------------------[0m
+[0;32mI (39729) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (39729) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (39729) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (39729) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (39729) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (39739) ADBMS6830_Test: ------------------------[0m
+[0;32mI (40739) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (40739) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (40739) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (40739) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (40739) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (40749) ADBMS6830_Test: ------------------------[0m
+[0;32mI (41749) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (41749) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (41749) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (41749) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (41749) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (41759) ADBMS6830_Test: ------------------------[0m
+[0;32mI (42759) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (42759) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (42759) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (42759) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (42759) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (42769) ADBMS6830_Test: ------------------------[0m
+[0;32mI (43769) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (43769) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (43769) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (43769) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (43769) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (43779) ADBMS6830_Test: ------------------------[0m
+[0;32mI (44779) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (44779) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (44779) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (44779) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (44779) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (44789) ADBMS6830_Test: ------------------------[0m
+[0;32mI (45789) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (45789) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (45789) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (45789) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (45789) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (45799) ADBMS6830_Test: ------------------------[0m
+[0;32mI (46799) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (46799) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (46799) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (46799) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (46799) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (46809) ADBMS6830_Test: ------------------------[0m
+[0;32mI (47809) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (47809) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (47809) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (47809) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (47809) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (47819) ADBMS6830_Test: ------------------------[0m
+[0;32mI (48819) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (48819) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (48819) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (48819) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (48819) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (48829) ADBMS6830_Test: ------------------------[0m
+[0;32mI (49829) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (49829) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (49829) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (49829) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (49829) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (49839) ADBMS6830_Test: ------------------------[0m
+[0;32mI (50839) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (50839) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (50839) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (50839) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (50839) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (50849) ADBMS6830_Test: ------------------------[0m
+[0;32mI (51849) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (51849) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (51849) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (51849) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (51849) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (51859) ADBMS6830_Test: ------------------------[0m
+[0;32mI (52859) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (52859) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (52859) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (52859) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (52859) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (52869) ADBMS6830_Test: ------------------------[0m
+[0;32mI (53869) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (53869) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (53869) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (53869) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (53869) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (53879) ADBMS6830_Test: ------------------------[0m
+[0;32mI (54879) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (54879) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (54879) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (54879) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (54879) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (54889) ADBMS6830_Test: ------------------------[0m
+[0;32mI (55889) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (55889) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (55889) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (55889) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (55889) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (55899) ADBMS6830_Test: ------------------------[0m
+[0;32mI (56899) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (56899) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (56899) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (56899) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (56899) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (56909) ADBMS6830_Test: ------------------------[0m
+[0;32mI (57909) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (57909) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (57909) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (57909) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (57909) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (57919) ADBMS6830_Test: ------------------------[0m
+[0;32mI (58919) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (58919) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (58919) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (58919) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (58919) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (58929) ADBMS6830_Test: ------------------------[0m
+[0;32mI (59929) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (59929) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (59929) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (59929) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (59929) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (59939) ADBMS6830_Test: ------------------------[0m
+[0;32mI (60939) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (60939) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (60939) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (60939) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (60939) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (60949) ADBMS6830_Test: ------------------------[0m
+[0;32mI (61949) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (61949) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (61949) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (61949) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (61949) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (61959) ADBMS6830_Test: ------------------------[0m
+[0;32mI (62959) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (62959) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (62959) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (62959) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (62959) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (62969) ADBMS6830_Test: ------------------------[0m
+[0;32mI (63969) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (63969) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (63969) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (63969) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (63969) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (63979) ADBMS6830_Test: ------------------------[0m
+[0;32mI (64979) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (64979) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (64979) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (64979) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (64979) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (64989) ADBMS6830_Test: ------------------------[0m
+[0;32mI (65989) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (65989) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (65989) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (65989) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (65989) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (65999) ADBMS6830_Test: ------------------------[0m
+[0;32mI (66999) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (66999) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (66999) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (66999) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (66999) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (67009) ADBMS6830_Test: ------------------------[0m
+[0;32mI (68009) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (68009) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (68009) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (68009) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (68009) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (68019) ADBMS6830_Test: ------------------------[0m
+[0;32mI (69019) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (69019) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (69019) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (69019) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (69019) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (69029) ADBMS6830_Test: ------------------------[0m
+[0;32mI (70029) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (70029) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (70029) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (70029) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (70029) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (70039) ADBMS6830_Test: ------------------------[0m
+[0;32mI (71039) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (71039) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (71039) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (71039) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (71039) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (71049) ADBMS6830_Test: ------------------------[0m
+[0;32mI (72049) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (72049) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (72049) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (72049) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (72049) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (72059) ADBMS6830_Test: ------------------------[0m
+[0;32mI (73059) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (73059) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (73059) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (73059) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (73059) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (73069) ADBMS6830_Test: ------------------------[0m
+[0;32mI (74069) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (74069) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (74069) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (74069) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (74069) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (74079) ADBMS6830_Test: ------------------------[0m
+[0;32mI (75079) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (75079) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (75079) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (75079) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (75079) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (75089) ADBMS6830_Test: ------------------------[0m
+[0;32mI (76089) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (76089) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (76089) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (76089) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (76089) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (76099) ADBMS6830_Test: ------------------------[0m
+[0;32mI (77099) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (77099) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (77099) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (77099) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (77099) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (77109) ADBMS6830_Test: ------------------------[0m
+[0;32mI (78109) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (78109) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (78109) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (78109) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (78109) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (78119) ADBMS6830_Test: ------------------------[0m
+[0;32mI (79119) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (79119) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (79119) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (79119) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (79119) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (79129) ADBMS6830_Test: ------------------------[0m
+[0;32mI (80129) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (80129) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (80129) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (80129) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (80129) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (80139) ADBMS6830_Test: ------------------------[0m
+[0;32mI (81139) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (81139) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (81139) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (81139) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (81139) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (81149) ADBMS6830_Test: ------------------------[0m
+[0;32mI (82149) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (82149) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (82149) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (82149) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (82149) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (82159) ADBMS6830_Test: ------------------------[0m
+[0;32mI (83159) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (83159) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (83159) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (83159) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (83159) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (83169) ADBMS6830_Test: ------------------------[0m
+[0;32mI (84169) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (84169) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (84169) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (84169) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (84169) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (84179) ADBMS6830_Test: ------------------------[0m
+[0;32mI (85179) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (85179) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (85179) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (85179) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (85179) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (85189) ADBMS6830_Test: ------------------------[0m
+[0;32mI (86189) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (86189) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (86189) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (86189) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (86189) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (86199) ADBMS6830_Test: ------------------------[0m
+[0;32mI (87199) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (87199) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (87199) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (87199) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (87199) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (87209) ADBMS6830_Test: ------------------------[0m
+[0;32mI (88209) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (88209) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (88209) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (88209) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (88209) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (88219) ADBMS6830_Test: ------------------------[0m
+[0;32mI (89219) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (89219) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (89219) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (89219) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (89219) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (89229) ADBMS6830_Test: ------------------------[0m
+[0;32mI (90229) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (90229) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (90229) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (90229) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (90229) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (90239) ADBMS6830_Test: ------------------------[0m
+[0;32mI (91239) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (91239) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (91239) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (91239) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (91239) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (91249) ADBMS6830_Test: ------------------------[0m
+[0;32mI (92249) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (92249) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (92249) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (92249) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (92249) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (92259) ADBMS6830_Test: ------------------------[0m
+[0;32mI (93259) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (93259) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (93259) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (93259) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (93259) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (93269) ADBMS6830_Test: ------------------------[0m
+[0;32mI (94269) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (94269) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (94269) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (94269) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (94269) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (94279) ADBMS6830_Test: ------------------------[0m
+[0;32mI (95279) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (95279) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (95279) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (95279) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (95279) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (95289) ADBMS6830_Test: ------------------------[0m
+[0;32mI (96289) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (96289) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (96289) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (96289) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (96289) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (96299) ADBMS6830_Test: ------------------------[0m
+[0;32mI (97299) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (97299) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (97299) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (97299) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (97299) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (97309) ADBMS6830_Test: ------------------------[0m
+[0;32mI (98309) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (98309) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (98309) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (98309) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (98309) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (98319) ADBMS6830_Test: ------------------------[0m
+[0;32mI (99319) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (99319) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (99319) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (99319) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (99319) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (99329) ADBMS6830_Test: ------------------------[0m
+[0;32mI (100329) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (100329) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (100329) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (100329) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (100329) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (100339) ADBMS6830_Test: ------------------------[0m
+[0;32mI (101339) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (101339) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (101339) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (101339) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (101339) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (101349) ADBMS6830_Test: ------------------------[0m
+[0;32mI (102349) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (102349) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (102349) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (102349) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (102349) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (102359) ADBMS6830_Test: ------------------------[0m
+[0;32mI (103359) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (103359) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (103359) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (103359) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (103359) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (103369) ADBMS6830_Test: ------------------------[0m
+[0;32mI (104369) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (104369) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (104369) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (104369) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (104369) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (104379) ADBMS6830_Test: ------------------------[0m
+[0;32mI (105379) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (105379) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (105379) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (105379) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (105379) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (105389) ADBMS6830_Test: ------------------------[0m
+[0;32mI (106389) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (106389) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (106389) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (106389) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (106389) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (106399) ADBMS6830_Test: ------------------------[0m
+[0;32mI (107399) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (107399) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (107399) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (107399) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (107399) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (107409) ADBMS6830_Test: ------------------------[0m
+[0;32mI (108409) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (108409) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (108409) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (108409) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (108409) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (108419) ADBMS6830_Test: ------------------------[0m
+[0;32mI (109419) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (109419) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (109419) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (109419) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (109419) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (109429) ADBMS6830_Test: ------------------------[0m
+[0;32mI (110429) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (110429) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (110429) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (110429) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (110429) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (110439) ADBMS6830_Test: ------------------------[0m
+[0;32mI (111439) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (111439) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (111439) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (111439) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (111439) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (111449) ADBMS6830_Test: ------------------------[0m
+[0;32mI (112449) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (112449) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (112449) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (112449) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (112449) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (112459) ADBMS6830_Test: ------------------------[0m
+[0;32mI (113459) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (113459) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (113459) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (113459) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (113459) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (113469) ADBMS6830_Test: ------------------------[0m
+[0;32mI (114469) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (114469) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (114469) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (114469) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (114469) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (114479) ADBMS6830_Test: ------------------------[0m
+[0;32mI (115479) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (115479) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (115479) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (115479) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (115479) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (115489) ADBMS6830_Test: ------------------------[0m
+[0;32mI (116489) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (116489) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (116489) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (116489) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (116489) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (116499) ADBMS6830_Test: ------------------------[0m
+[0;32mI (117499) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (117499) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (117499) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (117499) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (117499) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (117509) ADBMS6830_Test: ------------------------[0m
+[0;32mI (118509) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (118509) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (118509) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (118509) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (118509) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (118519) ADBMS6830_Test: ------------------------[0m
+[0;32mI (119519) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (119519) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (119519) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (119519) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (119519) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (119529) ADBMS6830_Test: ------------------------[0m
+[0;32mI (120529) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (120529) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (120529) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (120529) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (120529) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (120539) ADBMS6830_Test: ------------------------[0m
+[0;32mI (121539) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (121539) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (121539) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (121539) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (121539) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (121549) ADBMS6830_Test: ------------------------[0m
+[0;32mI (122549) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (122549) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (122549) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (122549) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (122549) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (122559) ADBMS6830_Test: ------------------------[0m
+[0;32mI (123559) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (123559) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (123559) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (123559) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (123559) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (123569) ADBMS6830_Test: ------------------------[0m
+[0;32mI (124569) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (124569) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (124569) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (124569) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (124569) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (124579) ADBMS6830_Test: ------------------------[0m
+[0;32mI (125579) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (125579) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (125579) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (125579) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (125579) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (125589) ADBMS6830_Test: ------------------------[0m
+[0;32mI (126589) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (126589) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (126589) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (126589) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (126589) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (126599) ADBMS6830_Test: ------------------------[0m
+[0;32mI (127599) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (127599) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (127599) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (127599) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (127599) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (127609) ADBMS6830_Test: ------------------------[0m
+[0;32mI (128609) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (128609) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (128609) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (128609) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (128609) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (128619) ADBMS6830_Test: ------------------------[0m
+[0;32mI (129619) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (129619) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (129619) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (129619) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (129619) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (129629) ADBMS6830_Test: ------------------------[0m
+[0;32mI (130629) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (130629) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (130629) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (130629) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (130629) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (130639) ADBMS6830_Test: ------------------------[0m
+[0;32mI (131639) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (131639) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (131639) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (131639) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (131639) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (131649) ADBMS6830_Test: ------------------------[0m
+[0;32mI (132649) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (132649) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (132649) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (132649) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (132649) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (132659) ADBMS6830_Test: ------------------------[0m
+[0;32mI (133659) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (133659) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (133659) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (133659) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (133659) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (133669) ADBMS6830_Test: ------------------------[0m
+[0;32mI (134669) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (134669) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (134669) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (134669) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (134669) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (134679) ADBMS6830_Test: ------------------------[0m
+[0;32mI (135679) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (135679) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (135679) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (135679) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (135679) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (135689) ADBMS6830_Test: ------------------------[0m
+[0;32mI (136689) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (136689) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (136689) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (136689) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (136689) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (136699) ADBMS6830_Test: ------------------------[0m
+[0;32mI (137699) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (137699) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (137699) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (137699) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (137699) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (137709) ADBMS6830_Test: ------------------------[0m
+[0;32mI (138709) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (138709) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (138709) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (138709) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (138709) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (138719) ADBMS6830_Test: ------------------------[0m
+[0;32mI (139719) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (139719) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (139719) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (139719) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (139719) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (139729) ADBMS6830_Test: ------------------------[0m
+[0;32mI (140729) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (140729) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (140729) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (140729) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (140729) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (140739) ADBMS6830_Test: ------------------------[0m
+[0;32mI (141739) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (141739) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (141739) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (141739) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (141739) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (141749) ADBMS6830_Test: ------------------------[0m
+[0;32mI (142749) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (142749) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (142749) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (142749) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (142749) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (142759) ADBMS6830_Test: ------------------------[0m
+[0;32mI (143759) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (143759) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (143759) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (143759) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (143759) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (143769) ADBMS6830_Test: ------------------------[0m
+[0;32mI (144769) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (144769) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (144769) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (144769) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (144769) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (144779) ADBMS6830_Test: ------------------------[0m
+[0;32mI (145779) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (145779) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (145779) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (145779) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (145779) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (145789) ADBMS6830_Test: ------------------------[0m
+[0;32mI (146789) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (146789) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (146789) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (146789) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (146789) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (146799) ADBMS6830_Test: ------------------------[0m
+[0;32mI (147799) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (147799) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (147799) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (147799) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (147799) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (147809) ADBMS6830_Test: ------------------------[0m
+[0;32mI (148809) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (148809) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (148809) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (148809) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (148809) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (148819) ADBMS6830_Test: ------------------------[0m
+[0;32mI (149819) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (149819) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (149819) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (149819) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (149819) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (149829) ADBMS6830_Test: ------------------------[0m
+[0;32mI (150829) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (150829) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (150829) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (150829) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (150829) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (150839) ADBMS6830_Test: ------------------------[0m
+[0;32mI (151839) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (151839) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (151839) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (151839) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (151839) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (151849) ADBMS6830_Test: ------------------------[0m
+[0;32mI (152849) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (152849) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (152849) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (152849) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (152849) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (152859) ADBMS6830_Test: ------------------------[0m
+[0;32mI (153859) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (153859) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (153859) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (153859) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (153859) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (153869) ADBMS6830_Test: ------------------------[0m
+[0;32mI (154869) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (154869) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (154869) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (154869) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (154869) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (154879) ADBMS6830_Test: ------------------------[0m
+[0;32mI (155879) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (155879) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (155879) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (155879) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (155879) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (155889) ADBMS6830_Test: ------------------------[0m
+[0;32mI (156889) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (156889) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (156889) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (156889) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (156889) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (156899) ADBMS6830_Test: ------------------------[0m
+[0;32mI (157899) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (157899) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (157899) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (157899) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (157899) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (157909) ADBMS6830_Test: ------------------------[0m
+[0;32mI (158909) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (158909) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (158909) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (158909) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (158909) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (158919) ADBMS6830_Test: ------------------------[0m
+[0;32mI (159919) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (159919) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (159919) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (159919) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (159919) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (159929) ADBMS6830_Test: ------------------------[0m
+[0;32mI (160929) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (160929) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (160929) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (160929) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (160929) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (160939) ADBMS6830_Test: ------------------------[0m
+[0;32mI (161939) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (161939) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (161939) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (161939) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (161939) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (161949) ADBMS6830_Test: ------------------------[0m
+[0;32mI (162949) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (162949) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (162949) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (162949) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (162949) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (162959) ADBMS6830_Test: ------------------------[0m
+[0;32mI (163959) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (163959) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (163959) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (163959) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (163959) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (163969) ADBMS6830_Test: ------------------------[0m
+[0;32mI (164969) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (164969) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (164969) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (164969) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (164969) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (164979) ADBMS6830_Test: ------------------------[0m
+[0;32mI (165979) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (165979) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (165979) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (165979) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (165979) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (165989) ADBMS6830_Test: ------------------------[0m
+[0;32mI (166989) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (166989) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (166989) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (166989) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (166989) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (166999) ADBMS6830_Test: ------------------------[0m
+[0;32mI (167999) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (167999) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (167999) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (167999) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (167999) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (168009) ADBMS6830_Test: ------------------------[0m
+[0;32mI (169009) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (169009) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (169009) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (169009) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (169009) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (169019) ADBMS6830_Test: ------------------------[0m
+[0;32mI (170019) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (170019) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (170019) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (170019) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (170019) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (170029) ADBMS6830_Test: ------------------------[0m
+[0;32mI (171029) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (171029) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (171029) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (171029) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (171029) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (171039) ADBMS6830_Test: ------------------------[0m
+[0;32mI (172039) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (172039) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (172039) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (172039) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (172039) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (172049) ADBMS6830_Test: ------------------------[0m
+[0;32mI (173049) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (173049) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (173049) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (173049) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (173049) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (173059) ADBMS6830_Test: ------------------------[0m
+[0;32mI (174059) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (174059) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (174059) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (174059) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (174059) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (174069) ADBMS6830_Test: ------------------------[0m
+[0;32mI (175069) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (175069) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (175069) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (175069) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (175069) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (175079) ADBMS6830_Test: ------------------------[0m
+[0;32mI (176079) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (176079) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (176079) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (176079) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (176079) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (176089) ADBMS6830_Test: ------------------------[0m
+[0;32mI (177089) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (177089) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (177089) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (177089) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (177089) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (177099) ADBMS6830_Test: ------------------------[0m
+[0;32mI (178099) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (178099) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (178099) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (178099) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (178099) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (178109) ADBMS6830_Test: ------------------------[0m
+[0;32mI (179109) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (179109) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (179109) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (179109) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (179109) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (179119) ADBMS6830_Test: ------------------------[0m
+[0;32mI (180119) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (180119) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (180119) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (180119) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (180119) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (180129) ADBMS6830_Test: ------------------------[0m
+[0;32mI (181129) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (181129) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (181129) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (181129) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (181129) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (181139) ADBMS6830_Test: ------------------------[0m
+[0;32mI (182139) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (182139) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (182139) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (182139) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (182139) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (182149) ADBMS6830_Test: ------------------------[0m
+[0;32mI (183149) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (183149) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (183149) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (183149) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (183149) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (183159) ADBMS6830_Test: ------------------------[0m
+[0;32mI (184159) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (184159) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (184159) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (184159) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (184159) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (184169) ADBMS6830_Test: ------------------------[0m
+[0;32mI (185169) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (185169) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (185169) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (185169) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (185169) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (185179) ADBMS6830_Test: ------------------------[0m
+[0;32mI (186179) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (186179) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (186179) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (186179) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (186179) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (186189) ADBMS6830_Test: ------------------------[0m
+[0;32mI (187189) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (187189) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (187189) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (187189) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (187189) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (187199) ADBMS6830_Test: ------------------------[0m
+[0;32mI (188199) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (188199) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (188199) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (188199) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (188199) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (188209) ADBMS6830_Test: ------------------------[0m
+[0;32mI (189209) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (189209) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (189209) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (189209) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (189209) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (189219) ADBMS6830_Test: ------------------------[0m
+[0;32mI (190219) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (190219) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (190219) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (190219) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (190219) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (190229) ADBMS6830_Test: ------------------------[0m
+[0;32mI (191229) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (191229) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (191229) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (191229) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (191229) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (191239) ADBMS6830_Test: ------------------------[0m
+[0;32mI (192239) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (192239) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (192239) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (192239) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (192239) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (192249) ADBMS6830_Test: ------------------------[0m
+[0;32mI (193249) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (193249) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (193249) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (193249) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (193249) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (193259) ADBMS6830_Test: ------------------------[0m
+[0;32mI (194259) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (194259) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (194259) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (194259) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (194259) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (194269) ADBMS6830_Test: ------------------------[0m
+[0;32mI (195269) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (195269) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (195269) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (195269) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (195269) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (195279) ADBMS6830_Test: ------------------------[0m
+[0;32mI (196279) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (196279) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (196279) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (196279) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (196279) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (196289) ADBMS6830_Test: ------------------------[0m
+[0;32mI (197289) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (197289) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (197289) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (197289) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (197289) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (197299) ADBMS6830_Test: ------------------------[0m
+[0;32mI (198299) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (198299) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (198299) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (198299) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (198299) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (198309) ADBMS6830_Test: ------------------------[0m
+[0;32mI (199309) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (199309) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (199309) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (199309) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (199309) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (199319) ADBMS6830_Test: ------------------------[0m
+[0;32mI (200319) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (200319) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (200319) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (200319) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (200319) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (200329) ADBMS6830_Test: ------------------------[0m
+[0;32mI (201329) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (201329) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (201329) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (201329) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (201329) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (201339) ADBMS6830_Test: ------------------------[0m
+[0;32mI (202339) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (202339) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (202339) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (202339) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (202339) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (202349) ADBMS6830_Test: ------------------------[0m
+[0;32mI (203349) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (203349) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (203349) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (203349) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (203349) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (203359) ADBMS6830_Test: ------------------------[0m
+[0;32mI (204359) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (204359) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (204359) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (204359) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (204359) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (204369) ADBMS6830_Test: ------------------------[0m
+[0;32mI (205369) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (205369) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (205369) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (205369) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (205369) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (205379) ADBMS6830_Test: ------------------------[0m
+[0;32mI (206379) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (206379) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (206379) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (206379) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (206379) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (206389) ADBMS6830_Test: ------------------------[0m
+[0;32mI (207389) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (207389) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (207389) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (207389) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (207389) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (207399) ADBMS6830_Test: ------------------------[0m
+[0;32mI (208399) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (208399) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (208399) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (208399) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (208399) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (208409) ADBMS6830_Test: ------------------------[0m
+[0;32mI (209409) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (209409) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (209409) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (209409) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (209409) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (209419) ADBMS6830_Test: ------------------------[0m
+[0;32mI (210419) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (210419) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (210419) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (210419) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (210419) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (210429) ADBMS6830_Test: ------------------------[0m
+[0;32mI (211429) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (211429) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (211429) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (211429) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (211429) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (211439) ADBMS6830_Test: ------------------------[0m
+[0;32mI (212439) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (212439) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (212439) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (212439) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (212439) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (212449) ADBMS6830_Test: ------------------------[0m
+[0;32mI (213449) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (213449) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (213449) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (213449) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (213449) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (213459) ADBMS6830_Test: ------------------------[0m
+[0;32mI (214459) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (214459) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (214459) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (214459) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (214459) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (214469) ADBMS6830_Test: ------------------------[0m
+[0;32mI (215469) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (215469) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (215469) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (215469) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (215469) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (215479) ADBMS6830_Test: ------------------------[0m
+[0;32mI (216479) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (216479) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (216479) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (216479) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (216479) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (216489) ADBMS6830_Test: ------------------------[0m
+[0;32mI (217489) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (217489) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (217489) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (217489) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (217489) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (217499) ADBMS6830_Test: ------------------------[0m
+[0;32mI (218499) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (218499) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (218499) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (218499) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (218499) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (218509) ADBMS6830_Test: ------------------------[0m
+[0;32mI (219509) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (219509) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (219509) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (219509) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (219509) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (219519) ADBMS6830_Test: ------------------------[0m
+[0;32mI (220519) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (220519) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (220519) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (220519) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (220519) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (220529) ADBMS6830_Test: ------------------------[0m
+[0;32mI (221529) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (221529) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (221529) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (221529) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (221529) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (221539) ADBMS6830_Test: ------------------------[0m
+[0;32mI (222539) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (222539) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (222539) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (222539) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (222539) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (222549) ADBMS6830_Test: ------------------------[0m
+[0;32mI (223549) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (223549) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (223549) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (223549) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (223549) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (223559) ADBMS6830_Test: ------------------------[0m
+[0;32mI (224559) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (224559) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (224559) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (224559) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (224559) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (224569) ADBMS6830_Test: ------------------------[0m
+[0;32mI (225569) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (225569) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (225569) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (225569) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (225569) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (225579) ADBMS6830_Test: ------------------------[0m
+[0;32mI (226579) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (226579) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (226579) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (226579) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (226579) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (226589) ADBMS6830_Test: ------------------------[0m
+[0;32mI (227589) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (227589) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (227589) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (227589) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (227589) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (227599) ADBMS6830_Test: ------------------------[0m
+[0;32mI (228599) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (228599) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (228599) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (228599) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (228599) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (228609) ADBMS6830_Test: ------------------------[0m
+[0;32mI (229609) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (229609) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (229609) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (229609) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (229609) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (229619) ADBMS6830_Test: ------------------------[0m
+[0;32mI (230619) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (230619) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (230619) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (230619) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (230619) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (230629) ADBMS6830_Test: ------------------------[0m
+[0;32mI (231629) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (231629) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (231629) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (231629) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (231629) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (231639) ADBMS6830_Test: ------------------------[0m
+[0;32mI (232639) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (232639) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (232639) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (232639) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (232639) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (232649) ADBMS6830_Test: ------------------------[0m
+[0;32mI (233649) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (233649) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (233649) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (233649) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (233649) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (233659) ADBMS6830_Test: ------------------------[0m
+[0;32mI (234659) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (234659) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (234659) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (234659) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (234659) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (234669) ADBMS6830_Test: ------------------------[0m
+[0;32mI (235669) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (235669) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (235669) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (235669) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (235669) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (235679) ADBMS6830_Test: ------------------------[0m
+[0;32mI (236679) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (236679) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (236679) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (236679) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (236679) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (236689) ADBMS6830_Test: ------------------------[0m
+[0;32mI (237689) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (237689) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (237689) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (237689) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (237689) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (237699) ADBMS6830_Test: ------------------------[0m
+[0;32mI (238699) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (238699) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (238699) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (238699) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (238699) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (238709) ADBMS6830_Test: ------------------------[0m
+[0;32mI (239709) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (239709) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (239709) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (239709) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (239709) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (239719) ADBMS6830_Test: ------------------------[0m
+[0;32mI (240719) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (240719) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (240719) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (240719) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (240719) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (240729) ADBMS6830_Test: ------------------------[0m
+[0;32mI (241729) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (241729) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (241729) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (241729) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (241729) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (241739) ADBMS6830_Test: ------------------------[0m
+[0;32mI (242739) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (242739) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (242739) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (242739) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (242739) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (242749) ADBMS6830_Test: ------------------------[0m
+[0;32mI (243749) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (243749) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (243749) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (243749) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (243749) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (243759) ADBMS6830_Test: ------------------------[0m
+[0;32mI (244759) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (244759) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (244759) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (244759) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (244759) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (244769) ADBMS6830_Test: ------------------------[0m
+[0;32mI (245769) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (245769) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (245769) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (245769) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (245769) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (245779) ADBMS6830_Test: ------------------------[0m
+[0;32mI (246779) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (246779) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (246779) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (246779) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (246779) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (246789) ADBMS6830_Test: ------------------------[0m
+[0;32mI (247789) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (247789) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (247789) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (247789) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (247789) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (247799) ADBMS6830_Test: ------------------------[0m
+[0;32mI (248799) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (248799) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (248799) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (248799) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (248799) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (248809) ADBMS6830_Test: ------------------------[0m
+[0;32mI (249809) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (249809) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (249809) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (249809) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (249809) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (249819) ADBMS6830_Test: ------------------------[0m
+[0;32mI (250819) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (250819) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (250819) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (250819) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (250819) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (250829) ADBMS6830_Test: ------------------------[0m
+[0;32mI (251829) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (251829) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (251829) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (251829) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (251829) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (251839) ADBMS6830_Test: ------------------------[0m
+[0;32mI (252839) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (252839) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (252839) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (252839) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (252839) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (252849) ADBMS6830_Test: ------------------------[0m
+[0;32mI (253849) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (253849) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (253849) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (253849) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (253849) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (253859) ADBMS6830_Test: ------------------------[0m
+[0;32mI (254859) ADBMS6830_Test: Testing Main device...[0m
+[0;32mI (254859) ADBMS6830_Test: Main device config: 0xFCFFFFFF[0m
+[0;32mI (254859) ADBMS6830_Test: Testing AUX device...[0m
+[0;32mI (254859) ADBMS6830_Test: AUX device config: 0xFCFFFFFF[0m
+[0;32mI (254859) ADBMS6830_Test: isoSPI communication test successful[0m
+[0;32mI (254869) ADBMS6830_Test: ------------------------[0m

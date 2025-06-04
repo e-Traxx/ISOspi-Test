@@ -1,0 +1,147 @@
+M
+[0;32mI (237) spi_flash: detected chip: generic[0m
+[0;32mI (239) spi_flash: flasESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048839
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0c8c8h ( 51400) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001c8f0 vaddr=3fc94600 size=02aech ( 10988) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001f3e4 vaddr=40374000 size=00c34h (  3124) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1c89ch (116892) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003c8c4 vaddr=40374c34 size=0f998h ( 63896) load[0m
+[0;32mI (146) esp_image: segment 5: paddr=0004c264 vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (152) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (152) boot: Disabling RNG early entropy source...[0m
+[0;32mI (163) cpu_start: Multicore app[0m
+[0;32mI (173) cpu_start: Pro cpu start user code[0m
+[0;32mI (173) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (173) app_init: Application information:[0m
+[0;32mI (173) app_init: Project name:     dc2792b_test[0m
+[0;32mI (177) app_init: App version:      1[0m
+[0;32mI (181) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (186) app_init: ELF file SHA256:  993a5c236...[0m
+[0;32mI (190) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (194) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (198) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (202) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (206) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (212) heap_init: At 3FC97BE8 len 00051B28 (326 KiB): RAM[0m
+[0;32mI (217) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (222) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (227) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (234) spi_flash: detected chip: generic[0m
+[0;32mI (236) spi_flash: flash io: dio[0m
+[0;33mW (239) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (252) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (258) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (265) main_task: Started on CPU0[0m
+[0;32mI (275) main_task: Calling app_main()[0m
+[0;32mI (275) ADBMS6830: === app_main: bring-up ===[0m
+[0;32mI (275) ADBMS6830: === Detailed GPIO Pin Test ===[0m
+[0;32mI (275) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (295) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (305) ADBMS6830: MISO (GPIO35): PullUp=1, PullDown=0 [OK][0m
+[0;32mI (305) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (325) gpio: GPIO[36]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (335) ADBMS6830: MOSI (GPIO36): PullUp=1, PullDown=0 [OK][0m
+[0;32mI (335) gpio: GPIO[37]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) gpio: GPIO[37]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 1| Intr:0 [0m
+[0;32mI (355) ADBMS6830: CLK  (GPIO37): PullUp=1, PullDown=0 [OK][0m
+[0;32mI (355) gpio: GPIO[38]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (365) ADBMS6830: CS1  (GPIO38): 1[0m
+[0;32mI (365) gpio: GPIO[39]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (375) ADBMS6830: CS2  (GPIO39): 1[0m
+[0;32mI (375) ADBMS6830: === GPIO Test Complete ===[0m
+[0;32mI (375) ADBMS6830: === Verifying RDSID PEC Calculation ===[0m
+[0;32mI (375) ADBMS6830: RDSID Command: 00 2C[0m
+[0;32mI (385) ADBMS6830: Calculated PEC: 0x5990[0m
+[0;32mI (385) ADBMS6830: Expected PEC: 0x5990[0m
+[0;32mI (385) ADBMS6830: ✓ PEC calculation is CORRECT[0m
+[0;32mI (395) ADBMS6830: Fast PEC calculation: 0x5990 ✓[0m
+[0;32mI (395) ADBMS6830: SPI initialized successfully at 500000 Hz[0m
+[0;32mI (405) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (415) ADBMS6830: === Debug Device‑ID Read ===[0m
+[0;32mI (415) ADBMS6830: Trying corrected RDSID command (00 2C 59 90)[0m
+[0;32mI (425) ADBMS6830: === Sending Corrected RDSID Command (single frame) ===[0m
+[0;32mI (425) ADBMS6830: Sending aggressive isoSPI wake-up sequence...[0m
+[0;32mI (435) ADBMS6830: Sending Alternating pattern[0m
+[0;32mI (445) ADBMS6830: Sending Clock pattern[0m
+[0;32mI (445) ADBMS6830: Sending High-Low pattern[0m
+[0;32mI (455) ADBMS6830: Aggressive wake-up sequence completed[0m
+[1;31mE (455) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (465) ADBMS6830: RDSID transaction failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (465) ADBMS6830: Fallback 1: opcode 0x002C[0m
+[0;32mI (475) ADBMS6830: === Debug Command Send: 0x002C ===[0m
+[0;32mI (475) ADBMS6830: Sending aggressive isoSPI wake-up sequence...[0m
+[0;32mI (485) ADBMS6830: Sending Alternating pattern[0m
+[0;32mI (495) ADBMS6830: Sending Clock pattern[0m
+[0;32mI (495) ADBMS6830: Sending High-Low pattern[0m
+[0;32mI (495) ADBMS6830: Aggressive wake-up sequence completed[0m
+[0;32mI (495) ADBMS6830: Command packet: 00 2C 59 90 (PEC: 0x5990)[0m
+[0;32mI (505) ADBMS6830: Attempt 1:[0m
+[1;31mE (505) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (515) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (525) ADBMS6830: Attempt 2:[0m
+[1;31mE (525) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (535) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (545) ADBMS6830: Attempt 3:[0m
+[1;31mE (545) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (555) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (565) ADBMS6830: Fallback 2: opcode 0x0260[0m
+[0;32mI (565) ADBMS6830: === Debug Command Send: 0x0260 ===[0m
+[0;32mI (575) ADBMS6830: Sending aggressive isoSPI wake-up sequence...[0m
+[0;32mI (575) ADBMS6830: Sending Alternating pattern[0m
+[0;32mI (585) ADBMS6830: Sending Clock pattern[0m
+[0;32mI (595) ADBMS6830: Sending High-Low pattern[0m
+[0;32mI (595) ADBMS6830: Aggressive wake-up sequence completed[0m
+[0;32mI (595) ADBMS6830: Command packet: 02 60 7C 20 (PEC: 0x7C20)[0m
+[0;32mI (605) ADBMS6830: Attempt 1:[0m
+[1;31mE (605) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (615) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (625) ADBMS6830: Attempt 2:[0m
+[1;31mE (625) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (635) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (645) ADBMS6830: Attempt 3:[0m
+[1;31mE (645) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (655) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (665) ADBMS6830: Fallback 3: opcode 0x0004[0m
+[0;32mI (665) ADBMS6830: === Debug Command Send: 0x0004 ===[0m
+[0;32mI (665) ADBMS6830: Sending aggressive isoSPI wake-up sequence...[0m
+[0;32mI (675) ADBMS6830: Sending Alternating pattern[0m
+[0;32mI (685) ADBMS6830: Sending Clock pattern[0m
+[0;32mI (685) ADBMS6830: Sending High-Low pattern[0m
+[0;32mI (695) ADBMS6830: Aggressive wake-up sequence completed[0m
+[0;32mI (695) ADBMS6830: Command packet: 00 04 07 C2 (PEC: 0x07C2)[0m
+[0;32mI (695) ADBMS6830: Attempt 1:[0m
+[1;31mE (695) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (715) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (715) ADBMS6830: Attempt 2:[0m
+[1;31mE (715) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (735) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;32mI (735) ADBMS6830: Attempt 3:[0m
+[1;31mE (735) spi_master: check_trans_valid(1069): SPI half duplex mode is not supported when both MOSI and MISO phases are enabled.[0m
+[1;31mE (755) ADBMS6830: Command transmission failed: ESP_ERR_INVALID_ARG[0m
+[0;33mW (755) ADBMS6830: All fallback commands returned all‑0xFF; link likely silent[0m
+[0;33mW (765) ADBMS6830: Device-ID read failed (ESP_ERR_NOT_FOUND)[0m

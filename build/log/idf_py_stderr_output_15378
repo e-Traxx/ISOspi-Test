@@ -1,0 +1,5 @@
+[0;33m--- esp-idf-monitor 1.6.2 on /dev/cu.usbmodem1101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x420038f8: is_vect_desc_usable at /Users/akame/esp/esp-idf/components/esp_hw_support/intr_alloc.c:255
+[0m
+[0m

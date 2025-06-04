@@ -1,0 +1,890 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d14
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2810,len:0x15a0
+load:0x403c8700,len:0x4
+load:0x403c8704,len:0xd20
+load:0x403cb700,len:0x2f00
+entry 0x403c8928
+[0;32mI (26) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time May 11 2025 06:07:19[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (27) boot: chip revision: v0.2[0m
+[0;32mI (30) boot: efuse block revision: v1.3[0m
+[0;32mI (33) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (37) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (41) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (45) boot: Enabling RNG early entropy source...[0m
+[0;32mI (49) boot: Partition Table:[0m
+[0;32mI (52) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (58) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (65) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (71) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (78) boot: End of partition table[0m
+[0;32mI (81) esp_image: segment 0: paddr=00010020 vaddr=3c020020 size=0bf48h ( 48968) map[0m
+[0;32mI (97) esp_image: segment 1: paddr=0001bf70 vaddr=3fc94300 size=02ac0h ( 10944) load[0m
+[0;32mI (100) esp_image: segment 2: paddr=0001ea38 vaddr=40374000 size=015e0h (  5600) load[0m
+[0;32mI (104) esp_image: segment 3: paddr=00020020 vaddr=42000020 size=1b620h (112160) map[0m
+[0;32mI (131) esp_image: segment 4: paddr=0003b648 vaddr=403755e0 size=0ec5ch ( 60508) load[0m
+[0;32mI (144) esp_image: segment 5: paddr=0004a2ac vaddr=600fe100 size=0001ch (    28) load[0m
+[0;32mI (151) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (151) boot: Disabling RNG early entropy source...[0m
+[0;32mI (162) cpu_start: Multicore app[0m
+[0;32mI (171) cpu_start: Pro cpu start user code[0m
+[0;32mI (171) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (172) app_init: Application information:[0m
+[0;32mI (172) app_init: Project name:     dc2792b_test[0m
+[0;32mI (176) app_init: App version:      1[0m
+[0;32mI (179) app_init: Compile time:     May 11 2025 06:06:35[0m
+[0;32mI (184) app_init: ELF file SHA256:  f4be5b961...[0m
+[0;32mI (189) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (192) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (196) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (200) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (204) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (210) heap_init: At 3FC97F28 len 000517E8 (325 KiB): RAM[0m
+[0;32mI (215) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (221) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (226) heap_init: At 600FE11C len 00001ECC (7 KiB): RTCRAM[0m
+[0;32mI (232) spi_flash: detected chip: generic[0m
+[0;32mI (235) spi_flash: flash io: dio[0m
+[0;33mW (238) spi_flash: Detected size(16384k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (250) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (256) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (263) main_task: Started on CPU0[0m
+[0;32mI (273) main_task: Calling app_main()[0m
+FAIL  loop 1  (crc tx 0x123F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 2  (crc tx 0xC40B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 3  (crc tx 0x6497  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 4  (crc tx 0xA11D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 5  (crc tx 0x5CCB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 6  (crc tx 0xAE82  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 7  (crc tx 0x83DA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 8  (crc tx 0x5E26  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 9  (crc tx 0xA6E2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 10  (crc tx 0x4F75  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 11  (crc tx 0xF3C8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 12  (crc tx 0xB419  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 13  (crc tx 0x8EA8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 14  (crc tx 0x8957  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 15  (crc tx 0x9AE9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 16  (crc tx 0xC7A3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 17  (crc tx 0xF060  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 18  (crc tx 0x20EE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 19  (crc tx 0x0F5B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 20  (crc tx 0xDAC7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 21  (crc tx 0xEEAC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 22  (crc tx 0xAAD5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 23  (crc tx 0x0493  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 24  (crc tx 0x829F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 25  (crc tx 0xC2B1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 26  (crc tx 0xEBBE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 27  (crc tx 0xB10B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 28  (crc tx 0x9576  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 29  (crc tx 0x18B2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 30  (crc tx 0x00C4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 31  (crc tx 0x05D6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 32  (crc tx 0x1E08  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 33  (crc tx 0x8FED  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 34  (crc tx 0x15C0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 35  (crc tx 0xD7B5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 36  (crc tx 0x39DD  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 37  (crc tx 0x96DE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 38  (crc tx 0x8C45  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 39  (crc tx 0x8137  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 40  (crc tx 0x5646  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 41  (crc tx 0x6A4D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 42  (crc tx 0xE29B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 43  (crc tx 0xE133  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 44  (crc tx 0x75C4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 45  (crc tx 0xF437  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 46  (crc tx 0xA7A7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 47  (crc tx 0xD3E2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 48  (crc tx 0xBE94  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 49  (crc tx 0x4A67  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 50  (crc tx 0xE816  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 51  (crc tx 0x25FC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 52  (crc tx 0x1485  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 53  (crc tx 0x4B22  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 54  (crc tx 0x7481  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 55  (crc tx 0x68A0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 56  (crc tx 0xEAFB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 57  (crc tx 0x2D9C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 58  (crc tx 0xD82A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 59  (crc tx 0xE6CC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 60  (crc tx 0x667A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 61  (crc tx 0xA97D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 62  (crc tx 0x9064  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 63  (crc tx 0x036C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 64  (crc tx 0x9121  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 65  (crc tx 0x9FFB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 66  (crc tx 0xDC7D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 67  (crc tx 0x6185  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 68  (crc tx 0xBAC3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 69  (crc tx 0xCD2E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 70  (crc tx 0x34AF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 71  (crc tx 0x41AF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 72  (crc tx 0xB04E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 73  (crc tx 0x09E1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 74  (crc tx 0x55EE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 75  (crc tx 0xFEBA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 76  (crc tx 0x6368  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 77  (crc tx 0xB2A3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 78  (crc tx 0x0181  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 79  (crc tx 0x9941  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 80  (crc tx 0x5354  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 81  (crc tx 0x7193  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 82  (crc tx 0x737E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 83  (crc tx 0x7B1E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 84  (crc tx 0xB7B1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 85  (crc tx 0x1A5F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 86  (crc tx 0x08A4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 87  (crc tx 0xC979  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 88  (crc tx 0xB3E6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 89  (crc tx 0x9D16  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 90  (crc tx 0xD41D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 91  (crc tx 0xAD2A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 92  (crc tx 0x172D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 93  (crc tx 0xDFD5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 94  (crc tx 0xF572  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 95  (crc tx 0x3B30  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 96  (crc tx 0x9EBE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 97  (crc tx 0x40EA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 98  (crc tx 0x2CD9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 99  (crc tx 0x44BD  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 100  (crc tx 0xAB90  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+PASS 0  |  FAIL 100
+FAIL  loop 101  (crc tx 0x9804  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 102  (crc tx 0xCFC3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 103  (crc tx 0x3CCF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 104  (crc tx 0x8D00  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 105  (crc tx 0x1DA0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 106  (crc tx 0x1B1A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 107  (crc tx 0x9433  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 108  (crc tx 0x8425  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 109  (crc tx 0x4D98  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 110  (crc tx 0xFBA8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 111  (crc tx 0x78B6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 112  (crc tx 0x2346  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 113  (crc tx 0x9BAC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 114  (crc tx 0x5B34  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 115  (crc tx 0xBD3C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 116  (crc tx 0xDE90  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 117  (crc tx 0x69E5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 118  (crc tx 0x766C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 119  (crc tx 0x60C0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 120  (crc tx 0x2654  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 121  (crc tx 0x8072  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 122  (crc tx 0xCAD1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 123  (crc tx 0x2711  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 124  (crc tx 0x1CE5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 125  (crc tx 0x878D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 126  (crc tx 0xD96F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 127  (crc tx 0x7A5B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 128  (crc tx 0x2B26  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 129  (crc tx 0x5703  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 130  (crc tx 0xF6DA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 131  (crc tx 0xAFC7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 132  (crc tx 0x1F4D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 133  (crc tx 0x137A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 134  (crc tx 0x589C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 135  (crc tx 0x29CB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 136  (crc tx 0x5F63  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 137  (crc tx 0x3A75  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 138  (crc tx 0x0229  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 139  (crc tx 0x0DB6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 140  (crc tx 0xD2A7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 141  (crc tx 0x2203  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 142  (crc tx 0x073B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 143  (crc tx 0x1668  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 144  (crc tx 0x4342  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 145  (crc tx 0xB82E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 146  (crc tx 0xC54E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 147  (crc tx 0xF800  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 148  (crc tx 0xEC41  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 149  (crc tx 0xA2B5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 150  (crc tx 0xC83C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 151  (crc tx 0x2F71  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 152  (crc tx 0xD04A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 153  (crc tx 0x2A63  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 154  (crc tx 0xCB94  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 155  (crc tx 0xBB86  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 156  (crc tx 0x51B9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 157  (crc tx 0x79F3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 158  (crc tx 0xBFD1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 159  (crc tx 0xD6F0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 160  (crc tx 0xA54A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 161  (crc tx 0xDB82  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 162  (crc tx 0x723B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 163  (crc tx 0xE789  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 164  (crc tx 0xFAED  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 165  (crc tx 0xE421  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 166  (crc tx 0x6E1A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 167  (crc tx 0x65D2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 168  (crc tx 0x3D8A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 169  (crc tx 0x1197  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 170  (crc tx 0x50FC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 171  (crc tx 0xE564  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 172  (crc tx 0xF28D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 173  (crc tx 0x288E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 174  (crc tx 0xC3F4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 175  (crc tx 0x7729  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 176  (crc tx 0xFC57  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 177  (crc tx 0x6B08  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 178  (crc tx 0x7E0C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 179  (crc tx 0xAC6F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 180  (crc tx 0x8BBA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 181  (crc tx 0x9289  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 182  (crc tx 0x0B0C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 183  (crc tx 0x5D8E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 184  (crc tx 0x3215  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 185  (crc tx 0xCE86  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 186  (crc tx 0xA058  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 187  (crc tx 0xC05C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 188  (crc tx 0xE3DE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 189  (crc tx 0x7DA4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 190  (crc tx 0x3898  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 191  (crc tx 0x0A49  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 192  (crc tx 0xC119  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 193  (crc tx 0x7F49  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 194  (crc tx 0x30F8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 195  (crc tx 0xC6E6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 196  (crc tx 0x6CF7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 197  (crc tx 0x6DB2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 198  (crc tx 0xF125  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 199  (crc tx 0xBC79  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 200  (crc tx 0x4207  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+PASS 0  |  FAIL 200
+FAIL  loop 201  (crc tx 0x24B9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 202  (crc tx 0x8812  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 203  (crc tx 0x067E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 204  (crc tx 0x8AFF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 205  (crc tx 0x0E1E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 206  (crc tx 0x4650  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 207  (crc tx 0xA3F0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 208  (crc tx 0x54AB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 209  (crc tx 0x622D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 210  (crc tx 0x2E34  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 211  (crc tx 0x4CDD  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 212  (crc tx 0x673F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 213  (crc tx 0x35EA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 214  (crc tx 0xDD38  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 215  (crc tx 0xFD12  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 216  (crc tx 0xF79F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 217  (crc tx 0x3350  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 218  (crc tx 0x5211  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 219  (crc tx 0xED04  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 220  (crc tx 0x3E22  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 221  (crc tx 0x8560  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 222  (crc tx 0xD10F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 223  (crc tx 0xB6F4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 224  (crc tx 0x86C8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 225  (crc tx 0x45F8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 226  (crc tx 0x3707  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 227  (crc tx 0xD558  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 228  (crc tx 0x31BD  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 229  (crc tx 0x5A71  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 230  (crc tx 0x21AB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 231  (crc tx 0x93CC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 232  (crc tx 0x979B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 233  (crc tx 0x10D2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 234  (crc tx 0xCC6B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 235  (crc tx 0xA838  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 236  (crc tx 0x0CF3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 237  (crc tx 0x4E30  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 238  (crc tx 0x6F5F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 239  (crc tx 0xF945  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 240  (crc tx 0x70D6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 241  (crc tx 0xEFE9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 242  (crc tx 0x3642  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 243  (crc tx 0x49CF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 244  (crc tx 0x7CE1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 245  (crc tx 0xA40F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 246  (crc tx 0x4715  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 247  (crc tx 0x3F67  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 248  (crc tx 0x19F7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 249  (crc tx 0x9C53  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 250  (crc tx 0x488A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 251  (crc tx 0xE076  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 252  (crc tx 0xE953  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 253  (crc tx 0xB96B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 254  (crc tx 0x59D9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 255  (crc tx 0xB55C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 256  (crc tx 0x123F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 257  (crc tx 0xC40B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 258  (crc tx 0x6497  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 259  (crc tx 0xA11D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 260  (crc tx 0x5CCB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 261  (crc tx 0xAE82  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 262  (crc tx 0x83DA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 263  (crc tx 0x5E26  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 264  (crc tx 0xA6E2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 265  (crc tx 0x4F75  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 266  (crc tx 0xF3C8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 267  (crc tx 0xB419  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 268  (crc tx 0x8EA8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 269  (crc tx 0x8957  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 270  (crc tx 0x9AE9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 271  (crc tx 0xC7A3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 272  (crc tx 0xF060  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 273  (crc tx 0x20EE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 274  (crc tx 0x0F5B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 275  (crc tx 0xDAC7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 276  (crc tx 0xEEAC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 277  (crc tx 0xAAD5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 278  (crc tx 0x0493  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 279  (crc tx 0x829F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 280  (crc tx 0xC2B1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 281  (crc tx 0xEBBE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 282  (crc tx 0xB10B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 283  (crc tx 0x9576  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 284  (crc tx 0x18B2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 285  (crc tx 0x00C4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 286  (crc tx 0x05D6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 287  (crc tx 0x1E08  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 288  (crc tx 0x8FED  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 289  (crc tx 0x15C0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 290  (crc tx 0xD7B5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 291  (crc tx 0x39DD  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 292  (crc tx 0x96DE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 293  (crc tx 0x8C45  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 294  (crc tx 0x8137  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 295  (crc tx 0x5646  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 296  (crc tx 0x6A4D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 297  (crc tx 0xE29B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 298  (crc tx 0xE133  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 299  (crc tx 0x75C4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 300  (crc tx 0xF437  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+PASS 0  |  FAIL 300
+FAIL  loop 301  (crc tx 0xA7A7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 302  (crc tx 0xD3E2  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 303  (crc tx 0xBE94  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 304  (crc tx 0x4A67  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 305  (crc tx 0xE816  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 306  (crc tx 0x25FC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 307  (crc tx 0x1485  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 308  (crc tx 0x4B22  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 309  (crc tx 0x7481  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 310  (crc tx 0x68A0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 311  (crc tx 0xEAFB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 312  (crc tx 0x2D9C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 313  (crc tx 0xD82A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 314  (crc tx 0xE6CC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 315  (crc tx 0x667A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 316  (crc tx 0xA97D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 317  (crc tx 0x9064  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 318  (crc tx 0x036C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 319  (crc tx 0x9121  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 320  (crc tx 0x9FFB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 321  (crc tx 0xDC7D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 322  (crc tx 0x6185  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 323  (crc tx 0xBAC3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 324  (crc tx 0xCD2E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 325  (crc tx 0x34AF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 326  (crc tx 0x41AF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 327  (crc tx 0xB04E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 328  (crc tx 0x09E1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 329  (crc tx 0x55EE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 330  (crc tx 0xFEBA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 331  (crc tx 0x6368  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 332  (crc tx 0xB2A3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 333  (crc tx 0x0181  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 334  (crc tx 0x9941  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 335  (crc tx 0x5354  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 336  (crc tx 0x7193  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 337  (crc tx 0x737E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 338  (crc tx 0x7B1E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 339  (crc tx 0xB7B1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 340  (crc tx 0x1A5F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 341  (crc tx 0x08A4  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 342  (crc tx 0xC979  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 343  (crc tx 0xB3E6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 344  (crc tx 0x9D16  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 345  (crc tx 0xD41D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 346  (crc tx 0xAD2A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 347  (crc tx 0x172D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 348  (crc tx 0xDFD5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 349  (crc tx 0xF572  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 350  (crc tx 0x3B30  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 351  (crc tx 0x9EBE  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 352  (crc tx 0x40EA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 353  (crc tx 0x2CD9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 354  (crc tx 0x44BD  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 355  (crc tx 0xAB90  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 356  (crc tx 0x9804  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 357  (crc tx 0xCFC3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 358  (crc tx 0x3CCF  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 359  (crc tx 0x8D00  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 360  (crc tx 0x1DA0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 361  (crc tx 0x1B1A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 362  (crc tx 0x9433  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 363  (crc tx 0x8425  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 364  (crc tx 0x4D98  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 365  (crc tx 0xFBA8  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 366  (crc tx 0x78B6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 367  (crc tx 0x2346  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 368  (crc tx 0x9BAC  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 369  (crc tx 0x5B34  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 370  (crc tx 0xBD3C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 371  (crc tx 0xDE90  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 372  (crc tx 0x69E5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 373  (crc tx 0x766C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 374  (crc tx 0x60C0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 375  (crc tx 0x2654  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 376  (crc tx 0x8072  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 377  (crc tx 0xCAD1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 378  (crc tx 0x2711  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 379  (crc tx 0x1CE5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 380  (crc tx 0x878D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 381  (crc tx 0xD96F  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 382  (crc tx 0x7A5B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 383  (crc tx 0x2B26  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 384  (crc tx 0x5703  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 385  (crc tx 0xF6DA  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 386  (crc tx 0xAFC7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 387  (crc tx 0x1F4D  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 388  (crc tx 0x137A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 389  (crc tx 0x589C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 390  (crc tx 0x29CB  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 391  (crc tx 0x5F63  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 392  (crc tx 0x3A75  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 393  (crc tx 0x0229  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 394  (crc tx 0x0DB6  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 395  (crc tx 0xD2A7  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 396  (crc tx 0x2203  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 397  (crc tx 0x073B  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 398  (crc tx 0x1668  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 399  (crc tx 0x4342  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 400  (crc tx 0xB82E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+PASS 0  |  FAIL 400
+FAIL  loop 401  (crc tx 0xC54E  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 402  (crc tx 0xF800  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 403  (crc tx 0xEC41  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 404  (crc tx 0xA2B5  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 405  (crc tx 0xC83C  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 406  (crc tx 0x2F71  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 407  (crc tx 0xD04A  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 408  (crc tx 0x2A63  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 409  (crc tx 0xCB94  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 410  (crc tx 0xBB86  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 411  (crc tx 0x51B9  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 412  (crc tx 0x79F3  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 413  (crc tx 0xBFD1  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+FAIL  loop 414  (crc tx 0xD6F0  rx 0xFFFF)
+RX[0..15]: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
